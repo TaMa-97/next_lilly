@@ -12,21 +12,25 @@ export const getStaticProps = async () => {
 }
 
 const Home: NextPage<Props> = ({ allPosts }) => (
-  <ul>
-    {allPosts?.map((post) => (
-      <li key={post.slug}>
-        <a href={`/blog/${post.slug}`}>
-          <p>{post.title}</p>
-        </a>
-        <p>{post.date}</p>
-        <ul>
-          {post.tags?.map((tag) => (
-            <li key={tag}>{tag}</li>
-          ))}
-        </ul>
-      </li>
-    ))}
-  </ul>
+  <>
+    <main>
+      <ul>
+        {allPosts?.map((post) => (
+          <li key={post.slug}>
+            <a href={`/blog/${post.slug}`}>
+              <p>{post.title}</p>
+            </a>
+            <p>{post.date}</p>
+            <ul>
+              {post.tags?.map((tag) => (
+                <li key={tag}>{tag}</li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
+    </main>
+  </>
 )
 
 export default Home
