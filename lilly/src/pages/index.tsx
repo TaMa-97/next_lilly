@@ -1,5 +1,7 @@
 import { NextPage, InferGetStaticPropsType } from 'next'
 import { getAllPosts } from '@/utils/api'
+import Header from '@/components/base/Header/Header'
+import Footer from '@/components/base/Footer/Footer'
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
@@ -13,6 +15,7 @@ export const getStaticProps = async () => {
 
 const Home: NextPage<Props> = ({ allPosts }) => (
   <>
+    <Header />
     <main>
       <ul>
         {allPosts?.map((post) => (
@@ -30,6 +33,7 @@ const Home: NextPage<Props> = ({ allPosts }) => (
         ))}
       </ul>
     </main>
+    <Footer />
   </>
 )
 
