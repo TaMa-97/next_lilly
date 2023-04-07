@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+// ----------- init
+
+// font
+$baseFont: 16;
+$baseLineHeight: 1.8;
+
+// color
+$baseColor: #c9d1d9;
+$baseLinkColor: #c9d1d9;
+$mainColor: #c9d1d9;
+
+$formColor: (
+  border: #aaa,
+  placeholder: #b4b4b4,
+  error: (
+    border: #e33e41,
+    color: #e33e41,
+    bg: #fff2f2,
+  ),
+  check: (
+    border: #aaa,
+    color: nth($mainColor, 1),
+    bg: #eee,
+    bg02: #fff,
+  ),
+);
+
+// brake-point
+$bpSphoneP: 600px;
+$bpTabletP: 768px;
+$bpTabletL: 992px;
+$baseWidthWide: 1200px;
+
+// container-padding
+$containerPadding: 15;
+
+// container-size
+$container: #{$containerPadding * 2 + 970px};
+
+// font-family
+$baseFontFamily: "Zen Kaku Gothic New", "メイリオ", Meiryo, sans-serif;
+$fontEBGaramond: "EB Garamond", "Zen Old Mincho", "Zen Kaku Gothic New",
+  monospace, sans-serif;
+
+//pass
+$cmnPath: "../img/common/";
+
+// ----------- mixin
+
+@mixin pc {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin pcmin {
+  @media only screen and (min-width: 1201px) {
+    @content;
+  }
+}
+
+@mixin tabletL {
+  @media only screen and (max-width: 992px) {
+    @content;
+  }
+}
+@mixin tabletLmin {
+  @media only screen and (min-width: 993px) {
+    @content;
+  }
+}
+
+@mixin tabletP {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tabletPmin {
+  @media only screen and (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin sphoneP {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin sphonePmin {
+  @media only screen and (min-width: 601px) {
+    @content;
+  }
+}
+
+@mixin sphoneSE {
+  @media only screen and (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin max($max) {
+  @media only screen and (max-width: #{$max}px) {
+    @content;
+  }
+}
+
+@mixin min($min) {
+  @media only screen and (min-width: #{$min}px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+// clearfix
+@mixin clearfix() {
+  &:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+// font-size
+@mixin fz($size: $baseFont, $important: false) {
+  $result: calc($size/16);
+  font-size: if($important, ($result + rem!important), ($result + rem));
+}

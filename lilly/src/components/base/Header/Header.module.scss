@@ -1,3 +1,5 @@
+@import "@/styles/variables";
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -13,9 +15,12 @@
 }
 
 .logo {
-  font-size: 1.5rem;
+  @include fz(16);
   font-weight: bold;
   color: #333333;
+  @include tabletP {
+    @include fz(12);
+  }
 }
 
 .nav {
