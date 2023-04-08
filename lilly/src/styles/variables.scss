@@ -40,9 +40,9 @@ $containerPadding: 15;
 $container: #{$containerPadding * 2 + 970px};
 
 // font-family
-$baseFontFamily: "Zen Kaku Gothic New", "メイリオ", Meiryo, sans-serif;
-$fontEBGaramond: "EB Garamond", "Zen Old Mincho", "Zen Kaku Gothic New",
-  monospace, sans-serif;
+$baseFontFamily: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "メイリオ",
+  Meiryo, "Hiragino Kaku Gothic ProN", sans-serif;
+$fontEn: "Roboto", monospace, sans-serif;
 
 //pass
 $cmnPath: "../img/common/";
