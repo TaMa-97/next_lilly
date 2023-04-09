@@ -7,16 +7,16 @@ $baseFont: 16;
 $baseLineHeight: 1.8;
 
 // color
-$baseColor: #c9d1d9;
-$baseLinkColor: #c9d1d9;
-$mainColor: red;
+$baseColor: #111111;
+$baseLinkColor: #007fff;
+$mainColor: #111111;
 
 $formColor: (
   border: #aaa,
   placeholder: #b4b4b4,
   error: (
-    border: #e33e41,
-    color: #e33e41,
+    border: #007fff,
+    color: #007fff,
     bg: #fff2f2,
   ),
   check: (
@@ -34,10 +34,11 @@ $bpTabletL: 992px;
 $baseWidthWide: 1200px;
 
 // container-padding
-$containerPadding: 15;
+$containerPadding: 30;
+$containerPaddingSp: 20;
 
 // container-size
-$container: #{$containerPadding * 2 + 970px};
+$container: #{$containerPadding * 2 + 640px};
 
 // font-family
 $baseFontFamily: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "メイリオ",
@@ -45,7 +46,7 @@ $baseFontFamily: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "メイリ�
 $fontEn: "Roboto", monospace, sans-serif;
 
 //pass
-$cmnPath: "../img/common/";
+$cmnPath: "/img/common/";
 
 // ----------- mixin
 

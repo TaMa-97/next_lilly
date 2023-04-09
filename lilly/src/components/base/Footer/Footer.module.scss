@@ -1,13 +1,26 @@
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
+@charset "utf-8";
+@import "@/styles/variables";
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+.gFooter {
+  padding: 0 30px;
+  @include tabletP {
+    padding: 0 20px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dbdbdb;
+    padding: 27px 0;
+    @include tabletP {
+      padding: 25px 0;
+    }
+  }
+  &__copy {
+    font-family: $fontEn;
+    color: #9b9b9b;
+    font-weight: 500;
+    @include tabletP {
+      @include fz(13);
+    }
+  }
 }

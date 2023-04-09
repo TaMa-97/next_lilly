@@ -130,7 +130,7 @@ br {
 a {
   color: $baseLinkColor;
   text-decoration: underline;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
   &:hover {
     text-decoration: none;
   }
@@ -156,7 +156,7 @@ body {
   overflow-wrap: break-word;
   -webkit-text-size-adjust: 100%;
   word-wrap: break-word;
-  background-color: #0d1117;
+  background-color: #fff;
   position: relative;
 }
 
@@ -168,7 +168,11 @@ body {
 }
 
 main {
+  margin-top: 30px;
   flex: 1;
+  @include tabletP {
+    margin-top: 42px;
+  }
 }
 
 input,
@@ -187,6 +191,10 @@ select {
   max-width: $container;
   padding-left: #{$containerPadding}px;
   padding-right: #{$containerPadding}px;
+  @include tabletP {
+    padding-left: #{$containerPaddingSp}px;
+    padding-right: #{$containerPaddingSp}px;
+  }
 }
 
 br {

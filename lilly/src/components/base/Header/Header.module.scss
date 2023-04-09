@@ -1,49 +1,34 @@
+@charset "utf-8";
 @import "@/styles/variables";
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #ffffff;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
-
-.logoContainer {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  @include fz(16);
-  font-weight: bold;
-  color: $mainColor;
-  @include tabletP {
-    @include fz(12);
+.gHeader {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    @include tabletP {
+      padding: 20px 20px;
+    }
+  }
+  &__title {
+    font-family: $fontEn;
+    font-style: italic;
+    font-weight: 500;
   }
 }
 
-.nav {
-  display: flex;
-}
-
-.navList {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navItem {
-  margin-left: 1rem;
-}
-
-.navLink {
-  text-decoration: none;
-  color: #333333;
-  transition: color 0.3s ease-in-out;
-
-  &:hover {
-    color: #0070f3;
+.gNav {
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    @include tabletP {
+      gap: 13px;
+    }
+  }
+  &__link {
+    font-family: $fontEn;
+    color: nth($mainColor, 1);
+    text-decoration: none;
   }
 }
