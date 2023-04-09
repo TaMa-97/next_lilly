@@ -4,6 +4,7 @@ import markdownToHtml from '@/utils/markdownToHtml'
 import CustomHead from '@/components/base/Head/CustomHead'
 import Header from '@/components/base/Header/Header'
 import Footer from '@/components/base/Footer/Footer'
+import styles from './[slug].module.scss'
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
@@ -53,17 +54,24 @@ const Post: NextPage<Props> = ({ post }) => {
       <Header />
       <main>
         <div className="container">
-          <section>
-            <h2>{post.title}</h2>
-            <p>{post.date}</p>
-            <ul>
-              {post.tags?.map((tag) => (
-                <li key={tag}>{tag}</li>
-              ))}
-            </ul>
+          <section className={styles.myBlog}>
+            <h2 className={styles.myBlog__title}>{post.title}</h2>
+            <div className={styles.myBlog__head}>
+              <p className={styles.myBlog__date}>{post.date}</p>
+              <ul className={styles.myBlog__list}>
+                {post.tags?.map((tag) => (
+                  <li key={tag} className={styles.myBlog__item}>
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+            </div>
             <article>
               {/* ここでdangerouslySetInnerHTMLを使ってHTMLタグを出力する */}
-              <div dangerouslySetInnerHTML={{ __html: post.content }} />
+              <div
+                className="znc"
+                dangerouslySetInnerHTML={{ __html: post.content }}
+              />
             </article>
           </section>
         </div>

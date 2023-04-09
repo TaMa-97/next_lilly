@@ -1,13 +1,11 @@
-import { remark } from 'remark'
-import html from 'remark-html'
+import markdownToHtml from 'zenn-markdown-html'
 /**
- * remarkによるmarkdownの構文変換を行う
- * @param markdown markdown記法で書かれたプレーンテキスト
- * @returns 変換結果をString化したもの
+ * Zenn Markdown による markdown の構文変換を行う
+ * @param markdown markdown 記法で書かれたプレーンテキスト
+ * @returns 変換結果を String 化したもの
  */
-const markdownToHtml = async (markdown: string) => {
-  const result = await remark().use(html).process(markdown)
-  return result.toString()
+const convertMarkdownToHtml = async (markdown: string) => {
+  return markdownToHtml(markdown)
 }
 
-export default markdownToHtml
+export default convertMarkdownToHtml

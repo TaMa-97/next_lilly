@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import "@/styles/variables";
+
+.myBlog {
+  &__title {
+    font-weight: 700;
+    @include fz(26);
+    margin-bottom: 15px;
+  }
+  &__head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  &__date {
+    @include fz(13);
+    font-family: $fontEn;
+    font-weight: 500;
+    color: #9b9b9b;
+  }
+  &__item {
+    display: inline-block;
+    @include fz(15);
+    font-family: $fontEn;
+    font-weight: 500;
+    padding: 2px 13px;
+    border: 1px solid #dbdbdb;
+    border-radius: 20px;
+  }
+}
