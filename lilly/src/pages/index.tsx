@@ -26,7 +26,7 @@ const Home: NextPage<Props> = ({ allPosts }) => {
         <section className={styles.myBlog}>
           <div className="container">
             <div className={styles.myBlog__head}>
-              <h2 className={styles.myBlog__title}>Blog</h2>
+              <h2 className={styles.myBlog__title}>Blog &#x1f680;</h2>
               <p className={styles.myBlog__lead}>
                 主に技術的なメモやTipsをゆるく投稿している場所です。
               </p>

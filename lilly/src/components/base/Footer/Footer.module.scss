@@ -2,13 +2,20 @@
 @import "@/styles/variables";
 
 .gFooter {
-  padding: 0 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $container;
+  padding-left: #{$containerPadding}px;
+  padding-right: #{$containerPadding}px;
+  width: 100%;
   @include tabletP {
-    padding: 0 20px;
+    padding-left: #{$containerPaddingSp}px;
+    padding-right: #{$containerPaddingSp}px;
   }
   &__inner {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     border-top: 1px solid #dbdbdb;
     padding: 27px 0;
     @include tabletP {
@@ -18,9 +25,15 @@
   &__copy {
     font-family: $fontEn;
     color: #9b9b9b;
-    font-weight: 500;
+    font-weight: 400;
+    @include fz(14);
     @include tabletP {
       @include fz(13);
+    }
+  }
+  &__logo {
+    svg {
+      max-width: 160px;
     }
   }
 }

@@ -5,7 +5,7 @@ import styles from './Footer.module.scss'
 const Footer = () => {
   return (
     <footer className={styles.gFooter}>
-      <div className={`container ${styles.gFooter__inner}`}>
+      <div className={styles.gFooter__inner}>
         <p className={styles.gFooter__copy}>
           &copy;lilly_{new Date().getFullYear()}.
         </p>
