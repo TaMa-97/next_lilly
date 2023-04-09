@@ -69,7 +69,7 @@ const Post: NextPage<Props> = ({ post }) => {
             <article>
               {/* ここでdangerouslySetInnerHTMLを使ってHTMLタグを出力する */}
               <div
-                className="znc"
+                className={`znc ${styles.myZnc}`}
                 dangerouslySetInnerHTML={{ __html: post.content }}
               />
             </article>
