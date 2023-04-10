@@ -11,10 +11,15 @@
     }
   }
   &__title {
-    font-family: $fontEn;
-    font-style: italic;
-    font-weight: 500;
-    padding-top: 2px;
+    &Link {
+      text-decoration: none;
+      display: block;
+      font-family: $fontEn;
+      font-style: italic;
+      font-weight: 500;
+      padding-top: 2px;
+      color: nth($mainColor, 1);
+    }
   }
 }
 

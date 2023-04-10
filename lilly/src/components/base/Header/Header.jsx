@@ -6,7 +6,11 @@ const Header = () => {
     <header className={styles.gHeader}>
       <div className={`container ${styles.gHeader__inner}`}>
         <div className={styles.gHeader__logo}>
-          <h1 className={styles.gHeader__title}>Lilly</h1>
+          <h1 className={styles.gHeader__title}>
+            <a href="/" className={styles.gHeader__titleLink}>
+              Lilly
+            </a>
+          </h1>
         </div>
         <nav className={styles.gNav}>
           <ul className={styles.gNav__list}>

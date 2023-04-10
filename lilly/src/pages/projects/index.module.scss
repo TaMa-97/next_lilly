@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import "@/styles/variables";
+
+.myProjects {
+  &__head {
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-family: $fontEn;
+    font-weight: 500;
+    @include fz(24);
+  }
+  &__lead {
+    color: #9b9b9b;
+    @include fz(15);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: $baseColor;
+    &Title {
+      position: relative;
+      display: inline-block;
+      font-weight: 500;
+      @include fz(19);
+      margin-bottom: 12px;
+      &::after {
+        content: "";
+        background: url(#{$cmnPath}icon_blank.svg) no-repeat center;
+        background-size: 13px 12px;
+        width: 13px;
+        height: 12px;
+        position: absolute;
+        top: 2px;
+        bottom: 0;
+        right: -25px;
+        margin: auto;
+      }
+    }
+    &Inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    &List {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+    &Item {
+      @include fz(15);
+      font-family: $fontEn;
+      font-weight: 500;
+      padding: 2px 13px;
+      border: 1px solid #dbdbdb;
+      border-radius: 20px;
+    }
+    &Date {
+      @include fz(15);
+      font-family: $fontEn;
+      font-weight: 500;
+      color: #9b9b9b;
+    }
+  }
+}
