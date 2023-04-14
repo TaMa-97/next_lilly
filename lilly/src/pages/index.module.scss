@@ -63,4 +63,31 @@
       color: #9b9b9b;
     }
   }
+
+  &__catList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 7px;
+    margin-bottom: 30px;
+  }
+  &__catItem {
+    width: calc((100% - 14px) / 3);
+
+    @include tabletP {
+      width: calc((100% - 7px) / 2);
+    }
+    &Link {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-decoration: none;
+      border: 2px solid #dbdbdb;
+      border-radius: 8px;
+      @include fz(13);
+      color: #9b9b9b;
+      font-family: $fontEn;
+      font-weight: 500;
+    }
+  }
 }

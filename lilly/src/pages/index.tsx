@@ -31,6 +31,28 @@ const Home: NextPage<Props> = ({ allPosts }) => {
                 主に技術的なメモやTipsをゆるく投稿している場所です。
               </p>
             </div>
+            <ul className={styles.myBlog__catList}>
+              <li className={styles.myBlog__catItem}>
+                <a href="#" className={styles.myBlog__catItemLink}>
+                  &#127758; ALL
+                </a>
+              </li>
+              <li className={styles.myBlog__catItem}>
+                <a href="#" className={styles.myBlog__catItemLink}>
+                  &#127758; ALL
+                </a>
+              </li>
+              <li className={styles.myBlog__catItem}>
+                <a href="#" className={styles.myBlog__catItemLink}>
+                  &#127758; ALL
+                </a>
+              </li>
+              <li className={styles.myBlog__catItem}>
+                <a href="#" className={styles.myBlog__catItemLink}>
+                  &#127758; ALL
+                </a>
+              </li>
+            </ul>
             <ul className={styles.myBlog__list}>
               {allPosts?.map((post) => (
                 <li key={post.slug} className={styles.myBlog__item}>
