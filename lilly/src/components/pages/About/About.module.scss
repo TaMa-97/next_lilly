@@ -1,2 +1,35 @@
 @charset "utf-8";
 @import "@/styles/variables";
+
+.myAbout {
+  &__head {
+    margin-bottom: 50px;
+  }
+  &__title {
+    font-family: $fontEn;
+    font-weight: 500;
+    @include fz(24);
+  }
+  &__lead {
+    font-family: $fontEn;
+    font-weight: 500;
+    @include fz(35);
+    margin-bottom: 30px;
+  }
+  &__txtArea {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  &__txtEn {
+    font-family: $fontEn;
+    font-weight: 500;
+    @include fz(15);
+    margin-bottom: 30px;
+  }
+  &__txtJa {
+    font-weight: 500;
+    @include fz(14);
+  }
+}
