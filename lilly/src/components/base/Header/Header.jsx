@@ -25,11 +25,6 @@ const Header = () => {
               </a>
             </li>
             <li className={styles.gNav__item}>
-              <a href="/photo" className={styles.gNav__link}>
-                Photo
-              </a>
-            </li>
-            <li className={styles.gNav__item}>
               <a href="/about" className={styles.gNav__link}>
                 About
               </a>
