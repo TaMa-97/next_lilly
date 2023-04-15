@@ -1,4 +1,9 @@
-import type { NextPage, InferGetStaticPropsType } from 'next'
+import type {
+  NextPage,
+  InferGetStaticPropsType,
+  GetStaticPropsContext,
+} from 'next'
+import React from 'react'
 import { getAllPosts, getPostBySlug } from '@/utils/api'
 import markdownToHtml from '@/utils/markdownToHtml'
 import CustomHead from '@/components/base/Head/CustomHead'
@@ -23,8 +28,15 @@ export const getStaticPaths = async () => {
   }
 }
 
-export const getStaticProps = async ({ params }: any) => {
-  const post = getPostBySlug(params.slug, [
+export const getStaticProps = async (context: GetStaticPropsContext) => {
+  if (!context.params || typeof context.params.slug !== 'string') {
+    // params が存在しない場合、または slug が string 型でない場合のエラーハンドリングを行います。
+    // 例: 404 ページを返す
+    return {
+      notFound: true,
+    }
+  }
+  const post = getPostBySlug(context.params.slug, [
     'slug',
     'title',
     'date',

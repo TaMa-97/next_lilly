@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './About.module.scss'
 
 const About = () => {
@@ -10,7 +11,7 @@ const About = () => {
         <h3 className={styles.myAbout__lead}>
           Hi there &#128075;
           <br />
-          I'm a developer based in Japan.
+          I&apos;m a developer based in Japan.
         </h3>
         <div className={styles.myAbout__txtArea}>
           <p className={styles.myAbout__txtEn}>
@@ -19,8 +20,8 @@ const About = () => {
             I design and implement web front-end UI components and interactions
             at my company. I enjoy working with JavaScript library and crafting
             beautiful front-end experiences.
-            <br /> I'm busy with playing tennis!, sauna, and radio, and watching
-            soccer.
+            <br /> I&apos;m busy with playing tennis!, sauna, and radio, and
+            watching soccer.
           </p>
           <p className={styles.myAbout__txtJa}>
             1997 年岡山県生まれ。

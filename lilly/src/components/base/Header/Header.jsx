@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import styles from './Header.module.scss'
 
 const Header = () => {
@@ -7,27 +8,27 @@ const Header = () => {
       <div className={`container ${styles.gHeader__inner}`}>
         <div className={styles.gHeader__logo}>
           <h1 className={styles.gHeader__title}>
-            <a href="/" className={styles.gHeader__titleLink}>
+            <Link href="/" className={styles.gHeader__titleLink}>
               Lilly
-            </a>
+            </Link>
           </h1>
         </div>
         <nav className={styles.gNav}>
           <ul className={styles.gNav__list}>
             <li className={styles.gNav__item}>
-              <a href="/" className={styles.gNav__link}>
+              <Link href="/" className={styles.gNav__link}>
                 Blog
-              </a>
+              </Link>
             </li>
             <li className={styles.gNav__item}>
-              <a href="/projects" className={styles.gNav__link}>
+              <Link href="/projects" className={styles.gNav__link}>
                 Projects
-              </a>
+              </Link>
             </li>
             <li className={styles.gNav__item}>
-              <a href="/about" className={styles.gNav__link}>
+              <Link href="/about" className={styles.gNav__link}>
                 About
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

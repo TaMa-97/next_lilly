@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import React from 'react'
 import CustomHead from '@/components/base/Head/CustomHead'
 import Header from '@/components/base/Header/Header'
 import Footer from '@/components/base/Footer/Footer'

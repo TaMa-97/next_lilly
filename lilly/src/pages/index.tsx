@@ -1,4 +1,6 @@
 import type { NextPage, InferGetStaticPropsType } from 'next'
+import React from 'react'
+import Link from 'next/link'
 import { getAllPosts } from '@/utils/api'
 import CustomHead from '@/components/base/Head/CustomHead'
 import Header from '@/components/base/Header/Header'
@@ -33,30 +35,30 @@ const Home: NextPage<Props> = ({ allPosts }) => {
             </div>
             <ul className={styles.myBlog__catList}>
               <li className={styles.myBlog__catItem}>
-                <a href="#" className={styles.myBlog__catItemLink}>
+                <Link href="#" className={styles.myBlog__catItemLink}>
                   &#127758; ALL
-                </a>
+                </Link>
               </li>
               <li className={styles.myBlog__catItem}>
-                <a href="#" className={styles.myBlog__catItemLink}>
+                <Link href="#" className={styles.myBlog__catItemLink}>
                   &#127758; ALL
-                </a>
+                </Link>
               </li>
               <li className={styles.myBlog__catItem}>
-                <a href="#" className={styles.myBlog__catItemLink}>
+                <Link href="#" className={styles.myBlog__catItemLink}>
                   &#127758; ALL
-                </a>
+                </Link>
               </li>
               <li className={styles.myBlog__catItem}>
-                <a href="#" className={styles.myBlog__catItemLink}>
+                <Link href="#" className={styles.myBlog__catItemLink}>
                   &#127758; ALL
-                </a>
+                </Link>
               </li>
             </ul>
             <ul className={styles.myBlog__list}>
               {allPosts?.map((post) => (
                 <li key={post.slug} className={styles.myBlog__item}>
-                  <a
+                  <Link
                     href={`/blog/${post.slug}`}
                     className={styles.myBlog__link}
                   >
@@ -71,7 +73,7 @@ const Home: NextPage<Props> = ({ allPosts }) => {
                       </ul>
                       <p className={styles.myBlog__linkDate}>{post.date}</p>
                     </div>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

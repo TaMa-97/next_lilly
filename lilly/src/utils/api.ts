@@ -76,11 +76,11 @@ export const getAllPosts = (fields: string[] = []) => {
 
       if (slugA > slugB) {
         return 1
+      } else if (slugB > slugA) {
+        return -1
       } else {
-        slugB > slugA
+        return 0
       }
-
-      return slugA >= slugB ? 1 : -1
     })
 
   return posts

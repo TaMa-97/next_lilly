@@ -1,3 +1,5 @@
+import React from 'react'
+import Link from 'next/link'
 import styles from './Products.module.scss'
 
 const Products = () => {
@@ -10,7 +12,7 @@ const Products = () => {
         </div>
         <ul className={styles.myProjects__list}>
           <li className={styles.myProjects__item}>
-            <a href="/" className={styles.myProjects__link}>
+            <Link href="/" className={styles.myProjects__link}>
               <p className={styles.myProjects__linkTitle}>Lilly</p>
               <div className={styles.myProjects__linkInner}>
                 <ul className={styles.myProjects__linkList}>
@@ -18,7 +20,7 @@ const Products = () => {
                   <li className={styles.myProjects__linkItem}>TypeScript</li>
                 </ul>
               </div>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

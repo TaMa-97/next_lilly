@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Head from 'next/head'
 
 const CustomHead = ({ title, description }) => {
@@ -18,6 +19,11 @@ const CustomHead = ({ title, description }) => {
       <link rel="icon" href="/favicon.ico" />
     </Head>
   )
+}
+
+CustomHead.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 }
 
 export default CustomHead
