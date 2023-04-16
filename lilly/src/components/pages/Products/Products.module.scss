@@ -95,6 +95,9 @@
         border-radius: 10px;
         border: 2px solid #dbdbdb;
         transition: all 0.2s cubic-bezier(0.23, 1, 0.58, 1);
+        @include tabletP {
+          border: 1px solid #dbdbdb;
+        }
       }
     }
     &Inner {
