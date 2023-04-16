@@ -3,13 +3,29 @@ import type {
   InferGetStaticPropsType,
   GetStaticPropsContext,
 } from 'next'
-import React from 'react'
+import React, { useEffect } from 'react'
+import Tocbot from 'tocbot'
 import { getAllPosts, getPostBySlug } from '@/utils/api'
 import markdownToHtml from '@/utils/markdownToHtml'
 import CustomHead from '@/components/base/Head/CustomHead'
 import Header from '@/components/base/Header/Header'
 import Footer from '@/components/base/Footer/Footer'
 import styles from './[slug].module.scss'
+
+const useTocbot = () => {
+  useEffect(() => {
+    Tocbot.init({
+      tocSelector: '#toc',
+      contentSelector: '.znc',
+      headingSelector: 'h1, h2, h3',
+      hasInnerContainers: true,
+    })
+
+    return () => {
+      Tocbot.destroy()
+    }
+  }, [])
+}
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
@@ -58,6 +74,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
 }
 
 const Post: NextPage<Props> = ({ post }) => {
+  useTocbot()
   const pageTitle = 'Lilly'
   const pageDescription = 'This is the Home page of Next Lilly'
   return (
@@ -78,6 +95,7 @@ const Post: NextPage<Props> = ({ post }) => {
                 ))}
               </ul>
             </div>
+            <div id="toc"></div>
             <article>
               {/* ここでdangerouslySetInnerHTMLを使ってHTMLタグを出力する */}
               <div
