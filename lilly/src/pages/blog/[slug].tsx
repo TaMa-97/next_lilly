@@ -95,7 +95,7 @@ const Post: NextPage<Props> = ({ post }) => {
                 ))}
               </ul>
             </div>
-            <div id="toc"></div>
+            <div id="toc" className={styles.myBlog__toc}></div>
             <article>
               {/* ここでdangerouslySetInnerHTMLを使ってHTMLタグを出力する */}
               <div
