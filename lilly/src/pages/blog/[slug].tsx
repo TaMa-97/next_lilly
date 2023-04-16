@@ -15,7 +15,7 @@ import styles from './[slug].module.scss'
 const useTocbot = () => {
   useEffect(() => {
     Tocbot.init({
-      tocSelector: '#toc',
+      tocSelector: '.toc-accordion',
       contentSelector: '.znc',
       headingSelector: 'h1, h2, h3',
       hasInnerContainers: true,
@@ -23,6 +23,36 @@ const useTocbot = () => {
 
     return () => {
       Tocbot.destroy()
+    }
+  }, [])
+}
+
+const useAccordion = () => {
+  useEffect(() => {
+    const tocHeader = document.getElementById('toc-header')
+    const tocContainer = document.querySelector('.toc-accordion')
+
+    const toggleAccordion = () => {
+      if (tocContainer) {
+        if (tocContainer.style.height === '0px' || !tocContainer.style.height) {
+          // アコーディオンが閉じている場合、目次の高さを計算して適用する
+          const scrollHeight = tocContainer.scrollHeight
+          tocContainer.style.height = `${scrollHeight}px`
+        } else {
+          // アコーディオンが開いている場合、高さを0に設定して閉じる
+          tocContainer.style.height = '0px'
+        }
+      }
+    }
+
+    if (tocHeader) {
+      tocHeader.addEventListener('click', toggleAccordion)
+    }
+
+    return () => {
+      if (tocHeader) {
+        tocHeader.removeEventListener('click', toggleAccordion)
+      }
     }
   }, [])
 }
@@ -75,6 +105,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
 
 const Post: NextPage<Props> = ({ post }) => {
   useTocbot()
+  useAccordion()
   const pageTitle = 'Lilly'
   const pageDescription = 'This is the Home page of Next Lilly'
   return (
@@ -95,7 +126,12 @@ const Post: NextPage<Props> = ({ post }) => {
                 ))}
               </ul>
             </div>
-            <div id="toc" className={styles.myBlog__toc}></div>
+            <div id="toc" className={styles.myBlog__toc}>
+              <p id="toc-header" className={styles.myBlog__tocTtl}>
+                もくじ
+              </p>
+              <div className="toc-accordion"></div>
+            </div>
             <article>
               {/* ここでdangerouslySetInnerHTMLを使ってHTMLタグを出力する */}
               <div

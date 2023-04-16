@@ -225,3 +225,12 @@ a[href*="tel:"] {
     pointer-events: none;
   }
 }
+
+/* Tocbot
+------------------------------------------------------------*/
+
+.toc-accordion {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.2s ease-out;
+}
