@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import styles from './About.module.scss'
 
 const About = () => {
@@ -34,6 +35,9 @@ const About = () => {
             <br />
             趣味は、テニスとサウナです。
           </p>
+          <Link href="/blog/about" className={styles.myAbout__link}>
+            このサイトについて<span className={styles.myAbout__linkIcon}></span>
+          </Link>
         </div>
       </div>
     </section>

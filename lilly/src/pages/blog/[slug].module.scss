@@ -21,6 +21,15 @@
     font-weight: 500;
     color: #9b9b9b;
   }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    @include tabletP {
+      gap: 5px;
+    }
+  }
   &__item {
     display: inline-block;
     @include fz(15);
