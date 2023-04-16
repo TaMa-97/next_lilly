@@ -62,7 +62,10 @@ const Home: NextPage<Props> = ({ allPosts }) => {
                     href={`/blog/${post.slug}`}
                     className={styles.myBlog__link}
                   >
-                    <p className={styles.myBlog__linkTitle}>{post.title}</p>
+                    <p className={styles.myBlog__linkTitle}>
+                      {post.title}
+                      <span className={styles.myBlog__linkIcon}></span>
+                    </p>
                     <div className={styles.myBlog__linkInner}>
                       <ul className={styles.myBlog__linkList}>
                         {post.tags?.map((tag) => (

@@ -48,6 +48,42 @@ $fontEn: "Roboto", monospace, sans-serif;
 //pass
 $cmnPath: "/images/common/";
 
+// animation
+$iconMove: (
+  //左右移動
+  easing: cubic-bezier(0.215, 0.61, 0.355, 1),
+  sp: 0.5s,
+  delay: 0s,
+  delayBtn: 0.2s,
+  end: forwards
+);
+
+$iconMove02: (
+  //上下左右反転
+  easing: cubic-bezier(0.19, 0.82, 0.27, 1),
+  sp: 0.45s
+);
+
+@keyframes iconMove {
+  //左右移動
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  50.0% {
+    transform: translate3d(60%, 0, 0);
+    opacity: 0;
+  }
+  50.1% {
+    transform: translate3d(-60%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
 // ----------- mixin
 
 @mixin pc {

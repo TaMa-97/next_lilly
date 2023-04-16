@@ -2,6 +2,8 @@
 @import "@/styles/variables";
 
 .myProjects {
+  $_: ".myProjects";
+
   &__head {
     margin-bottom: 50px;
   }
@@ -21,6 +23,9 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 25px;
+    @include tabletP {
+      gap: 20px;
+    }
   }
 
   &__item {
@@ -28,47 +33,98 @@
   }
 
   &__link {
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
     text-decoration: none;
     color: $baseColor;
+    @include tabletP {
+      gap: 25px;
+    }
     &Title {
       position: relative;
-      display: inline-block;
+      font-family: $fontEn;
       font-weight: 500;
-      @include fz(19);
+      @include fz(23);
       margin-bottom: 12px;
-      &::after {
-        content: "";
-        background: url(#{$cmnPath}icon_blank.svg) no-repeat center;
-        background-size: 13px 12px;
-        width: 13px;
-        height: 12px;
-        position: absolute;
-        top: 2px;
-        bottom: 0;
-        right: -25px;
-        margin: auto;
+      @include tabletP {
+        @include fz(18);
+        margin-bottom: 6px;
+      }
+      // &::after {
+      //   content: "";
+      //   background: url(#{$cmnPath}icon_blank.svg) no-repeat center;
+      //   background-size: 13px 12px;
+      //   width: 13px;
+      //   height: 12px;
+      //   position: absolute;
+      //   top: 2px;
+      //   bottom: 0;
+      //   right: -25px;
+      //   margin: auto;
+      // }
+    }
+    &:hover {
+      opacity: 1;
+      #{$_}__linkImg {
+        img {
+          box-shadow: rgba(149, 157, 165, 0.2) 0 8px 15px;
+          transform: scale(1.01) rotate(0.001deg);
+        }
+      }
+      #{$_}__linkIcon {
+        width: 10px;
+        height: 10px;
+        top: -2px;
+        &::after {
+          // animation: iconMove map-get($iconMove, "sp")
+          //   map-get($iconMove, "easing") map-get($iconMove, "delay") 1
+          //   map-get($iconMove, "end");
+          opacity: 0;
+        }
+      }
+    }
+    &Img {
+      width: 30%;
+      transition: all 0.2s cubic-bezier(0.23, 1, 0.58, 1);
+      @include tabletP {
+        width: 33%;
+      }
+      img {
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid #dbdbdb;
+        transition: all 0.2s cubic-bezier(0.23, 1, 0.58, 1);
       }
     }
     &Inner {
+      flex: 1;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-end;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
     }
     &List {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
       gap: 10px;
+      @include tabletP {
+        gap: 5px;
+      }
     }
     &Item {
-      @include fz(15);
+      @include fz(13);
       font-family: $fontEn;
       font-weight: 500;
       padding: 2px 13px;
       border: 1px solid #dbdbdb;
       border-radius: 20px;
+      @include tabletP {
+        @include fz(10);
+        padding: 1px 8px;
+      }
     }
     &Date {
       @include fz(15);
@@ -76,5 +132,43 @@
       font-weight: 500;
       color: #9b9b9b;
     }
+    &Icon {
+      display: inline-block;
+      position: relative;
+      top: 4px;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 24px;
+      height: 24px;
+      background-color: #dbdbdb;
+      border-radius: 50%;
+      margin-left: 11px;
+      overflow: hidden;
+      transition: all 0.2s cubic-bezier(0.23, 1, 0.58, 1);
+      @include tabletP {
+        width: 18px;
+        height: 18px;
+        margin-left: 8px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 24px;
+        height: 24px;
+        background-image: url(#{$cmnPath}ico_circle_arrow.svg);
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        @include tabletP {
+          width: 18px;
+          height: 18px;
+          background-size: 18px 18px;
+        }
+      }
+    } //icon
   }
 }

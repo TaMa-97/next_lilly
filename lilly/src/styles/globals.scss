@@ -130,7 +130,7 @@ br {
 a {
   color: $baseLinkColor;
   text-decoration: underline;
-  transition: all 0.2s ease-out;
+  transition: all 0.15s ease-out;
   &:hover {
     text-decoration: none;
   }
@@ -169,6 +169,7 @@ body {
 
 main {
   margin-top: 30px;
+  margin-bottom: 50px;
   flex: 1;
   @include tabletP {
     margin-top: 42px;

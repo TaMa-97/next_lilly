@@ -15,6 +15,9 @@
     font-weight: 500;
     @include fz(35);
     margin-bottom: 30px;
+    @include tabletP {
+      line-height: 1.6;
+    }
   }
   &__txtArea {
     max-width: 400px;

@@ -16,20 +16,23 @@ const About = () => {
         <div className={styles.myAbout__txtArea}>
           <p className={styles.myAbout__txtEn}>
             Born in Okayama, Japan in 1997.
+            <br />I design and implement web front-end components and
+            interactions.
+            <br />I enjoy creating beautiful and easy-to-use user interfaces.
+            <br />I love Next.js and Jamstack technology.
             <br />
-            I design and implement web front-end UI components and interactions
-            at my company. I enjoy working with JavaScript library and crafting
-            beautiful front-end experiences.
-            <br /> I&apos;m busy with playing tennis!, sauna, and radio, and
-            watching soccer.
+            My hobbies are tennis and sauna.
           </p>
           <p className={styles.myAbout__txtJa}>
-            1997 年岡山県生まれ。
-            <br /> Web フロントエンドの UI
-            コンポーネントやインタラクションの設計・実装を行っています。JavaScript
-            ライブラリを操作して、美しいフロントエンドエクスペリエンスを作成することを楽しんでいます。
+            1997年岡山県生まれ。
             <br />
-            テニス、サウナ、ラジオ、サッカー観戦で大忙しです。
+            Webフロントエンドのコンポーネントやインタラクションの設計・実装を行っています。
+            <br />
+            美しく使いやすいユーザーインターフェースを作成することを楽しんでいます。
+            <br />
+            Next.jsやJamstack技術が好きです。
+            <br />
+            趣味は、テニスとサウナです。
           </p>
         </div>
       </div>
