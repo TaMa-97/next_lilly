@@ -233,4 +233,63 @@ a[href*="tel:"] {
   overflow: hidden;
   height: 0;
   transition: height 0.2s ease-out;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+#toc-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+#toc-header.open {
+  background-color: #555555;
+}
+
+#toc-header::before,
+#toc-header::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 2px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+#toc-header::before {
+  margin-right: 4px;
+  transform: rotate(45deg);
+}
+
+#toc-header::after {
+  margin-left: 4px;
+  transform: rotate(-45deg);
+}
+
+#toc-header.open::before {
+  transform: rotate(-45deg);
+}
+
+#toc-header.open::after {
+  transform: rotate(45deg);
+}
+
+.toc-list {
+  padding: 20px 30px;
+
+  li {
+    padding-left: 30px;
+    padding-bottom: 5px;
+    a.toc-link {
+      text-decoration: none;
+    }
+  }
 }
