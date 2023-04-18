@@ -34,15 +34,20 @@ const useAccordion = () => {
 
     const toggleAccordion = () => {
       if (tocContainer) {
-        if (tocContainer.style.height === '0px' || !tocContainer.style.height) {
+        const htmlElement = tocContainer as HTMLElement
+        if (htmlElement.style.height === '0px' || !htmlElement.style.height) {
           // アコーディオンが閉じている場合、目次の高さを計算して適用する
-          const scrollHeight = tocContainer.scrollHeight
-          tocContainer.style.height = `${scrollHeight}px`
-          tocHeader.classList.add('open')
+          const scrollHeight = htmlElement.scrollHeight
+          htmlElement.style.height = `${scrollHeight}px`
+          if (tocHeader) {
+            tocHeader.classList.add('open')
+          }
         } else {
           // アコーディオンが開いている場合、高さを0に設定して閉じる
-          tocContainer.style.height = '0px'
-          tocHeader.classList.remove('open')
+          htmlElement.style.height = '0px'
+          if (tocHeader) {
+            tocHeader.classList.remove('open')
+          }
         }
       }
     }
