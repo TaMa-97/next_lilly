@@ -3,13 +3,61 @@ import type {
   InferGetStaticPropsType,
   GetStaticPropsContext,
 } from 'next'
-import React from 'react'
+import React, { useEffect } from 'react'
+import Tocbot from 'tocbot'
 import { getAllPosts, getPostBySlug } from '@/utils/api'
 import markdownToHtml from '@/utils/markdownToHtml'
 import CustomHead from '@/components/base/Head/CustomHead'
 import Header from '@/components/base/Header/Header'
 import Footer from '@/components/base/Footer/Footer'
 import styles from './[slug].module.scss'
+
+const useTocbot = () => {
+  useEffect(() => {
+    Tocbot.init({
+      tocSelector: '.toc-accordion',
+      contentSelector: '.znc',
+      headingSelector: 'h1, h2, h3',
+      hasInnerContainers: true,
+    })
+
+    return () => {
+      Tocbot.destroy()
+    }
+  }, [])
+}
+
+const useAccordion = () => {
+  useEffect(() => {
+    const tocHeader = document.getElementById('toc-header')
+    const tocContainer = document.querySelector('.toc-accordion')
+
+    const toggleAccordion = () => {
+      if (tocContainer) {
+        if (tocContainer.style.height === '0px' || !tocContainer.style.height) {
+          // アコーディオンが閉じている場合、目次の高さを計算して適用する
+          const scrollHeight = tocContainer.scrollHeight
+          tocContainer.style.height = `${scrollHeight}px`
+          tocHeader.classList.add('open')
+        } else {
+          // アコーディオンが開いている場合、高さを0に設定して閉じる
+          tocContainer.style.height = '0px'
+          tocHeader.classList.remove('open')
+        }
+      }
+    }
+
+    if (tocHeader) {
+      tocHeader.addEventListener('click', toggleAccordion)
+    }
+
+    return () => {
+      if (tocHeader) {
+        tocHeader.removeEventListener('click', toggleAccordion)
+      }
+    }
+  }, [])
+}
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
@@ -58,6 +106,8 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
 }
 
 const Post: NextPage<Props> = ({ post }) => {
+  useTocbot()
+  useAccordion()
   const pageTitle = 'Lilly'
   const pageDescription = 'This is the Home page of Next Lilly'
   return (
@@ -77,6 +127,12 @@ const Post: NextPage<Props> = ({ post }) => {
                   </li>
                 ))}
               </ul>
+            </div>
+            <div id="toc" className={`${styles.myBlog__toc} toc-fixed`}>
+              <p id="toc-header" className={styles.myBlog__tocTtl}>
+                もくじ
+              </p>
+              <div className="toc-accordion"></div>
             </div>
             <article>
               {/* ここでdangerouslySetInnerHTMLを使ってHTMLタグを出力する */}
