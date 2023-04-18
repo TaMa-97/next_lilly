@@ -128,7 +128,7 @@ const Post: NextPage<Props> = ({ post }) => {
                 ))}
               </ul>
             </div>
-            <div id="toc" className={styles.myBlog__toc}>
+            <div id="toc" className={`${styles.myBlog__toc} toc-fixed`}>
               <p id="toc-header" className={styles.myBlog__tocTtl}>
                 もくじ
               </p>
