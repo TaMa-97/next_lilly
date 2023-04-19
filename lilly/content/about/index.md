@@ -33,10 +33,13 @@ _アートボード_
 フロントエンドのライブラリは Next.js を採用しています。
 以前のサイトは、NuxtContent を用いて markdown ファイルを管理しており、Next.js でも同様に markdown ファイルで管理し、ビルド時に静的コンテンツを生成して Vercel でホスティングしています。
 
+![](/images/blog/about/img02.png)
+_PageSpeed Insights_
+
 ## スタイリング
 
-従来の SCSS に慣れていたため、今回は導入ハードルの低い CSS Modules を採用しています。
-一つ懸念点として、CSS Modules が将来的に廃止もしくは非推奨になる可能性があります。次回は CSSinJS の Emotion を使ってみようと思います。
+従来の SCSS に慣れていたため、今回は CSS Modules を採用しています。
+懸念点として、CSS Modules が将来的に廃止もしくは非推奨になる可能性があります。
 
 ## Markdown ツール
 
@@ -52,7 +55,7 @@ Zenn の UI が好きなので、Markdown パーザーとして下記を採用�
 ## 今後追加していきたい機能
 
 - カテゴリーページ作成
-- 目次追加
+- 目次追加【✔】
 - 記事検索・絞り込み機能（Algolia を使う予定）
 - PWA 対応
 

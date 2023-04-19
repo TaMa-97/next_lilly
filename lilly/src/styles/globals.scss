@@ -232,6 +232,12 @@ a[href*="tel:"] {
 .toc-fixed {
   position: sticky;
   top: 20px;
+  width: 50%;
+  margin-left: auto;
+  #toc-header {
+    width: 120px;
+    margin-left: auto;
+  }
 }
 
 .toc-accordion {

@@ -32,6 +32,14 @@ const useAccordion = () => {
     const tocHeader = document.getElementById('toc-header')
     const tocContainer = document.querySelector('.toc-accordion')
 
+    const closeAccordion = () => {
+      const htmlElement = tocContainer as HTMLElement
+      htmlElement.style.height = '0px'
+      if (tocHeader) {
+        tocHeader.classList.remove('open')
+      }
+    }
+
     const toggleAccordion = () => {
       if (tocContainer) {
         const htmlElement = tocContainer as HTMLElement
@@ -43,11 +51,7 @@ const useAccordion = () => {
             tocHeader.classList.add('open')
           }
         } else {
-          // アコーディオンが開いている場合、高さを0に設定して閉じる
-          htmlElement.style.height = '0px'
-          if (tocHeader) {
-            tocHeader.classList.remove('open')
-          }
+          closeAccordion()
         }
       }
     }
@@ -56,10 +60,18 @@ const useAccordion = () => {
       tocHeader.addEventListener('click', toggleAccordion)
     }
 
+    const tocLinks = document.querySelectorAll('.toc-link')
+    tocLinks.forEach((link) => {
+      link.addEventListener('click', closeAccordion)
+    })
+
     return () => {
       if (tocHeader) {
         tocHeader.removeEventListener('click', toggleAccordion)
       }
+      tocLinks.forEach((link) => {
+        link.removeEventListener('click', closeAccordion)
+      })
     }
   }, [])
 }
