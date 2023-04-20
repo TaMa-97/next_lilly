@@ -5,6 +5,7 @@ import type {
 } from 'next'
 import React, { useEffect } from 'react'
 import Tocbot from 'tocbot'
+import { motion } from 'framer-motion'
 import { getAllPosts, getPostBySlug } from '@/utils/api'
 import markdownToHtml from '@/utils/markdownToHtml'
 import CustomHead from '@/components/base/Head/CustomHead'
@@ -129,39 +130,47 @@ const Post: NextPage<Props> = ({ post }) => {
   const pageDescription = 'This is the Home page of Next Lilly'
   return (
     <>
-      <CustomHead title={pageTitle} description={pageDescription} />
-      <Header />
-      <main>
-        <div className="container">
-          <section className={styles.myBlog}>
-            <h2 className={styles.myBlog__title}>{post.title}</h2>
-            <div className={styles.myBlog__head}>
-              <p className={styles.myBlog__date}>{post.date}</p>
-              <ul className={styles.myBlog__list}>
-                {post.tags?.map((tag) => (
-                  <li key={tag} className={styles.myBlog__item}>
-                    {tag}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div id="toc" className={`${styles.myBlog__toc} toc-fixed`}>
-              <p id="toc-header" className={styles.myBlog__tocTtl}>
-                もくじ
-              </p>
-              <div className="toc-accordion"></div>
-            </div>
-            <article>
-              {/* ここでdangerouslySetInnerHTMLを使ってHTMLタグを出力する */}
-              <div
-                className={`znc ${styles.myZnc}`}
-                dangerouslySetInnerHTML={{ __html: post.content }}
-              />
-            </article>
-          </section>
-        </div>
-      </main>
-      <Footer />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ ease: 'easeOut' }}
+        className="modWrapper"
+      >
+        <CustomHead title={pageTitle} description={pageDescription} />
+        <Header />
+        <main>
+          <div className="container">
+            <section className={styles.myBlog}>
+              <h2 className={styles.myBlog__title}>{post.title}</h2>
+              <div className={styles.myBlog__head}>
+                <p className={styles.myBlog__date}>{post.date}</p>
+                <ul className={styles.myBlog__list}>
+                  {post.tags?.map((tag) => (
+                    <li key={tag} className={styles.myBlog__item}>
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div id="toc" className={`${styles.myBlog__toc} toc-fixed`}>
+                <p id="toc-header" className={styles.myBlog__tocTtl}>
+                  もくじ
+                </p>
+                <div className="toc-accordion"></div>
+              </div>
+              <article>
+                {/* ここでdangerouslySetInnerHTMLを使ってHTMLタグを出力する */}
+                <div
+                  className={`znc ${styles.myZnc}`}
+                  dangerouslySetInnerHTML={{ __html: post.content }}
+                />
+              </article>
+            </section>
+          </div>
+        </main>
+        <Footer />
+      </motion.div>
     </>
   )
 }
