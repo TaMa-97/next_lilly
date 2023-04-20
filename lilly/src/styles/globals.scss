@@ -160,13 +160,6 @@ body {
   position: relative;
 }
 
-#__next {
-  position: relative;
-  display: flex;
-  flex-flow: column;
-  min-height: 100vh;
-}
-
 main {
   margin-top: 30px;
   margin-bottom: 50px;
@@ -224,6 +217,13 @@ a[href*="tel:"] {
   @include sphonePmin {
     pointer-events: none;
   }
+}
+
+.modWrapper {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
 }
 
 /* Tocbot
