@@ -13,7 +13,7 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   &__date {
     @include fz(13);
@@ -41,7 +41,6 @@
   }
 
   &__toc {
-    margin-bottom: 20px;
     transition: all 0.2s ease-out;
   }
 }

@@ -234,6 +234,9 @@ a[href*="tel:"] {
   top: 20px;
   width: 50%;
   margin-left: auto;
+  @include tabletP {
+    width: 80%;
+  }
   #toc-header {
     width: 120px;
     margin-left: auto;
@@ -284,6 +287,7 @@ a[href*="tel:"] {
 
 .toc-list {
   padding: 20px 30px;
+  color: #adadad;
 
   li {
     padding-left: 30px;
@@ -301,20 +305,29 @@ a[href*="tel:"] {
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        background-color: #5e6478;
+        background-color: #7bbbfc;
         margin-top: 0;
+        box-sizing: content-box;
       }
     }
   }
 }
 
-.is-active-link {
-  &::after {
-    width: 7px;
-    height: 7px;
-    background-color: #111111;
+a.toc-link.is-active-link {
+  color: #111111;
+}
+.toc-list li a.toc-link.is-active-link {
+  &::before {
+    width: 5px;
+    height: 5px;
+    background-color: #007fff;
+    border: 2px solid #7bbbfc;
+    box-sizing: content-box;
   }
 }
+
+/* progress-bar
+------------------------------------------------------------*/
 
 .progress-bar {
   position: fixed;

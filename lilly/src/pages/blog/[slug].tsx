@@ -61,18 +61,18 @@ const useAccordion = () => {
       tocHeader.addEventListener('click', toggleAccordion)
     }
 
-    const tocLinks = document.querySelectorAll('.toc-link')
-    tocLinks.forEach((link) => {
-      link.addEventListener('click', closeAccordion)
-    })
+    // const tocLinks = document.querySelectorAll('.toc-link')
+    // tocLinks.forEach((link) => {
+    //   link.addEventListener('click', closeAccordion)
+    // })
 
     return () => {
       if (tocHeader) {
         tocHeader.removeEventListener('click', toggleAccordion)
       }
-      tocLinks.forEach((link) => {
-        link.removeEventListener('click', closeAccordion)
-      })
+      // tocLinks.forEach((link) => {
+      //   link.removeEventListener('click', closeAccordion)
+      // })
     }
   }, [])
 }
