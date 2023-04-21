@@ -255,7 +255,7 @@ a[href*="tel:"] {
   align-items: center;
   justify-content: flex-start;
   gap: 7px;
-  background-color: #2589d0;
+  background-color: #007fff;
   color: #ffffff;
   padding: 8px 20px;
   border-radius: 4px;
@@ -268,7 +268,7 @@ a[href*="tel:"] {
 }
 
 #toc-header.open {
-  background-color: #3b94d3;
+  background-color: #3298ff;
 }
 
 #toc-header::before {
@@ -314,4 +314,14 @@ a[href*="tel:"] {
     height: 7px;
     background-color: #111111;
   }
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #007fff;
+  transform-origin: 0%;
 }

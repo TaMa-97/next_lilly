@@ -5,7 +5,7 @@ import type {
 } from 'next'
 import React, { useEffect } from 'react'
 import Tocbot from 'tocbot'
-import { motion } from 'framer-motion'
+import { motion, useScroll } from 'framer-motion'
 import { getAllPosts, getPostBySlug } from '@/utils/api'
 import markdownToHtml from '@/utils/markdownToHtml'
 import CustomHead from '@/components/base/Head/CustomHead'
@@ -77,6 +77,14 @@ const useAccordion = () => {
   }, [])
 }
 
+const ScrollAnimatedComponent = () => {
+  const { scrollYProgress } = useScroll()
+
+  return (
+    <motion.div style={{ scaleX: scrollYProgress }} className="progress-bar" />
+  )
+}
+
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
 export const getStaticPaths = async () => {
@@ -140,6 +148,7 @@ const Post: NextPage<Props> = ({ post }) => {
         <CustomHead title={pageTitle} description={pageDescription} />
         <Header />
         <main>
+          <ScrollAnimatedComponent />
           <div className="container">
             <section className={styles.myBlog}>
               <h2 className={styles.myBlog__title}>{post.title}</h2>
