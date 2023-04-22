@@ -9,10 +9,10 @@ const Products = () => {
       <div className="container">
         <motion.div
           className={styles.myProjects__head}
-          initial={{ y: 20, opacity: 0 }}
+          initial={{ y: 15, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -20, opacity: 0 }}
-          transition={{ duration: 0.3 }}
+          exit={{ y: -15, opacity: 0 }}
+          transition={{ duration: 0.2 }}
         >
           <h2 className={styles.myProjects__title}>Projects &#128011;</h2>
           <p className={styles.myProjects__lead}>個人的につくったもの</p>

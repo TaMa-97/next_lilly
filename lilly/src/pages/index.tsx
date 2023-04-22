@@ -26,7 +26,7 @@ const Home: NextPage<Props> = ({ allPosts }) => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+        // exit={{ opacity: 0 }}
         transition={{ ease: 'easeOut' }}
         className="modWrapper"
       >
@@ -37,10 +37,10 @@ const Home: NextPage<Props> = ({ allPosts }) => {
             <div className="container">
               <motion.div
                 className={styles.myBlog__head}
-                initial={{ y: 20, opacity: 0 }}
+                initial={{ y: 15, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                exit={{ y: -20, opacity: 0 }}
-                transition={{ duration: 0.3 }}
+                exit={{ y: -15, opacity: 0 }}
+                transition={{ duration: 0.2 }}
               >
                 <h2 className={styles.myBlog__title}>Blog &#x1f680;</h2>
                 <p className={styles.myBlog__lead}>

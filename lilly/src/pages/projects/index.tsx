@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+        // exit={{ opacity: 0 }}
         transition={{ ease: 'easeOut' }}
         className="modWrapper"
       >

@@ -9,10 +9,10 @@ const About = () => {
       <div className="container">
         <motion.div
           className={styles.myAbout__head}
-          initial={{ y: 20, opacity: 0 }}
+          initial={{ y: 15, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -20, opacity: 0 }}
-          transition={{ duration: 0.3 }}
+          exit={{ y: -15, opacity: 0 }}
+          transition={{ duration: 0.2 }}
         >
           <h2 className={styles.myAbout__title}>About &#129430;</h2>
         </motion.div>

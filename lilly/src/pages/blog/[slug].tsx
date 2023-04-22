@@ -141,7 +141,7 @@ const Post: NextPage<Props> = ({ post }) => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+        // exit={{ opacity: 0 }}
         transition={{ ease: 'easeOut' }}
         className="modWrapper"
       >
@@ -156,7 +156,7 @@ const Post: NextPage<Props> = ({ post }) => {
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: -10, opacity: 0 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.2 }}
               >
                 {post.title}
               </motion.h2>
