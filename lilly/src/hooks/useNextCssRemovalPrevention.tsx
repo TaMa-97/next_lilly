@@ -38,13 +38,13 @@ export const useNextCssRemovalPrevention = () => {
               const href = el.getAttribute('data-n-href-perm')
               if (href) {
                 if (requiredHrefs.has(href)) {
-                  el.parentNode!.removeChild(el)
+                  el.parentNode?.removeChild(el)
                 } else {
                   requiredHrefs.add(href)
                 }
               }
             } else {
-              el.parentNode!.removeChild(el)
+              el.parentNode?.removeChild(el)
             }
           }
         }
