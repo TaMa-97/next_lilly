@@ -1,15 +1,22 @@
 import React from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import styles from './Products.module.scss'
 
 const Products = () => {
   return (
     <section className={styles.myProjects}>
       <div className="container">
-        <div className={styles.myProjects__head}>
+        <motion.div
+          className={styles.myProjects__head}
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -20, opacity: 0 }}
+          transition={{ duration: 0.3 }}
+        >
           <h2 className={styles.myProjects__title}>Projects &#128011;</h2>
           <p className={styles.myProjects__lead}>個人的につくったもの</p>
-        </div>
+        </motion.div>
         <ul className={styles.myProjects__list}>
           <li className={styles.myProjects__item}>
             <Link

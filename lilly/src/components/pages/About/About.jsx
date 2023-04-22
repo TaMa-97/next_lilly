@@ -1,14 +1,21 @@
 import React from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import styles from './About.module.scss'
 
 const About = () => {
   return (
     <section className={styles.myAbout}>
       <div className="container">
-        <div className={styles.myAbout__head}>
+        <motion.div
+          className={styles.myAbout__head}
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -20, opacity: 0 }}
+          transition={{ duration: 0.3 }}
+        >
           <h2 className={styles.myAbout__title}>About &#129430;</h2>
-        </div>
+        </motion.div>
         <h3 className={styles.myAbout__lead}>
           Hi there &#128075;
           <br />
