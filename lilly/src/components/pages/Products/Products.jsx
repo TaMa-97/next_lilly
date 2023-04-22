@@ -26,7 +26,12 @@ const Products = () => {
               scroll={false}
             >
               <div className={styles.myProjects__linkImg}>
-                <Image src="/images/projects/img01.svg" alt="Lilly" />
+                <Image
+                  src="/images/projects/img01.png"
+                  alt="Lilly"
+                  width={190}
+                  height={122}
+                />
               </div>
               <div className={styles.myProjects__linkInner}>
                 <p className={styles.myProjects__linkTitle}>
@@ -42,7 +47,12 @@ const Products = () => {
               scroll={false}
             >
               <div className={styles.myProjects__linkImg}>
-                <Image src="/images/projects/img02.svg" alt="tmlabo" />
+                <Image
+                  src="/images/projects/img02.png"
+                  alt="tmlabo"
+                  width={190}
+                  height={122}
+                />
               </div>
               <div className={styles.myProjects__linkInner}>
                 <p className={styles.myProjects__linkTitle}>
