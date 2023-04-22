@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import styles from './Products.module.scss'
 
@@ -25,7 +26,7 @@ const Products = () => {
               scroll={false}
             >
               <div className={styles.myProjects__linkImg}>
-                <img src="/images/projects/img01.svg" alt="Lilly" />
+                <Image src="/images/projects/img01.svg" alt="Lilly" />
               </div>
               <div className={styles.myProjects__linkInner}>
                 <p className={styles.myProjects__linkTitle}>
@@ -41,7 +42,7 @@ const Products = () => {
               scroll={false}
             >
               <div className={styles.myProjects__linkImg}>
-                <img src="/images/projects/img02.svg" alt="tmlabo" />
+                <Image src="/images/projects/img02.svg" alt="tmlabo" />
               </div>
               <div className={styles.myProjects__linkInner}>
                 <p className={styles.myProjects__linkTitle}>
