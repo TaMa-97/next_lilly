@@ -12,7 +12,11 @@ const Products = () => {
         </div>
         <ul className={styles.myProjects__list}>
           <li className={styles.myProjects__item}>
-            <Link href="/products/lilly" className={styles.myProjects__link}>
+            <Link
+              href="/products/lilly"
+              className={styles.myProjects__link}
+              scroll={false}
+            >
               <div className={styles.myProjects__linkImg}>
                 <img src="/images/projects/img01.svg" alt="Lilly" />
               </div>
@@ -24,7 +28,11 @@ const Products = () => {
             </Link>
           </li>
           <li className={styles.myProjects__item}>
-            <Link href="/products/tmlabo" className={styles.myProjects__link}>
+            <Link
+              href="/products/tmlabo"
+              className={styles.myProjects__link}
+              scroll={false}
+            >
               <div className={styles.myProjects__linkImg}>
                 <img src="/images/projects/img02.svg" alt="tmlabo" />
               </div>

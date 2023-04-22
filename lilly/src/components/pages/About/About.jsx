@@ -16,26 +16,29 @@ const About = () => {
         </h3>
         <div className={styles.myAbout__txtArea}>
           <p className={styles.myAbout__txtEn}>
-            Born in Okayama, Japan in 1997.
-            <br />I design and implement web front-end components and
-            interactions.
-            <br />I enjoy creating beautiful and easy-to-use user interfaces.
-            <br />I love Next.js and Jamstack technology.
+            Born in 1997 and lives in Okayama Prefecture.
+            <br />I started my career as an engineer in 2020 and currently work
+            on website production and web application development.
+            <br />
+            My main focus is on the web front-end area, from implementation of
+            components and interactions to base design and release.
             <br />
             My hobbies are tennis and sauna.
           </p>
           <p className={styles.myAbout__txtJa}>
-            1997年岡山県生まれ。
+            1997年生まれ、岡山県在住。
             <br />
-            Webフロントエンドのコンポーネントやインタラクションの設計・実装を行っています。
+            2020年にエンジニアとしてキャリアをスタートし、現在はWebサイト制作やWebアプリケーション開発を行っています。
             <br />
-            美しく使いやすいユーザーインターフェースを作成することを楽しんでいます。
-            <br />
-            Next.jsやJamstack技術が好きです。
+            Webフロントエンド領域をメインとして、コンポーネントやインタラクションの実装からベース設計、リリースまでの工程に対応しています。
             <br />
             趣味は、テニスとサウナです。
           </p>
-          <Link href="/blog/about" className={styles.myAbout__link}>
+          <Link
+            href="/blog/about"
+            className={styles.myAbout__link}
+            scroll={false}
+          >
             このサイトについて<span className={styles.myAbout__linkIcon}></span>
           </Link>
         </div>

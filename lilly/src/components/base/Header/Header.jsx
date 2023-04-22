@@ -8,7 +8,7 @@ const Header = () => {
       <div className={`container ${styles.gHeader__inner}`}>
         <div className={styles.gHeader__logo}>
           <h1 className={styles.gHeader__title}>
-            <Link href="/" className={styles.gHeader__titleLink}>
+            <Link href="/" className={styles.gHeader__titleLink} scroll={false}>
               Lilly
             </Link>
           </h1>
@@ -16,17 +16,21 @@ const Header = () => {
         <nav className={styles.gNav}>
           <ul className={styles.gNav__list}>
             <li className={styles.gNav__item}>
-              <Link href="/" className={styles.gNav__link}>
+              <Link href="/" className={styles.gNav__link} scroll={false}>
                 Blog
               </Link>
             </li>
             <li className={styles.gNav__item}>
-              <Link href="/projects" className={styles.gNav__link}>
+              <Link
+                href="/projects"
+                className={styles.gNav__link}
+                scroll={false}
+              >
                 Projects
               </Link>
             </li>
             <li className={styles.gNav__item}>
-              <Link href="/about" className={styles.gNav__link}>
+              <Link href="/about" className={styles.gNav__link} scroll={false}>
                 About
               </Link>
             </li>

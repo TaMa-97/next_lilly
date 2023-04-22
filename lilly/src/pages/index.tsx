@@ -35,30 +35,52 @@ const Home: NextPage<Props> = ({ allPosts }) => {
         <main>
           <section className={styles.myBlog}>
             <div className="container">
-              <div className={styles.myBlog__head}>
+              <motion.div
+                className={styles.myBlog__head}
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -10, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+              >
                 <h2 className={styles.myBlog__title}>Blog &#x1f680;</h2>
                 <p className={styles.myBlog__lead}>
                   主に技術的なメモやTipsをゆるく投稿している場所です。
                 </p>
-              </div>
+              </motion.div>
               <ul className={styles.myBlog__catList}>
                 <li className={styles.myBlog__catItem}>
-                  <Link href="#" className={styles.myBlog__catItemLink}>
+                  <Link
+                    href="#"
+                    className={styles.myBlog__catItemLink}
+                    scroll={false}
+                  >
                     &#127758; ALL
                   </Link>
                 </li>
                 <li className={styles.myBlog__catItem}>
-                  <Link href="#" className={styles.myBlog__catItemLink}>
+                  <Link
+                    href="#"
+                    className={styles.myBlog__catItemLink}
+                    scroll={false}
+                  >
                     &#127758; ALL
                   </Link>
                 </li>
                 <li className={styles.myBlog__catItem}>
-                  <Link href="#" className={styles.myBlog__catItemLink}>
+                  <Link
+                    href="#"
+                    className={styles.myBlog__catItemLink}
+                    scroll={false}
+                  >
                     &#127758; ALL
                   </Link>
                 </li>
                 <li className={styles.myBlog__catItem}>
-                  <Link href="#" className={styles.myBlog__catItemLink}>
+                  <Link
+                    href="#"
+                    className={styles.myBlog__catItemLink}
+                    scroll={false}
+                  >
                     &#127758; ALL
                   </Link>
                 </li>
@@ -69,6 +91,7 @@ const Home: NextPage<Props> = ({ allPosts }) => {
                     <Link
                       href={`/blog/${post.slug}`}
                       className={styles.myBlog__link}
+                      scroll={false}
                     >
                       <p className={styles.myBlog__linkTitle}>
                         {post.title}
