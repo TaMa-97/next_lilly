@@ -8,7 +8,8 @@ import 'tocbot/dist/tocbot.css'
 export default function App({ Component, pageProps, router }: AppProps) {
   return (
     <AnimatePresence
-      mode="wait"
+      initial={false}
+      mode={'wait'}
       onExitComplete={() => {
         window.scrollTo(0, 0)
       }}
