@@ -1,9 +1,20 @@
 import React from 'react'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import styles from './About.module.scss'
 
 const About = () => {
+  const textVariants = {
+    hidden: { x: -50, opacity: 0, scale: 0.5, filter: 'blur(5px)' },
+    visible: {
+      x: 0,
+      opacity: 1,
+      scale: 1,
+      filter: 'blur(0px)',
+      transition: { duration: 0.5, ease: 'easeOut' },
+    },
+  }
+
   return (
     <section className={styles.myAbout}>
       <div className="container">
@@ -17,9 +28,27 @@ const About = () => {
           <h2 className={styles.myAbout__title}>About &#129430;</h2>
         </motion.div>
         <h3 className={styles.myAbout__lead}>
-          Hi there &#128075;
+          <AnimatePresence>
+            <motion.span
+              key="text1"
+              variants={textVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              Hi there &#128075;
+            </motion.span>
+          </AnimatePresence>
           <br />
-          I&apos;m a developer based in Japan.
+          <AnimatePresence>
+            <motion.span
+              key="text2"
+              variants={textVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              I&apos;m a developer based in Japan.
+            </motion.span>
+          </AnimatePresence>
         </h3>
         <div className={styles.myAbout__txtArea}>
           <p className={styles.myAbout__txtEn}>
