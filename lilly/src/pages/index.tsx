@@ -20,7 +20,14 @@ export const getStaticProps = async () => {
 
 const Home: NextPage<Props> = ({ allPosts }) => {
   const pageTitle = 'Lilly'
-  const pageDescription = 'This is the Home page of Next Lilly'
+  const pageDescription =
+    'Lillyの個人サイトです。This is the Home page of Lilly'
+
+  // 投稿を日付で降順に並べ替える
+  const sortedPosts = allPosts.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  )
+
   return (
     <>
       <motion.div
@@ -86,7 +93,7 @@ const Home: NextPage<Props> = ({ allPosts }) => {
                 </li>
               </ul>
               <ul className={styles.myBlog__list}>
-                {allPosts?.map((post) => (
+                {sortedPosts?.map((post) => (
                   <li key={post.slug} className={styles.myBlog__item}>
                     <Link
                       href={`/blog/${post.slug}`}
