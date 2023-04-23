@@ -56,13 +56,13 @@ export default function App({ Component, pageProps, router }: AppProps) {
 }
 ```
 
-## 解決
+## 対策
 
 CSS modules の本番ビルドでは、next/link DOM をクリックした直後にスタイルがなくなるバグが存在する模様。
-CSS modules を辞めれば解決するが今回は使いたいのでなし。
-以下よりページ遷移時に CSS modules のスタイルが一瞬なくなる問題に対処するため解決方法。
+CSS modules を辞めれば解決するが今回は使用したいので却下。
+以下よりページ遷移時に CSS modules のスタイルが一瞬なくなる問題に対処するための解決方法。
 
-1. スタイルシート削除を防ぐカスタムフックを作成する
+1. サーバーレンダリングのスタイルシート削除を防ぐカスタムフックを作成する
 
 ```tsx:useNextCssRemovalPrevention.tsx
 import { useEffect } from 'react'
@@ -122,6 +122,9 @@ export const useNextCssRemovalPrevention = () => {
 2. すべてのページに適用する
 
 ```tsx:_app.tsx
+import { AnimatePresence } from 'framer-motion'
+import { useNextCssRemovalPrevention } from '@/hooks/useNextCssRemovalPrevention' //追加
+//省略
 export default function App({ Component, pageProps, router }: AppProps) {
   useNextCssRemovalPrevention() //追加
   return (
@@ -138,4 +141,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
 }
 ```
 
-参考：[issues](https://github.com/vercel/next.js/issues/17464)
+## 参考
+
+- [next.js-issues](https://github.com/vercel/next.js/issues/17464)
+- [next.js-issuescomment](https://github.com/vercel/next.js/issues/17464#issuecomment-1447335147)
