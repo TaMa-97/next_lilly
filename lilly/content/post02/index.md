@@ -143,5 +143,5 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
 ## 参考
 
-- [next.js-issues](https://github.com/vercel/next.js/issues/17464)
-- [next.js-issuescomment](https://github.com/vercel/next.js/issues/17464#issuecomment-1447335147)
+- [next.js-issues#17464](https://github.com/vercel/next.js/issues/17464)
+- [next.js-issues#17464-comment](https://github.com/vercel/next.js/issues/17464#issuecomment-1447335147)

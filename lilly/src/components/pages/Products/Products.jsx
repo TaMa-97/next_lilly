@@ -15,7 +15,7 @@ const Products = () => {
           exit={{ y: -15, opacity: 0 }}
           transition={{ duration: 0.2 }}
         >
-          <h2 className={styles.myProjects__title}>Projects &#128011;</h2>
+          <h2 className={styles.myProjects__title}>Projects 🐳</h2>
           <p className={styles.myProjects__lead}>個人的につくったもの</p>
         </motion.div>
         <ul className={styles.myProjects__list}>

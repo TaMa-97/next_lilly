@@ -25,7 +25,7 @@ const About = () => {
           exit={{ y: -15, opacity: 0 }}
           transition={{ duration: 0.2 }}
         >
-          <h2 className={styles.myAbout__title}>About &#129430;</h2>
+          <h2 className={styles.myAbout__title}>About 🎾</h2>
         </motion.div>
         <h3 className={styles.myAbout__lead}>
           <AnimatePresence>
