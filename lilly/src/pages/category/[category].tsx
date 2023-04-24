@@ -19,7 +19,7 @@ type TagPageProps = {
 const TagPage: React.FC<TagPageProps> = ({ posts }) => {
   // useRouter を使ってルーティング情報を取得
   const router = useRouter()
-  const { tag } = router.query
+  const { category } = router.query
 
   const pageTitle = 'Lilly'
   const pageDescription =
@@ -49,7 +49,7 @@ const TagPage: React.FC<TagPageProps> = ({ posts }) => {
               >
                 <h2 className={styles.myTag__title}>
                   <span className={styles.myTag__titleIcon}>Category</span>
-                  {tag}
+                  {category}
                 </h2>
               </motion.div>
 
@@ -98,8 +98,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   // すべての投稿を取得し、指定されたタグを含む投稿を絞り込む
   const allPosts = getAllPosts(['slug', 'title', 'tags'])
-  const tag = params.tag as string
-  const posts = allPosts.filter((post) => post.tags.includes(tag))
+  const category = params.category as string
+  const posts = allPosts.filter((post) => post.tags.includes(category))
 
   // 絞り込まれた投稿をpropsとして渡す
   return {
@@ -118,7 +118,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   // 各タグに対応するパスを生成
   const paths = tags.map((tag) => ({
     params: {
-      tag,
+      category: tag,
     },
   }))
 
