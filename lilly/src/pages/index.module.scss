@@ -169,20 +169,23 @@
   }
 
   &__catItemButton {
-    display: block;
-    width: 100%;
-    padding: 1em;
+    display: inline-block;
+    width: 110px;
+    padding: 10px;
     text-align: left;
     background: none;
     border: none;
-    color: #333;
-    font-size: 1.1em;
-    font-weight: 600;
+    background-color: #007fff;
+    color: #ffffff;
+    @include fz(14);
+    font-weight: 500;
     cursor: pointer;
+    border-radius: 4px;
     transition: background-color 0.3s ease;
 
     &:hover {
       background-color: #f3f3f3;
+      color: #007fff;
     }
   }
   &__subCatList {
@@ -192,6 +195,29 @@
     overflow: hidden;
     background: #f7f7f7;
     transform-origin: top;
+    border-radius: 4px;
+    margin-top: 10px;
+    &.enter {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    &.enterActive {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 300ms, transform 300ms;
+    }
+
+    &.exit {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    &.exitActive {
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity 300ms, transform 300ms;
+    }
   }
   &__subCatItem {
     padding: 0.5em 1em;
@@ -203,5 +229,8 @@
       color: #333;
       text-decoration: none;
     }
+  }
+  &__catArea {
+    margin-bottom: 30px;
   }
 }

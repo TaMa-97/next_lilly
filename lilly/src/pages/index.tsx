@@ -2,6 +2,7 @@ import type { NextPage, InferGetStaticPropsType } from 'next'
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { CSSTransition } from 'react-transition-group'
 import { getAllPosts } from '@/utils/api'
 import CustomHead from '@/components/base/Head/CustomHead'
 import Header from '@/components/base/Header/Header'
@@ -115,21 +116,28 @@ const Home: NextPage<Props> = ({ allPosts, categoryCounts }) => {
                   </Link>
                 </li>
               </ul> */}
-              <ul className={styles.myBlog__catList}>
-                <li className={styles.myBlog__catItem}>
-                  <button
-                    onClick={toggleAccordion}
-                    className={styles.myBlog__catItemButton}
-                  >
-                    &#127758; Categories
-                  </button>
-                  <motion.ul
+              <div className={styles.myBlog__catArea}>
+                <button
+                  className={styles.myBlog__catItemButton}
+                  onClick={toggleAccordion}
+                >
+                  🌍 Category
+                </button>
+                <CSSTransition
+                  in={isOpen}
+                  timeout={300}
+                  classNames={{
+                    enter: styles.enter,
+                    enterActive: styles.enterActive,
+                    exit: styles.exit,
+                    exitActive: styles.exitActive,
+                  }}
+                  unmountOnExit
+                >
+                  <ul
                     className={`${styles.myBlog__subCatList} ${
                       isOpen ? styles.myBlog__subCatListOpen : ''
                     }`}
-                    initial={{ scaleY: 0, originY: 0 }}
-                    animate={{ scaleY: isOpen ? 1 : 0 }}
-                    transition={{ duration: 0.3 }}
                   >
                     {Object.entries(categoryCounts).map(([category, count]) => (
                       <li key={category} className={styles.myBlog__subCatItem}>
@@ -138,9 +146,9 @@ const Home: NextPage<Props> = ({ allPosts, categoryCounts }) => {
                         </Link>
                       </li>
                     ))}
-                  </motion.ul>
-                </li>
-              </ul>
+                  </ul>
+                </CSSTransition>
+              </div>
               <ul className={styles.myBlog__list}>
                 {sortedPosts?.map((post) => (
                   <li key={post.slug} className={styles.myBlog__item}>
