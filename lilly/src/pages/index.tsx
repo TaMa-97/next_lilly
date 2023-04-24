@@ -1,5 +1,5 @@
 import type { NextPage, InferGetStaticPropsType } from 'next'
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { getAllPosts } from '@/utils/api'
@@ -13,12 +13,27 @@ type Props = InferGetStaticPropsType<typeof getStaticProps>
 export const getStaticProps = async () => {
   const allPosts = getAllPosts(['slug', 'title', 'date', 'tags'])
 
+  const categoryCounts = allPosts.reduce<Record<string, number>>(
+    (acc, post) => {
+      post.tags.forEach((tag) => {
+        if (acc[tag]) {
+          acc[tag] += 1
+        } else {
+          acc[tag] = 1
+        }
+      })
+
+      return acc
+    },
+    {}
+  )
+
   return {
-    props: { allPosts },
+    props: { allPosts, categoryCounts },
   }
 }
 
-const Home: NextPage<Props> = ({ allPosts }) => {
+const Home: NextPage<Props> = ({ allPosts, categoryCounts }) => {
   const pageTitle = 'Lilly'
   const pageDescription =
     'Lillyの個人サイトです。This is the Home page of Lilly'
@@ -27,6 +42,14 @@ const Home: NextPage<Props> = ({ allPosts }) => {
   const sortedPosts = allPosts.sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   )
+
+  // アコーディオンの開閉状態を管理
+  const [isOpen, setIsOpen] = useState(false)
+
+  // アコーディオンの開閉を切り替える関数
+  const toggleAccordion = () => {
+    setIsOpen(!isOpen)
+  }
 
   return (
     <>
@@ -54,42 +77,68 @@ const Home: NextPage<Props> = ({ allPosts }) => {
                   主に技術的なメモやTipsをゆるく投稿している場所です。
                 </p>
               </motion.div>
+              {/* <ul className={styles.myBlog__catList}>
+                <li className={styles.myBlog__catItem}>
+                  <Link
+                    href="#"
+                    className={styles.myBlog__catItemLink}
+                    scroll={false}
+                  >
+                    &#127758; ALL
+                  </Link>
+                </li>
+                <li className={styles.myBlog__catItem}>
+                  <Link
+                    href="#"
+                    className={styles.myBlog__catItemLink}
+                    scroll={false}
+                  >
+                    &#127758; ALL
+                  </Link>
+                </li>
+                <li className={styles.myBlog__catItem}>
+                  <Link
+                    href="#"
+                    className={styles.myBlog__catItemLink}
+                    scroll={false}
+                  >
+                    &#127758; ALL
+                  </Link>
+                </li>
+                <li className={styles.myBlog__catItem}>
+                  <Link
+                    href="#"
+                    className={styles.myBlog__catItemLink}
+                    scroll={false}
+                  >
+                    &#127758; ALL
+                  </Link>
+                </li>
+              </ul> */}
               <ul className={styles.myBlog__catList}>
                 <li className={styles.myBlog__catItem}>
-                  <Link
-                    href="#"
-                    className={styles.myBlog__catItemLink}
-                    scroll={false}
+                  <button
+                    onClick={toggleAccordion}
+                    className={styles.myBlog__catItemButton}
                   >
-                    &#127758; ALL
-                  </Link>
-                </li>
-                <li className={styles.myBlog__catItem}>
-                  <Link
-                    href="#"
-                    className={styles.myBlog__catItemLink}
-                    scroll={false}
+                    &#127758; Categories
+                  </button>
+                  <motion.ul
+                    className={`${styles.myBlog__subCatList} ${
+                      isOpen ? styles.myBlog__subCatListOpen : ''
+                    }`}
+                    initial={{ scaleY: 0, originY: 0 }}
+                    animate={{ scaleY: isOpen ? 1 : 0 }}
+                    transition={{ duration: 0.3 }}
                   >
-                    &#127758; ALL
-                  </Link>
-                </li>
-                <li className={styles.myBlog__catItem}>
-                  <Link
-                    href="#"
-                    className={styles.myBlog__catItemLink}
-                    scroll={false}
-                  >
-                    &#127758; ALL
-                  </Link>
-                </li>
-                <li className={styles.myBlog__catItem}>
-                  <Link
-                    href="#"
-                    className={styles.myBlog__catItemLink}
-                    scroll={false}
-                  >
-                    &#127758; ALL
-                  </Link>
+                    {Object.entries(categoryCounts).map(([category, count]) => (
+                      <li key={category} className={styles.myBlog__subCatItem}>
+                        <Link href={`/category/${category}`}>
+                          {category} ({count})
+                        </Link>
+                      </li>
+                    ))}
+                  </motion.ul>
                 </li>
               </ul>
               <ul className={styles.myBlog__list}>
