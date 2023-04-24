@@ -85,3 +85,11 @@ export const getAllPosts = (fields: string[] = []) => {
 
   return posts
 }
+
+export type Post = {
+  slug: string
+  content?: string
+  title: string
+  date?: string
+  tags: string[]
+}

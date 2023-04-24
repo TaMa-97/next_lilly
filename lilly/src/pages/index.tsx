@@ -1,7 +1,8 @@
 import type { NextPage, InferGetStaticPropsType } from 'next'
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { CSSTransition } from 'react-transition-group'
 import { getAllPosts } from '@/utils/api'
 import CustomHead from '@/components/base/Head/CustomHead'
 import Header from '@/components/base/Header/Header'
@@ -13,12 +14,27 @@ type Props = InferGetStaticPropsType<typeof getStaticProps>
 export const getStaticProps = async () => {
   const allPosts = getAllPosts(['slug', 'title', 'date', 'tags'])
 
+  const categoryCounts = allPosts.reduce<Record<string, number>>(
+    (acc, post) => {
+      post.tags.forEach((tag) => {
+        if (acc[tag]) {
+          acc[tag] += 1
+        } else {
+          acc[tag] = 1
+        }
+      })
+
+      return acc
+    },
+    {}
+  )
+
   return {
-    props: { allPosts },
+    props: { allPosts, categoryCounts },
   }
 }
 
-const Home: NextPage<Props> = ({ allPosts }) => {
+const Home: NextPage<Props> = ({ allPosts, categoryCounts }) => {
   const pageTitle = 'Lilly'
   const pageDescription =
     'Lillyの個人サイトです。This is the Home page of Lilly'
@@ -27,6 +43,14 @@ const Home: NextPage<Props> = ({ allPosts }) => {
   const sortedPosts = allPosts.sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   )
+
+  // アコーディオンの開閉状態を管理
+  const [isOpen, setIsOpen] = useState(false)
+
+  // アコーディオンの開閉を切り替える関数
+  const toggleAccordion = () => {
+    setIsOpen(!isOpen)
+  }
 
   return (
     <>
@@ -54,7 +78,7 @@ const Home: NextPage<Props> = ({ allPosts }) => {
                   主に技術的なメモやTipsをゆるく投稿している場所です。
                 </p>
               </motion.div>
-              <ul className={styles.myBlog__catList}>
+              {/* <ul className={styles.myBlog__catList}>
                 <li className={styles.myBlog__catItem}>
                   <Link
                     href="#"
@@ -91,7 +115,40 @@ const Home: NextPage<Props> = ({ allPosts }) => {
                     &#127758; ALL
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
+              <div className={styles.myBlog__catArea}>
+                <button
+                  className={styles.myBlog__catItemButton}
+                  onClick={toggleAccordion}
+                >
+                  🌍 Category
+                </button>
+                <CSSTransition
+                  in={isOpen}
+                  timeout={300}
+                  classNames={{
+                    enter: styles.enter,
+                    enterActive: styles.enterActive,
+                    exit: styles.exit,
+                    exitActive: styles.exitActive,
+                  }}
+                  unmountOnExit
+                >
+                  <ul
+                    className={`${styles.myBlog__subCatList} ${
+                      isOpen ? styles.myBlog__subCatListOpen : ''
+                    }`}
+                  >
+                    {Object.entries(categoryCounts).map(([category, count]) => (
+                      <li key={category} className={styles.myBlog__subCatItem}>
+                        <Link href={`/category/${category}`}>
+                          {category} ({count})
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </CSSTransition>
+              </div>
               <ul className={styles.myBlog__list}>
                 {sortedPosts?.map((post) => (
                   <li key={post.slug} className={styles.myBlog__item}>
