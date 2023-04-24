@@ -170,32 +170,33 @@
 
   &__catItemButton {
     display: inline-block;
-    width: 110px;
-    padding: 10px;
+    width: 105px;
+    padding: 6px;
     text-align: left;
     background: none;
     border: none;
     background-color: #007fff;
     color: #ffffff;
+    font-family: $fontEn;
     @include fz(14);
     font-weight: 500;
     cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    transition: all 0.2s ease;
 
     &:hover {
       background-color: #f3f3f3;
-      color: #007fff;
+      color: #111111;
     }
   }
   &__subCatList {
     list-style: none;
-    padding: 0;
+    padding: 10px 25px;
     margin: 0;
     overflow: hidden;
     background: #f7f7f7;
     transform-origin: top;
-    border-radius: 4px;
+    border-radius: 5px;
     margin-top: 10px;
     &.enter {
       opacity: 0;
@@ -220,14 +221,12 @@
     }
   }
   &__subCatItem {
-    padding: 0.5em 1em;
-
-    &:hover {
-      background: #eee;
-    }
+    padding: 6px 0;
+    line-height: 1.3;
     a {
+      font-family: $fontEn;
       color: #333;
-      text-decoration: none;
+      text-decoration: underline;
     }
   }
   &__catArea {
