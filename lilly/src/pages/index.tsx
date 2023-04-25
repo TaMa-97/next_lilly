@@ -118,7 +118,9 @@ const Home: NextPage<Props> = ({ allPosts, categoryCounts }) => {
               </ul> */}
               <div className={styles.myBlog__catArea}>
                 <button
-                  className={styles.myBlog__catItemButton}
+                  className={`${styles.myBlog__catItemButton} ${
+                    isOpen ? styles.open : ''
+                  }`}
                   onClick={toggleAccordion}
                 >
                   🌍 Category
