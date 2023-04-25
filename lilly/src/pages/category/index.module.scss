@@ -4,10 +4,7 @@
 .myTag {
   $_: ".myTag";
   &__head {
-    margin-bottom: 40px;
-    @include tabletP {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
   }
   &__title {
     font-family: $fontEn;

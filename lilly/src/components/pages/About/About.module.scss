@@ -1,6 +1,25 @@
 @charset "utf-8";
 @import "@/styles/variables";
 
+@keyframes iconAnime {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-15deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(15deg);
+  }
+}
+
 .myAbout {
   $_: ".myAbout";
 
@@ -19,6 +38,10 @@
     margin-bottom: 30px;
     @include tabletP {
       line-height: 1.6;
+    }
+    &Icon {
+      display: inline-block;
+      animation: iconAnime 2.5s infinite ease-in-out alternate;
     }
   }
   &__txtArea {

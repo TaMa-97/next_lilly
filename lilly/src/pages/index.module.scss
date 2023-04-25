@@ -169,10 +169,11 @@
   }
 
   &__catItemButton {
+    position: relative;
     display: inline-block;
     width: 105px;
-    padding: 6px;
-    text-align: left;
+    text-align: center;
+    padding: 5px 10px 6px 18px;
     background: none;
     border: none;
     background-color: #007fff;
@@ -184,6 +185,19 @@
     border-radius: 5px;
     transition: all 0.2s ease;
 
+    &::before {
+      content: "";
+      background: url(#{$cmnPath}icon_link.svg) no-repeat center;
+      background-size: 18px 18px;
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 8px;
+      margin: auto;
+    }
+
     &:hover {
       box-shadow: rgba(149, 157, 165, 0.2) 0 8px 15px;
       // transform: scale(1.03) rotate(0.001deg);
@@ -191,11 +205,19 @@
         background-color: #f3f3f3;
         color: #111111;
       }
+      &::before {
+        filter: invert(31%) sepia(71%) saturate(3492%) hue-rotate(199deg)
+          brightness(105%) contrast(104%);
+      }
     }
 
     &.open {
       background-color: #f3f3f3;
       color: #111111;
+      &::before {
+        filter: invert(31%) sepia(71%) saturate(3492%) hue-rotate(199deg)
+          brightness(105%) contrast(104%);
+      }
     }
   }
   &__subCatList {

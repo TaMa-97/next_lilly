@@ -35,7 +35,8 @@ const About = () => {
               initial="hidden"
               animate="visible"
             >
-              Hi there &#128075;
+              Hi there{' '}
+              <span className={styles.myAbout__leadIcon}>&#128075;</span>
             </motion.span>
           </AnimatePresence>
           <br />

@@ -123,7 +123,7 @@ const Home: NextPage<Props> = ({ allPosts, categoryCounts }) => {
                   }`}
                   onClick={toggleAccordion}
                 >
-                  🌍 Category
+                  Category
                 </button>
                 <CSSTransition
                   in={isOpen}
