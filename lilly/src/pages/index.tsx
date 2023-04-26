@@ -78,44 +78,6 @@ const Home: NextPage<Props> = ({ allPosts, categoryCounts }) => {
                   主に技術的なメモやTipsをゆるく投稿している場所です。
                 </p>
               </motion.div>
-              {/* <ul className={styles.myBlog__catList}>
-                <li className={styles.myBlog__catItem}>
-                  <Link
-                    href="#"
-                    className={styles.myBlog__catItemLink}
-                    scroll={false}
-                  >
-                    &#127758; ALL
-                  </Link>
-                </li>
-                <li className={styles.myBlog__catItem}>
-                  <Link
-                    href="#"
-                    className={styles.myBlog__catItemLink}
-                    scroll={false}
-                  >
-                    &#127758; ALL
-                  </Link>
-                </li>
-                <li className={styles.myBlog__catItem}>
-                  <Link
-                    href="#"
-                    className={styles.myBlog__catItemLink}
-                    scroll={false}
-                  >
-                    &#127758; ALL
-                  </Link>
-                </li>
-                <li className={styles.myBlog__catItem}>
-                  <Link
-                    href="#"
-                    className={styles.myBlog__catItemLink}
-                    scroll={false}
-                  >
-                    &#127758; ALL
-                  </Link>
-                </li>
-              </ul> */}
               <div className={styles.myBlog__catArea}>
                 <button
                   className={`${styles.myBlog__catItemButton} ${
@@ -143,7 +105,7 @@ const Home: NextPage<Props> = ({ allPosts, categoryCounts }) => {
                   >
                     {Object.entries(categoryCounts).map(([category, count]) => (
                       <li key={category} className={styles.myBlog__subCatItem}>
-                        <Link href={`/category/${category}`}>
+                        <Link href={`/category/${category}`} scroll={false}>
                           {category} ({count})
                         </Link>
                       </li>

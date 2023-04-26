@@ -21,15 +21,6 @@ const Header = () => {
               </Link>
             </li>
             <li className={styles.gNav__item}>
-              <Link
-                href="/projects"
-                className={styles.gNav__link}
-                scroll={false}
-              >
-                Projects
-              </Link>
-            </li>
-            <li className={styles.gNav__item}>
               <Link href="/about" className={styles.gNav__link} scroll={false}>
                 About
               </Link>

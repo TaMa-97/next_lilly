@@ -6,17 +6,8 @@
   100% {
     transform: rotate(0deg);
   }
-
-  25% {
-    transform: rotate(-15deg);
-  }
-
   50% {
-    transform: rotate(0deg);
-  }
-
-  75% {
-    transform: rotate(15deg);
+    transform: rotate(14deg);
   }
 }
 
@@ -41,7 +32,10 @@
     }
     &Icon {
       display: inline-block;
-      animation: iconAnime 2.5s infinite ease-in-out alternate;
+      animation: iconAnime 1s linear infinite;
+      position: relative;
+      top: -4px;
+      @include fz(27);
     }
   }
   &__txtArea {
@@ -61,7 +55,7 @@
     @include fz(14);
   }
   &__link {
-    display: block;
+    display: inline-block;
     margin-top: 50px;
     &:hover {
       opacity: 1;
