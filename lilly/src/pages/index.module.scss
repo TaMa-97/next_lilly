@@ -45,7 +45,7 @@
     }
     &Title {
       font-weight: 500;
-      @include fz(19);
+      @include fz(18);
       margin-bottom: 12px;
       @include tabletP {
         @include fz(16);
@@ -67,7 +67,7 @@
       }
     }
     &Item {
-      @include fz(15);
+      @include fz(12);
       font-family: $fontEn;
       font-weight: 500;
       padding: 2px 13px;
@@ -206,8 +206,10 @@
         color: #111111;
       }
       &::before {
-        filter: invert(31%) sepia(71%) saturate(3492%) hue-rotate(199deg)
-          brightness(105%) contrast(104%);
+        @include tabletPmin {
+          filter: invert(31%) sepia(71%) saturate(3492%) hue-rotate(199deg)
+            brightness(105%) contrast(104%);
+        }
       }
     }
 
@@ -222,7 +224,11 @@
   }
   &__subCatList {
     list-style: none;
-    padding: 10px 25px;
+    padding: 15px 25px;
+    display: flex;
+    gap: 2px 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     margin: 0;
     overflow: hidden;
     background: #f7f7f7;
