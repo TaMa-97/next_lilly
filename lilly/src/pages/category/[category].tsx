@@ -29,7 +29,7 @@ const TagPage: React.FC<TagPageProps> = ({ posts }) => {
   // タグと関連する投稿を表示
   return (
     <>
-      {category ? (
+      {category !== undefined ? (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

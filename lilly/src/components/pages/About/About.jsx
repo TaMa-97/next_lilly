@@ -53,7 +53,7 @@ const About = () => {
         </h3>
         <div className={styles.myAbout__txtArea}>
           <p className={styles.myAbout__txtEn}>
-            Born in 1997 and lives in Okayama Prefecture.
+            Born in 1997.
             <br />I started my career as an engineer in 2020 and currently work
             on website production and web application development.
             <br />
@@ -63,7 +63,7 @@ const About = () => {
             My hobbies are tennis and sauna.
           </p>
           <p className={styles.myAbout__txtJa}>
-            1997年生まれ、岡山県在住。
+            1997年生まれ。
             <br />
             2020年にエンジニアとしてキャリアをスタートし、現在はWebサイト制作やWebアプリケーション開発を行っています。
             <br />
