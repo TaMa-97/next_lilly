@@ -7,7 +7,7 @@
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(14deg);
+    transform: rotate(25deg);
   }
 }
 
@@ -34,8 +34,8 @@
       display: inline-block;
       animation: iconAnime 1s linear infinite;
       position: relative;
-      top: -4px;
-      @include fz(27);
+      top: -5px;
+      @include fz(23);
     }
   }
   &__txtArea {

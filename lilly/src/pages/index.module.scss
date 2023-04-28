@@ -45,10 +45,10 @@
     }
     &Title {
       font-weight: 500;
-      @include fz(18);
+      @include fz(16);
       margin-bottom: 12px;
       @include tabletP {
-        @include fz(16);
+        @include fz(15);
       }
     }
     &Inner {
@@ -61,7 +61,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
-      gap: 10px;
+      gap: 8px;
       @include tabletP {
         gap: 5px;
       }
@@ -70,7 +70,7 @@
       @include fz(12);
       font-family: $fontEn;
       font-weight: 500;
-      padding: 2px 13px;
+      padding: 1px 12px;
       border: 1px solid #dbdbdb;
       border-radius: 20px;
       @include tabletP {
@@ -91,7 +91,7 @@
     &Icon {
       display: inline-block;
       position: relative;
-      top: 2px;
+      top: 3px;
       bottom: 0;
       right: 0;
       margin: auto;
@@ -179,7 +179,7 @@
     background-color: #007fff;
     color: #ffffff;
     font-family: $fontEn;
-    @include fz(14);
+    @include fz(13);
     font-weight: 500;
     cursor: pointer;
     border-radius: 5px;
@@ -226,7 +226,7 @@
     list-style: none;
     padding: 15px 25px;
     display: flex;
-    gap: 2px 20px;
+    gap: 1px 17px;
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 0;
@@ -266,6 +266,11 @@
       font-family: $fontEn;
       color: #333;
       text-decoration: underline;
+      @include fz(15);
+      transition: all 0.2s ease-out;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
   &__catArea {

@@ -1,5 +1,5 @@
 ---
-title: 'Safari対応：縦書きテキストと横スクロールバーの実装方法'
+title: 'Safari対応：縦書きテキスト＋横スクロールバーの実装方法'
 date: '2023/04/27'
 tags: ['JavaScript', 'SimpleBar', 'SCSS']
 ---
@@ -214,7 +214,7 @@ scrollbarEvent() {
 ```
 
 :::message
-setTimeout で遅延を設定している理由:
+【setTimeout で遅延を設定している理由】
 SimpleBar の初期化やスタイルの適用が完了するまでに多少時間がかかるので、遅延を設けてからスクロール位置を設定しています。遅延時間は状況に応じて調整が必要な場合があるかと思います。
 :::
 

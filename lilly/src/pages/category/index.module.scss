@@ -21,16 +21,16 @@
       padding-bottom: 10px;
     }
     &Icon {
-      @include fz(13);
+      font-family: $fontEn;
+      @include fz(12);
       background-color: #007fff;
       color: #ffffff;
-      padding: 2px 10px;
+      padding: 1px 10px;
       border-radius: 4px;
-      font-weight: 400;
+      font-weight: 500;
       transition: all 0.2s ease;
       @include tabletP {
-        @include fz(12);
-        padding: 1px 10px;
+        @include fz(11);
       }
     }
   }
@@ -68,10 +68,10 @@
     }
     &Title {
       font-weight: 500;
-      @include fz(19);
+      @include fz(16);
       margin-bottom: 12px;
       @include tabletP {
-        @include fz(16);
+        @include fz(15);
       }
     }
     &Inner {
@@ -84,16 +84,16 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
-      gap: 10px;
+      gap: 8px;
       @include tabletP {
         gap: 5px;
       }
     }
     &Item {
-      @include fz(15);
+      @include fz(12);
       font-family: $fontEn;
       font-weight: 500;
-      padding: 2px 13px;
+      padding: 1px 12px;
       border: 1px solid #dbdbdb;
       border-radius: 20px;
       @include tabletP {
@@ -114,7 +114,7 @@
     &Icon {
       display: inline-block;
       position: relative;
-      top: 2px;
+      top: 3px;
       bottom: 0;
       right: 0;
       margin: auto;

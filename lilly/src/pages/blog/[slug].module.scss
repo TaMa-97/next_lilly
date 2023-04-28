@@ -6,6 +6,10 @@
     font-weight: 700;
     @include fz(26);
     margin-bottom: 15px;
+    @include tabletP {
+      @include fz(23);
+      margin-bottom: 13px;
+    }
   }
   &__head {
     display: flex;
@@ -14,6 +18,9 @@
     flex-direction: column;
     gap: 10px;
     margin-bottom: 30px;
+    @include tabletP {
+      margin-bottom: 15px;
+    }
   }
   &__date {
     @include fz(13);
@@ -25,19 +32,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 8px;
     @include tabletP {
       gap: 5px;
     }
   }
   &__item {
     display: inline-block;
-    @include fz(15);
+    @include fz(14);
     font-family: $fontEn;
     font-weight: 500;
-    padding: 2px 13px;
+    padding: 1px 12px;
     border: 1px solid #dbdbdb;
     border-radius: 20px;
+    @include tabletP {
+      @include fz(11);
+      padding: 1px 8px;
+    }
   }
 
   &__toc {
