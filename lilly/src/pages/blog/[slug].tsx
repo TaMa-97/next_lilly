@@ -134,8 +134,8 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
 const Post: NextPage<Props> = ({ post }) => {
   useTocbot()
   useAccordion()
-  const pageTitle = 'Lilly'
-  const pageDescription = 'This is the Home page of Next Lilly'
+  const pageTitle = post.title
+  const pageDescription = post.title
   return (
     <>
       <motion.div
