@@ -8,7 +8,7 @@ import About from '@/components/pages/About/About'
 
 const Home: NextPage = () => {
   const pageTitle = 'About | lilly'
-  const pageDescription = 'This is the Home page of Next Lilly'
+  const pageDescription = 'lillyのAboutページです。'
   return (
     <>
       <motion.div
