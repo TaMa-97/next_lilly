@@ -6,7 +6,12 @@ import styles from './Header.module.scss'
 const Header = () => {
   const router = useRouter()
   const isActiveLink = (path) => {
-    return router.pathname === path
+    return (
+      router.pathname === path ||
+      (path === '/' &&
+        (router.pathname.startsWith('/blog/') ||
+          router.pathname.startsWith('/category/')))
+    )
   }
 
   return (
