@@ -102,7 +102,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 
   // すべての投稿を取得し、指定されたタグを含む投稿を絞り込む
-  const allPosts = getAllPosts(['slug', 'title', 'tags'])
+  const allPosts = getAllPosts(['slug', 'title', 'tags', 'date'])
   const category = params.category as string
   const posts = allPosts.filter((post) => post.tags.includes(category))
 
