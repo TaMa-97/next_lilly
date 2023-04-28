@@ -1,8 +1,19 @@
 import React from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import styles from './Header.module.scss'
 
 const Header = () => {
+  const router = useRouter()
+  const isActiveLink = (path) => {
+    return (
+      router.pathname === path ||
+      (path === '/' &&
+        (router.pathname.startsWith('/blog/') ||
+          router.pathname.startsWith('/category/')))
+    )
+  }
+
   return (
     <header className={styles.gHeader}>
       <div className={`container ${styles.gHeader__inner}`}>
@@ -16,12 +27,24 @@ const Header = () => {
         <nav className={styles.gNav}>
           <ul className={styles.gNav__list}>
             <li className={styles.gNav__item}>
-              <Link href="/" className={styles.gNav__link} scroll={false}>
+              <Link
+                href="/"
+                className={`${styles.gNav__link} ${
+                  isActiveLink('/') ? styles.gNav__linkActive : ''
+                }`}
+                scroll={false}
+              >
                 Blog
               </Link>
             </li>
             <li className={styles.gNav__item}>
-              <Link href="/about" className={styles.gNav__link} scroll={false}>
+              <Link
+                href="/about"
+                className={`${styles.gNav__link} ${
+                  isActiveLink('/about') ? styles.gNav__linkActive : ''
+                }`}
+                scroll={false}
+              >
                 About
               </Link>
             </li>
