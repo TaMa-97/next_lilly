@@ -37,5 +37,8 @@
     color: nth($mainColor, 1);
     text-decoration: none;
     font-weight: 500;
+    &Active {
+      color: #b3b3b3;
+    }
   }
 }
