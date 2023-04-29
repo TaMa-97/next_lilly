@@ -1,7 +1,7 @@
 ---
-title: 'Next.jsでframer-motionを使ったらバグが発生した'
+title: 'Next.jsでframer-motionを使ったらCSS modulesのバグが発生した😓'
 date: '2023/04/23'
-tags: ['Next.js', 'framer-motion', 'TypeScript']
+tags: ['Next.js', 'framer-motion', 'TypeScript', 'CSS modules']
 ---
 
 ## 現象

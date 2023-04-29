@@ -1,5 +1,5 @@
 ---
-title: 'Safari対応：縦書きテキスト＋横スクロールバーの実装方法'
+title: 'Safari対応：縦書きテキスト＋横スクロールバーの実装方法👻'
 date: '2023/04/27'
 tags: ['JavaScript', 'SimpleBar', 'SCSS']
 ---

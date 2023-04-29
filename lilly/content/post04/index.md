@@ -1,13 +1,13 @@
 ---
-title: 'Next.js：useRouterの使い方'
-date: '2023/04/28'
+title: 'Next.js：useRouterの使い方🐧'
+date: '2023/04/29'
 tags: ['Next.js', 'TypeScript']
 ---
 
 ## はじめに
 
-こちらのサイトのヘッダーコンポーネントでページごとにカレント表示を実装するために`useRouter`を用いました。
-そこでこの記事では、`useRouter`の機能やプロパティ/メソッドの紹介、最後に具体例を交えながら現在のページのルーティング情報を取得する方法を書いていきます。
+こちらのサイトの Header コンポーネントでページごとにカレント表示を実装するために`useRouter`を用いました。
+そこでこの記事では、`useRouter`の機能やプロパティ/メソッドの紹介、具体例を交えながら現在のページのルーティング情報を取得する方法などを紹介していきます。
 
 ## useRouter とは
 
@@ -41,44 +41,47 @@ ServerRouter {
 
 `useRouter`から取得できる`router`オブジェクトには、さまざまなメソッドがあります。
 
-- **push**
-  ページ遷移を実行する。
-  引数には遷移先の URL とオプションが渡される。
+### push
+
+ページ遷移を実行する。
+引数には遷移先の URL とオプションが渡される。
 
 ```tsx
 const router = useRouter()
 const buttonClick = () => {
-  router.push('/about')
+  router.push('/hoge')
 }
 return <button onClick={buttonClick}>hoge</button>
 ```
 
-- **replace**
-  ページ遷移を実行する（※ブラウザの履歴には追加されない）
-  引数には遷移先の URL とオプションが渡される。
+### replace
+
+ページ遷移を実行する（※ブラウザの履歴には追加されない）
+引数には遷移先の URL とオプションが渡される。
 
 ```tsx
 const router = useRouter()
 const buttonClick = () => {
-  router.replace('/about')
+  router.replace('/hoge')
 }
 return <button onClick={buttonClick}>hoge</button>
 ```
 
-- **back**
-  ブラウザの履歴を 1 つ戻る。
+### back
+
+ブラウザの履歴を 1 つ戻る。
 
 ```tsx
 const router = useRouter()
 const BackButtonClick = () => {
   router.back()
 }
-
 return <button onClick={BackButtonClick}>hoge</button>
 ```
 
-- **beforePopState**
-  ブラウザの履歴が変更される前に呼び出されるイベントリスナーを登録する。
+### beforePopState
+
+ブラウザの履歴が変更される前に呼び出されるイベントリスナーを登録する。
 
 ```tsx
 import { useEffect } from 'react'
@@ -94,50 +97,92 @@ useEffect(() => {
 }, [])
 ```
 
-- **events**
-  `router.events`は、ページ遷移イベントを監視する機能です。
-  ページ遷移の開始や完了などのタイミングで特定の処理を行うことができます。
+### events
+
+`router.events`は、ページ遷移イベントを監視する機能です。
+ページ遷移の開始や完了などのタイミングで特定の処理を行うことができます。
+
+#### 主なメソッド
+
+- `on`: イベントリスナーを登録
+- `off`: イベントリスナーを解除
+
+#### 主なイベント
+
+- `routeChangeStart`: ルート変更前
+- `routeChangeComplete`: ルート変更後
+- `routeChangeError`: ルート変更時のエラー
 
 ```tsx
+//----- 例
+//下記ではuseEffectフックを使ってイベントリスナーを登録/解除しています。ページ遷移の進行状況を監視して、特定のタイミングで処理を実行することができます。
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
+const MyComponent = () => {
+  const router = useRouter()
+
+  useEffect(() => {
+    const RouteChangeEvent = (url) => console.log('URL変更:', url)
+    router.events.on('routeChangeStart', RouteChangeEvent)
+
+    return () => router.events.off('routeChangeStart', RouteChangeEvent)
+  }, [])
+
+  return (
+    <h1>
+      ページ遷移が開始されるたびにコンソールにメッセージを表示するコンポーネント
+    </h1>
+  )
+}
 ```
 
 ## 具体例
 
-具体例として、Header コンポーネントで`useRouter`を使用して、現在のページのパス名に基づいてナビリンクのスタイルを変更することができます。
-以下は、`useRouter`を使用してアクティブなナビリンクのスタイルを変更するための簡単な例です。
+当サイトで実際に実装されている Header コンポーネントを紹介していきます。
+`useRouter`を使用して、現在のページのパス名に基づいてアクティブなナビリンクのスタイルを変更しています。
 
 ```tsx:Header.tsx
 import { useRouter } from 'next/router'
-//省略
+// 省略
+
 const Header = () => {
   const router = useRouter()
-
   const isActiveLink = (path) => {
-    return router.pathname === path
+    return (
+      router.pathname === path ||
+      (path === '/' &&
+        (router.pathname.startsWith('/blog/') ||
+          router.pathname.startsWith('/category/')))
+    )
   }
 
   return (
     <header className={styles.gHeader}>
       <div className={`container ${styles.gHeader__inner}`}>
+        {/* 省略 */}
         <nav className={styles.gNav}>
           <ul className={styles.gNav__list}>
             <li className={styles.gNav__item}>
               <Link
-                href="/hoge01"
-                className={`${styles.gNav__link} ${isActiveLink('/hoge01') ? styles.gNav__linkActive : ''}`}
+                href="/"
+                className={`${styles.gNav__link} ${
+                  isActiveLink('/') ? styles.gNav__linkActive : ''
+                }`}
                 scroll={false}
               >
-                hoge01
+                Blog
               </Link>
             </li>
             <li className={styles.gNav__item}>
               <Link
-                href="/hoge02"
-                className={`${styles.gNav__link} ${isActiveLink('/hoge02') ? styles.gNav__linkActive : ''}`}
+                href="/about"
+                className={`${styles.gNav__link} ${
+                  isActiveLink('/about') ? styles.gNav__linkActive : ''
+                }`}
                 scroll={false}
               >
-                hoge02
+                About
               </Link>
             </li>
           </ul>
@@ -148,9 +193,10 @@ const Header = () => {
 }
 
 export default Header
+
 ```
 
-こちらの例では、`useRouter`フックを使って`router`オブジェクトを取得して、`isActiveLink`関数を作成しています。引数として渡されたパスが現在のページのパスと一致するかどうかをチェックしています。
+`useRouter`フックを使って`router`オブジェクトを取得して、`isActiveLink`関数を作成しています。引数として渡されたパスが現在のページのパスと一致するかどうかをチェックして、`/blog/`と`/category/`配下のページを含むチェックも追加してフラグを返しています。
 
 ## 参考
 
