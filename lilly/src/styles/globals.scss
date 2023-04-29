@@ -304,6 +304,19 @@ a[href*="tel:"] {
       filter: invert(31%) sepia(71%) saturate(3492%) hue-rotate(199deg)
         brightness(105%) contrast(104%);
     }
+    &:hover {
+      opacity: 1;
+      box-shadow: rgba(149, 157, 165, 0.2) 0 10px 15px;
+      @include tabletPmin {
+        background-color: #007fff;
+        color: #ffffff;
+      }
+      &::before {
+        @include tabletPmin {
+          filter: none;
+        }
+      }
+    }
   }
 }
 

@@ -37,7 +37,7 @@ _アートボード_
 また、コード品質と保守性の向上のために ESLint（デフォルト）と Prettier を導入しました。コードの問題を見つけやすくなり、保存時に自動フォーマットが適用されるため、開発体験が向上し、改善と保守作業が快適になりました。
 
 ![](/images/blog/about/img02.png)
-_PageSpeed Insights_
+_PageSpeed Insights(リリース時のスコア)_
 
 ## CSS Modules によるスタイル管理
 
