@@ -18,7 +18,7 @@ const useTocbot = () => {
     Tocbot.init({
       tocSelector: '.toc-accordion',
       contentSelector: '.znc',
-      headingSelector: 'h1, h2, h3',
+      headingSelector: 'h1, h2',
       hasInnerContainers: true,
     })
 
