@@ -142,7 +142,7 @@ gsap.to('.hoge', 1,{
 | `onStart`                 | アニメーションの開始時に呼び出す関数                         |
 | `onStartParams`           | `onStart` 関数に渡すための配列                               |
 | `onUpdate`                | アニメーション中に呼び出す関数                               |
-| onUpdateParams            | `onUpdate` 関数に渡すための配列                              |
+| `onUpdateParams`          | `onUpdate` 関数に渡すための配列                              |
 
 ### stagger
 
