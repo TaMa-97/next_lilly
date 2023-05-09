@@ -9,6 +9,7 @@ import CustomHead from '@/components/base/Head/CustomHead'
 import Header from '@/components/base/Header/Header'
 import Footer from '@/components/base/Footer/Footer'
 import LoadingSpinner from '@/components/elements/LoadingSpinner/LoadingSpinner'
+import Breadcrumbs from '@/components/elements/Breadcrumbs/Breadcrumbs'
 import styles from './index.module.scss'
 
 // TagPage コンポーネントのpropsを定義
@@ -25,6 +26,11 @@ const TagPage: React.FC<TagPageProps> = ({ posts }) => {
   const pageTitle = `${category} | Lilly`
   const pageDescription = `カテゴリー：${category}の記事一覧ページです。`
 
+  const breadcrumbs = [
+    { title: 'ホーム', href: '/' },
+    { title: `カテゴリー: ${category}` },
+  ]
+
   // タグと関連する投稿を表示
   return (
     <>
@@ -39,6 +45,7 @@ const TagPage: React.FC<TagPageProps> = ({ posts }) => {
           <CustomHead title={pageTitle} description={pageDescription} />
           <Header />
           <main>
+            <Breadcrumbs breadcrumbs={breadcrumbs} />
             <section className={styles.myTag}>
               <div className="container">
                 <motion.div
