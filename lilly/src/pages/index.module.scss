@@ -62,9 +62,10 @@
     &Title {
       font-weight: 500;
       @include fz(16);
-      margin-bottom: 12px;
+      margin-bottom: 20px;
       @include tabletP {
         @include fz(15);
+        margin-bottom: 15px;
       }
     }
     &Inner {
