@@ -21,7 +21,12 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 25px;
+    @include tabletPmin {
+      gap: 7px;
+    }
+    @include tabletP {
+      gap: 15px;
+    }
   }
 
   &__item {
@@ -32,8 +37,19 @@
     display: block;
     text-decoration: none;
     color: $baseColor;
+    @include tabletPmin {
+      padding: 20px 15px 13px;
+      border-radius: 20px;
+      transition: all 0.2s ease-out;
+    }
+    @include tabletP {
+      padding: 10px 0;
+    }
     &:hover {
       opacity: 1;
+      @include tabletPmin {
+        box-shadow: rgba(149, 157, 165, 0.2) 0 8px 15px;
+      }
       #{$_}__linkIcon {
         width: 7px;
         height: 7px;
@@ -67,20 +83,20 @@
       }
     }
     &Item {
-      @include fz(12);
+      @include fz(11);
       font-family: $fontEn;
       font-weight: 500;
       padding: 1px 12px;
       border: 1px solid #dbdbdb;
       border-radius: 20px;
       @include tabletP {
-        @include fz(11);
+        @include fz(10);
         padding: 0px 8px;
         border-radius: 15px;
       }
     }
     &Date {
-      @include fz(14);
+      @include fz(13);
       font-family: $fontEn;
       font-weight: 500;
       color: #9b9b9b;
@@ -128,33 +144,6 @@
       }
     } //icon
   }
-
-  // &__catList {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: flex-start;
-  //   gap: 7px;
-  //   margin-bottom: 30px;
-  // }
-  // &__catItem {
-  //   width: calc((100% - 14px) / 3);
-
-  //   @include tabletP {
-  //     width: calc((100% - 7px) / 2);
-  //   }
-  //   &Link {
-  //     display: block;
-  //     width: 100%;
-  //     padding: 10px;
-  //     text-decoration: none;
-  //     border: 2px solid #dbdbdb;
-  //     border-radius: 8px;
-  //     @include fz(13);
-  //     color: #9b9b9b;
-  //     font-family: $fontEn;
-  //     font-weight: 500;
-  //   }
-  // }
 
   &__catList {
     list-style: none;
