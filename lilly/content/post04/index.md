@@ -1,5 +1,5 @@
 ---
-title: 'Next.js：useRouterの使い方🐧'
+title: 'Next.js：useRouterの使い方'
 date: '2023/04/29'
 tags: ['Next.js', 'TypeScript']
 ---

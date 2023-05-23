@@ -14,6 +14,33 @@
 .myAbout {
   $_: ".myAbout";
 
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    background: url(#{$cmnPath}bg01.svg) no-repeat center;
+    background-size: 800px 800px;
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: -40px;
+    right: 2vw;
+    @include max(1500) {
+      background-size: 600px 600px;
+      width: 600px;
+      height: 600px;
+      right: -200px;
+    }
+    @include tabletP {
+      background-size: 430px 430px;
+      width: 430px;
+      height: 430px;
+      left: unset;
+      top: 0;
+      right: -100px;
+    }
+  }
+
   &__head {
     margin-bottom: 50px;
   }

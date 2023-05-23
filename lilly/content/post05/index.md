@@ -1,5 +1,5 @@
 ---
-title: 'アニメーションプロジェクトに最適なGSAP: 基本機能💡'
+title: 'アニメーションプロジェクトに最適なGSAP: 基本機能'
 date: '2023/05/07'
 tags: ['GSAP', 'JavaScript']
 ---

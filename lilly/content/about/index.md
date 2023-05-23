@@ -1,5 +1,5 @@
 ---
-title: 'ウェブサイトをNext.js + TypeScriptでリニューアルしました🔥'
+title: 'ウェブサイトをNext.js + TypeScriptでリニューアルしました'
 date: '2023/04/16'
 tags: ['Next.js', 'TypeScript']
 ---
