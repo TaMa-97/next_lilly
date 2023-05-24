@@ -72,7 +72,7 @@ const About = () => {
             趣味は、テニスとサウナです。
           </p>
           <section className={styles.myAbout__block}>
-            <h2 className={styles.myAbout__blockTtl}>つづけること</h2>
+            <h2 className={styles.myAbout__blockTtl}>⚡つづけること</h2>
             <ul className={styles.myAbout__blockList}>
               <li className={styles.myAbout__blockItem}>
                 ・React,Next.jsの理解を深める
