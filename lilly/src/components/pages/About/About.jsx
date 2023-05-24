@@ -71,6 +71,20 @@ const About = () => {
             <br />
             趣味は、テニスとサウナです。
           </p>
+          <section className={styles.myAbout__block}>
+            <h2 className={styles.myAbout__blockTtl}>つづけること</h2>
+            <ul className={styles.myAbout__blockList}>
+              <li className={styles.myAbout__blockItem}>
+                ・React,Next.jsの理解を深める
+              </li>
+              <li className={styles.myAbout__blockItem}>
+                ・最新のフロントエンド/AI周りの技術をキャッチアップする
+              </li>
+              <li className={styles.myAbout__blockItem}>
+                ・毎日何かしらのインプットとアウトプットを継続する
+              </li>
+            </ul>
+          </section>
           <Link
             href="/blog/about"
             className={styles.myAbout__link}
