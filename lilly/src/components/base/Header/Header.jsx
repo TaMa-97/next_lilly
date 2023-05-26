@@ -41,6 +41,17 @@ const Header = () => {
               <Link
                 href="/about"
                 className={`${styles.gNav__link} ${
+                  isActiveLink('/read') ? styles.gNav__linkActive : ''
+                }`}
+                scroll={false}
+              >
+                Read
+              </Link>
+            </li>
+            <li className={styles.gNav__item}>
+              <Link
+                href="/about"
+                className={`${styles.gNav__link} ${
                   isActiveLink('/about') ? styles.gNav__linkActive : ''
                 }`}
                 scroll={false}
