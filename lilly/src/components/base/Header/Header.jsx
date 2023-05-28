@@ -39,7 +39,7 @@ const Header = () => {
             </li>
             <li className={styles.gNav__item}>
               <Link
-                href="/about"
+                href="/read"
                 className={`${styles.gNav__link} ${
                   isActiveLink('/read') ? styles.gNav__linkActive : ''
                 }`}
