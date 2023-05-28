@@ -1,0 +1,154 @@
+@charset "utf-8";
+@import "@/styles/variables";
+
+.myRead {
+  $_: ".myRead";
+  &__head {
+    margin-bottom: 50px;
+  }
+  &__title {
+    font-family: $fontEn;
+    font-weight: 500;
+    @include fz(24);
+  }
+  &__lead {
+    color: #9b9b9b;
+    @include fz(15);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-top: solid 1px rgba(92, 147, 187, 0.17);
+    padding-top: 10px;
+    @include tabletPmin {
+      gap: 7px;
+    }
+    @include tabletP {
+      gap: 15px;
+    }
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: $baseColor;
+    @include tabletPmin {
+      padding: 20px 15px 13px;
+      border-radius: 20px;
+      transition: all 0.2s ease-out;
+    }
+    @include tabletP {
+      padding: 10px 0;
+    }
+    &:hover {
+      opacity: 1;
+      #{$_}__linkTitle {
+        text-decoration: none;
+      }
+      #{$_}__linkIcon {
+        width: 7px;
+        height: 7px;
+        top: -3px;
+        &:after {
+          opacity: 0;
+        }
+      }
+    }
+    &Head {
+      font-weight: 500;
+      @include fz(16);
+      margin-bottom: 10px;
+      @include tabletP {
+        @include fz(15);
+      }
+    }
+    &Title {
+      color: #007fff;
+      display: inline-block;
+      text-decoration: underline;
+    }
+    &Foot {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    &List {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 8px;
+      @include tabletP {
+        gap: 5px;
+      }
+    }
+    &Item {
+      @include fz(11);
+      font-family: $fontEn;
+      font-weight: 500;
+      padding: 1px 12px;
+      border: 1px solid #dbdbdb;
+      border-radius: 20px;
+      @include tabletP {
+        @include fz(10);
+        padding: 0px 8px;
+        border-radius: 15px;
+      }
+    }
+    &Date {
+      @include fz(13);
+      font-family: $fontEn;
+      font-weight: 500;
+      color: #9b9b9b;
+      @include tabletP {
+        @include fz(12);
+      }
+    }
+    &Icon {
+      display: inline-block;
+      position: relative;
+      top: 3px;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 17px;
+      height: 17px;
+      background-color: #007fff;
+      border-radius: 50%;
+      margin-left: 12px;
+      overflow: hidden;
+      transition: all 0.2s cubic-bezier(0.23, 1, 0.58, 1);
+      @include tabletP {
+        width: 16px;
+        height: 16px;
+        margin-left: 12px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: -1.5px;
+        width: 20px;
+        height: 20px;
+        background-image: url(#{$cmnPath}ico_circle_arrow.svg);
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        @include tabletP {
+          width: 18px;
+          height: 18px;
+          background-size: 18px 18px;
+          left: -1px;
+        }
+      }
+    } //icon
+  }
+}

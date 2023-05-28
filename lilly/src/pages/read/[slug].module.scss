@@ -1,0 +1,46 @@
+@charset "utf-8";
+@import "@/styles/variables";
+
+.myBlog {
+  &__title {
+    font-weight: 700;
+    @include fz(26);
+    margin-bottom: 15px;
+    @include tabletP {
+      @include fz(23);
+      margin-bottom: 13px;
+    }
+  }
+  &__head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    @include tabletP {
+      margin-bottom: 15px;
+    }
+  }
+  &__date {
+    @include fz(13);
+    font-family: $fontEn;
+    font-weight: 500;
+    color: #9b9b9b;
+  }
+
+  &__toc {
+    transition: all 0.2s ease-out;
+  }
+}
+
+.myZnc {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+  }
+}
