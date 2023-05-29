@@ -35,10 +35,10 @@ date: 'May 15, 2023'
 - [astro を実践投入してみた](https://yuzu441.hateblo.jp/entry/2023/04/21/123000)
 - [いい加減オリジンとかドメインとかホストとかごっちゃになるのをやめたい](https://qiita.com/igossou/items/c437bc4b3ca3b01bc6dc)
 - [GPT-3.5 を使って PEST 分析できるアプリを作った話](https://zenn.dev/yui/articles/74b1a59fb5fdaf)
+- [意外ととっつきやすい OSS 開発参加方法まとめ](https://qiita.com/shunsuke227ono/items/94dd6e707d34a1da2617)
 - [lru-cache を使って IP アドレスで API にレートリミットを追加する](https://zenn.dev/yui/articles/4ab2249cb39c4e)
 - [JavaScript で配列形式の JSON を CSV としてダウンロードする方法](https://zenn.dev/yui/articles/32b02c23e70dbc)
 - [React を使うなら React Developer Tools の再レンダリング時ハイライトくらい設定してくれ](https://zenn.dev/bs_kansai/articles/415c7e7a81ac6a)
-- [JavaScript で配列形式の JSON を CSV としてダウンロードする方法](https://zenn.dev/yui/articles/32b02c23e70dbc)
 
 ## 🚶 セミナー参加
 

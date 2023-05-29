@@ -40,7 +40,7 @@
     text-decoration: none;
     color: $baseColor;
     @include tabletPmin {
-      padding: 20px 15px 13px;
+      padding: 19px 15px 13px 0;
       border-radius: 20px;
       transition: all 0.2s ease-out;
     }
