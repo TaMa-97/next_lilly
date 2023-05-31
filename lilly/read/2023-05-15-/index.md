@@ -39,7 +39,8 @@ date: 'May 15, 2023'
 - [lru-cache を使って IP アドレスで API にレートリミットを追加する](https://zenn.dev/yui/articles/4ab2249cb39c4e)
 - [JavaScript で配列形式の JSON を CSV としてダウンロードする方法](https://zenn.dev/yui/articles/32b02c23e70dbc)
 - [React を使うなら React Developer Tools の再レンダリング時ハイライトくらい設定してくれ](https://zenn.dev/bs_kansai/articles/415c7e7a81ac6a)
-- [freeeのエンジニアチーム](https://qiita.com/hiraguri/items/dfc15ef036228442d3bf)
+- [freee のエンジニアチーム](https://qiita.com/hiraguri/items/dfc15ef036228442d3bf)
+- [安心・安全なサービス開発のための Dependabot 運用](https://tech.buysell-technologies.com/entry/2023/04/28/000000)
 
 ## 🚶 セミナー参加
 
