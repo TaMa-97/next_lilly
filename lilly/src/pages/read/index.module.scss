@@ -22,12 +22,12 @@
     justify-content: flex-start;
     flex-direction: column;
     border-top: solid 1px rgba(92, 147, 187, 0.17);
-    padding-top: 10px;
+    padding-top: 15px;
     @include tabletPmin {
-      gap: 7px;
+      gap: 0;
     }
     @include tabletP {
-      gap: 15px;
+      gap: 5px;
     }
   }
 
@@ -40,7 +40,7 @@
     text-decoration: none;
     color: $baseColor;
     @include tabletPmin {
-      padding: 19px 15px 13px 0;
+      padding: 13px 0;
       border-radius: 20px;
       transition: all 0.2s ease-out;
     }
