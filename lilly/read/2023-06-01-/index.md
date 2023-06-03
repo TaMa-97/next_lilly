@@ -8,6 +8,7 @@ date: 'June 1, 2023'
 ## 👀 読んだ
 
 - [私の推しフロントエンドディレクトリ構成と気をつけたいポイント](https://zenn.dev/sakito/articles/af87061a5016e6)
+- [SSR みたいなフロント用語の使い方改めませんか運動](https://zenn.dev/sumiren/articles/349c60f19c505f)
 
 ## 🚶 セミナー参加
 
