@@ -9,6 +9,8 @@ date: 'June 1, 2023'
 
 - [私の推しフロントエンドディレクトリ構成と気をつけたいポイント](https://zenn.dev/sakito/articles/af87061a5016e6)
 - [SSR みたいなフロント用語の使い方改めませんか運動](https://zenn.dev/sumiren/articles/349c60f19c505f)
+- [やる気出ないんだが](https://zenn.dev/mochimochimo/articles/b09a62c175eb73)
+- [レスポンシブ対応の考え方と実装](https://zenn.dev/yuta_ike/articles/responsive_layout)
 
 ## 🚶 セミナー参加
 
