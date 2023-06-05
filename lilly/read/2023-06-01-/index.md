@@ -11,6 +11,8 @@ date: 'June 1, 2023'
 - [SSR みたいなフロント用語の使い方改めませんか運動](https://zenn.dev/sumiren/articles/349c60f19c505f)
 - [やる気出ないんだが](https://zenn.dev/mochimochimo/articles/b09a62c175eb73)
 - [レスポンシブ対応の考え方と実装](https://zenn.dev/yuta_ike/articles/responsive_layout)
+- [イラストで理解する AWS](https://zenn.dev/fdnsy/articles/90f348e400711b)
+- [オンプレミスと比べて AWS が優れている利点 5 つとその理由](https://zenn.dev/khatakey/articles/five-reasons-to-choose-aws)
 
 ## 🚶 セミナー参加
 
