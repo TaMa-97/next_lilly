@@ -13,6 +13,7 @@ date: 'June 1, 2023'
 - [レスポンシブ対応の考え方と実装](https://zenn.dev/yuta_ike/articles/responsive_layout)
 - [イラストで理解する AWS](https://zenn.dev/fdnsy/articles/90f348e400711b)
 - [オンプレミスと比べて AWS が優れている利点 5 つとその理由](https://zenn.dev/khatakey/articles/five-reasons-to-choose-aws)
+- [React でお手軽アニメーション実装](https://zenn.dev/chot/articles/87b7355eee80b2)
 
 ## 🚶 セミナー参加
 
