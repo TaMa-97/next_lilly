@@ -15,6 +15,7 @@ date: 'June 1, 2023'
 - [オンプレミスと比べて AWS が優れている利点 5 つとその理由](https://zenn.dev/khatakey/articles/five-reasons-to-choose-aws)
 - [React でお手軽アニメーション実装](https://zenn.dev/chot/articles/87b7355eee80b2)
 - [コンテナ技術の基本を徹底解説](https://zenn.dev/nameless_sn/articles/the_fundamental_of_container)
+- [AI にお任せして、Git コミットメッセージを書かなくなってしまった。](https://zenn.dev/takaha4k/articles/7cd3ac44ee2c7b)
 
 ## 🚶 セミナー参加
 
