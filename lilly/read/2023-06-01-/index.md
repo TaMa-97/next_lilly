@@ -16,6 +16,7 @@ date: 'June 1, 2023'
 - [React でお手軽アニメーション実装](https://zenn.dev/chot/articles/87b7355eee80b2)
 - [コンテナ技術の基本を徹底解説](https://zenn.dev/nameless_sn/articles/the_fundamental_of_container)
 - [AI にお任せして、Git コミットメッセージを書かなくなってしまった。](https://zenn.dev/takaha4k/articles/7cd3ac44ee2c7b)
+- [margin-inline:auto を使おう。margin-left:auto と margin-right:auto を書くのが面倒なあなたへ](https://zenn.dev/moneyforward/articles/margin-inline_auto)
 
 ## 🚶 セミナー参加
 
