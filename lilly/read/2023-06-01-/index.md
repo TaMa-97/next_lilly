@@ -18,6 +18,7 @@ date: 'June 1, 2023'
 - [AI にお任せして、Git コミットメッセージを書かなくなってしまった。](https://zenn.dev/takaha4k/articles/7cd3ac44ee2c7b)
 - [margin-inline:auto を使おう。margin-left:auto と margin-right:auto を書くのが面倒なあなたへ](https://zenn.dev/moneyforward/articles/margin-inline_auto)
 - [さらに検温カメラをばらしてみたらの話](https://honeylab.hatenablog.jp/entry/2023/06/11/022348)
+- [デジタル庁のサイトやばすぎる www](https://qiita.com/mu_tomoya/items/f78f1fad3a8b57ac7dc3)
 
 ## 🚶 セミナー参加
 
