@@ -19,6 +19,7 @@ date: 'June 1, 2023'
 - [margin-inline:auto を使おう。margin-left:auto と margin-right:auto を書くのが面倒なあなたへ](https://zenn.dev/moneyforward/articles/margin-inline_auto)
 - [さらに検温カメラをばらしてみたらの話](https://honeylab.hatenablog.jp/entry/2023/06/11/022348)
 - [デジタル庁のサイトやばすぎる www](https://qiita.com/mu_tomoya/items/f78f1fad3a8b57ac7dc3)
+- [head 内の各要素とその重みをリスト化し、プライオリティが高い順に並べ替えてくれるツール -capo.js](https://coliss.com/articles/build-websites/operation/work/identify-out-of-order-elements-in-head.html)
 
 ## 🚶 セミナー参加
 
