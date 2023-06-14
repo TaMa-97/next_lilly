@@ -5,6 +5,8 @@ date: 'June 1, 2023'
 
 ## ✨ ピックアップ
 
+- [【わかりやすく解説】UX デザインの基本と主要概念](https://blog.btrax.com/jp/ux-basics/)
+
 ## 👀 読んだ
 
 - [私の推しフロントエンドディレクトリ構成と気をつけたいポイント](https://zenn.dev/sakito/articles/af87061a5016e6)
