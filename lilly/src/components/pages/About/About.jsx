@@ -86,7 +86,7 @@ const About = () => {
             </ul>
           </section>
           <Link
-            href="/blog/about"
+            href="/note/about"
             className={styles.myAbout__link}
             scroll={false}
           >

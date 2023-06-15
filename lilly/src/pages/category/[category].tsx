@@ -58,7 +58,7 @@ const TagPage: React.FC<TagPageProps> = ({ posts }) => {
                   {posts.map((post) => (
                     <li key={post.slug} className={styles.myTag__item}>
                       <Link
-                        href={`/blog/${post.slug}`}
+                        href={`/note/${post.slug}`}
                         className={styles.myTag__link}
                         scroll={false}
                       >

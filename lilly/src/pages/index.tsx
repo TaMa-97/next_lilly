@@ -73,7 +73,7 @@ const Home: NextPage<Props> = ({ allPosts, categoryCounts }) => {
                 exit={{ y: -15, opacity: 0 }}
                 transition={{ duration: 0.2 }}
               >
-                <h2 className={styles.myBlog__title}>Blog &#x1f680;</h2>
+                <h2 className={styles.myBlog__title}>Notebook &#x1f680;</h2>
                 <p className={styles.myBlog__lead}>
                   主に技術的なメモやTipsをゆるく投稿している場所です。
                 </p>
@@ -117,7 +117,7 @@ const Home: NextPage<Props> = ({ allPosts, categoryCounts }) => {
                 {sortedPosts?.map((post) => (
                   <li key={post.slug} className={styles.myBlog__item}>
                     <Link
-                      href={`/blog/${post.slug}`}
+                      href={`/note/${post.slug}`}
                       className={styles.myBlog__link}
                       scroll={false}
                     >

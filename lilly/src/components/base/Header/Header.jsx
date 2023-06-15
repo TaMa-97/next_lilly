@@ -9,7 +9,7 @@ const Header = () => {
     return (
       router.pathname === path ||
       (path === '/' &&
-        (router.pathname.startsWith('/blog/') ||
+        (router.pathname.startsWith('/note/') ||
           router.pathname.startsWith('/category/')))
     )
   }
@@ -34,7 +34,7 @@ const Header = () => {
                 }`}
                 scroll={false}
               >
-                Blog
+                Note
               </Link>
             </li>
             <li className={styles.gNav__item}>
