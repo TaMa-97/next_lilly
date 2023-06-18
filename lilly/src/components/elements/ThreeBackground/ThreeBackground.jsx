@@ -33,19 +33,7 @@ function ThreeBackground() {
     }
   }, [myRef.current])
 
-  return (
-    <div
-      ref={myRef}
-      style={{
-        position: 'fixed',
-        width: '100%',
-        height: '100vh',
-        top: 0,
-        left: 0,
-        zIndex: -1,
-      }}
-    />
-  )
+  return <div ref={myRef} className="gThreeBg" />
 }
 
 export default ThreeBackground
