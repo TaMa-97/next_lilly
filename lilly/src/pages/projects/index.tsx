@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ ease: 'easeOut', duration: 0.25 }}
-        className="modWrapper"
+        className="gWrapper"
       >
         <CustomHead title={pageTitle} description={pageDescription} />
         <Header />
