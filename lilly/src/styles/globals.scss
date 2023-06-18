@@ -224,6 +224,7 @@ a[href*="tel:"] {
   display: flex;
   flex-flow: column;
   min-height: 100vh;
+  z-index: 100;
 }
 
 /* Tocbot
