@@ -24,8 +24,10 @@
     "react-transition-group": "^4.4.5",
     "remark": "^14.0.2",
     "remark-html": "^15.0.2",
+    "three": "^0.153.0",
     "tocbot": "^4.21.0",
     "typescript": "5.0.3",
+    "vanta": "^0.5.24",
     "zenn-content-css": "^0.1.141",
     "zenn-markdown-html": "^0.1.141"
   },
