@@ -6,8 +6,9 @@ function ThreeBackground() {
   const myRef = useRef()
 
   useEffect(() => {
-    let vantaEffect
-    if (myRef.current) {
+    let vantaEffect = null // nullで初期化
+    if (myRef.current !== null) {
+      // nullの場合のチェックを追加
       vantaEffect = FOG({
         el: myRef.current,
         THREE,
@@ -27,9 +28,12 @@ function ThreeBackground() {
     }
 
     return () => {
-      if (vantaEffect) vantaEffect.destroy()
+      if (vantaEffect !== null) {
+        // nullの場合のチェックを追加
+        vantaEffect.destroy()
+      }
     }
-  }, [])
+  }, [myRef.current]) // 依存配列にmyRef.currentを追加
 
   return (
     <div
