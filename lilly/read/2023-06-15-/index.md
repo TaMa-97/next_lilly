@@ -13,6 +13,7 @@ date: 'June 15, 2023'
 - [Laravel10 を Vercel に簡単にデプロイ！外部公開までの手順](https://qiita.com/Masanarea_qiita/items/2e1616e4e18f6c8ee26d)
 - [【ロードマップ】React2 年やってみて](https://qiita.com/baan_nasebanaru/items/fc3cb1e23707ff89fdd9)
 - [腰痛の原因を撲滅するためのおすすめツール 10 選](https://zenn.dev/bs_kansai/articles/171e7ab53b2aff)
+- [コーダーができるサイトの高速化 10 選](https://zenn.dev/necscat/articles/cdd4c17d52f1bc)
 
 ## 🚶 セミナー参加
 
