@@ -25,3 +25,4 @@ date: 'June 15, 2023'
 ## 📚 あとで読む
 
 - [TypeScript 本体のコードを読んでみよう](https://zenn.dev/mizchi/articles/typescript-code-reading)
+- [React を使うとなぜ jQuery が要らなくなるのか](https://qiita.com/naruto/items/fdb61bc743395f8d8faf)
