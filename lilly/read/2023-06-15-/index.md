@@ -15,6 +15,7 @@ date: 'June 15, 2023'
 - [腰痛の原因を撲滅するためのおすすめツール 10 選](https://zenn.dev/bs_kansai/articles/171e7ab53b2aff)
 - [コーダーができるサイトの高速化 10 選](https://zenn.dev/necscat/articles/cdd4c17d52f1bc)
 - [エッジで輝くフロントエンド](https://speakerdeck.com/chimame/etuzidehui-kuhurontoendo?slide=15)
+- [どういうデザイナーとだと仕事しやすいか](https://konifar-zatsu.hatenadiary.jp/entry/2017/11/14/121512)
 
 ## 🚶 セミナー参加
 
