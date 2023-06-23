@@ -16,6 +16,7 @@ date: 'June 15, 2023'
 - [コーダーができるサイトの高速化 10 選](https://zenn.dev/necscat/articles/cdd4c17d52f1bc)
 - [エッジで輝くフロントエンド](https://speakerdeck.com/chimame/etuzidehui-kuhurontoendo?slide=15)
 - [どういうデザイナーとだと仕事しやすいか](https://konifar-zatsu.hatenadiary.jp/entry/2017/11/14/121512)
+- [Figma for VS Code で変わるデザインと開発のコミュニケーションと効率](https://zenn.dev/sakito/articles/388ca64d3c7a36)
 
 ## 🚶 セミナー参加
 
