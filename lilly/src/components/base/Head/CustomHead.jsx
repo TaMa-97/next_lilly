@@ -1,8 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 const CustomHead = ({ title, description }) => {
+  const router = useRouter()
+  const canonicalURL = `https://lilly-dev.vercel.app${router.asPath}`
+
   return (
     <Head>
       <title>{title}</title>
@@ -15,7 +19,8 @@ const CustomHead = ({ title, description }) => {
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
-      <meta property="og:url" content="" />
+      <meta property="og:url" content={canonicalURL} />
+      <link rel="canonical" href={canonicalURL} />
       <link rel="icon" href="/favicon.ico" />
     </Head>
   )

@@ -59,7 +59,6 @@ export default function App({ Component, pageProps, router }: AppProps) {
 ## 対策
 
 CSS modules の本番ビルドでは、next/link DOM をクリックした直後にスタイルがなくなるバグが存在する模様。
-CSS modules を辞めれば解決するが今回は使用したいので却下。
 以下よりページ遷移時に CSS modules のスタイルが一瞬なくなる問題に対処するための解決方法。
 
 1. サーバーレンダリングのスタイルシート削除を防ぐカスタムフックを作成する

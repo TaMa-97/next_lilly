@@ -9,7 +9,7 @@ tags: ['JavaScript', 'SimpleBar', 'SCSS']
 横スクロールバーが Safari（iOS および macOS）で表示されない問題が発生しました。
 iOS 13 以前のバージョンや macOS においては、`-webkit-scrollbar` を指定することで問題が解決されていましたが、
 iOS 13 以降のバージョンでは、`-webkit-scrollbar` が効かなくなり、CSS だけでのスクロールバーの常時表示ができなくなりました。
-そこで今回は、SimpleBar という JavaScript プラグインを使って解決していきます。
+そこで SimpleBar という JavaScript プラグインを使って解決していきます。
 
 ## SimpleBar バージョン
 
