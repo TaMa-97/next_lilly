@@ -28,3 +28,5 @@ date: 'June 15, 2023'
 
 - [TypeScript 本体のコードを読んでみよう](https://zenn.dev/mizchi/articles/typescript-code-reading)
 - [React を使うとなぜ jQuery が要らなくなるのか](https://qiita.com/naruto/items/fdb61bc743395f8d8faf)
+- [React Native ( TypeScript ) × microCMS でつくるニュースアプリ](https://zenn.dev/chot/articles/537c99ea098add)
+- [Tailwind CSS は CSS 設計に何をもたらすか](https://zenn.dev/junseinagao/articles/efde96dc22e1de62d649)
