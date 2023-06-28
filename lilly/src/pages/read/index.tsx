@@ -47,10 +47,10 @@ const Reads: NextPage<Props> = ({ allReads }) => {
                 exit={{ y: -15, opacity: 0 }}
                 transition={{ duration: 0.2 }}
               >
-                <h2 className={styles.myRead__title}>Reading list 📖</h2>
-                <p className={styles.myRead__lead}>
+                <h1 className={styles.myRead__title}>Reading list 📖</h1>
+                <h2 className={styles.myRead__lead}>
                   主に読んだ記事や本などをまとめていくための場所です。
-                </p>
+                </h2>
               </motion.div>
               <ul className={styles.myRead__list}>
                 {sortedReads?.map((read) => (

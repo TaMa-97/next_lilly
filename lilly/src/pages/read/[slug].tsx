@@ -157,7 +157,7 @@ const Post: NextPage<Props> = ({ post }) => {
           <ScrollAnimatedComponent />
           <div className="container">
             <section className={styles.myBlog}>
-              <motion.h2
+              <motion.h1
                 className={styles.myBlog__title}
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -165,7 +165,7 @@ const Post: NextPage<Props> = ({ post }) => {
                 transition={{ duration: 0.2 }}
               >
                 {post.title}
-              </motion.h2>
+              </motion.h1>
               <div className={styles.myBlog__head}>
                 <p className={styles.myBlog__date}>{post.date}</p>
               </div>

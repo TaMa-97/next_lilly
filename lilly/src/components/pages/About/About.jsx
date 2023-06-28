@@ -25,9 +25,9 @@ const About = () => {
           exit={{ y: -15, opacity: 0 }}
           transition={{ duration: 0.2 }}
         >
-          <h2 className={styles.myAbout__title}>About 🎾</h2>
+          <h1 className={styles.myAbout__title}>About 🎾</h1>
         </motion.div>
-        <h3 className={styles.myAbout__lead}>
+        <h2 className={styles.myAbout__lead}>
           <AnimatePresence>
             <motion.span
               key="text1"
@@ -50,7 +50,7 @@ const About = () => {
               I&apos;m a developer based in Japan.
             </motion.span>
           </AnimatePresence>
-        </h3>
+        </h2>
         <div className={styles.myAbout__txtArea}>
           <p className={styles.myAbout__txtEn}>
             Born in 1997.
