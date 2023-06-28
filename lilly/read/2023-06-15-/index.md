@@ -22,7 +22,8 @@ date: 'June 15, 2023'
 
 - 6/21 PWA Night vol.52 ～ Google I/O & WWDC Recap
 - 6/22 Front-End Deep Dive Online
-- 6/28-29 CyberAgent Developer Conference2023
+- 6/28 CyberAgent Developer Conference2023
+- 6/29 Encraft #4 React/Next.js 最前線
 
 ## 📚 あとで読む
 
