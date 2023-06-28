@@ -74,9 +74,9 @@ const Home: NextPage<Props> = ({ allPosts, categoryCounts }) => {
                 transition={{ duration: 0.2 }}
               >
                 <h2 className={styles.myBlog__title}>Notebook &#x1f680;</h2>
-                <p className={styles.myBlog__lead}>
+                <h3 className={styles.myBlog__lead}>
                   主に技術的なメモやTipsをゆるく投稿している場所です。
-                </p>
+                </h3>
               </motion.div>
               <div className={styles.myBlog__catArea}>
                 <button

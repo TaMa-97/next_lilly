@@ -5,6 +5,7 @@ import styles from './Header.module.scss'
 
 const Header = () => {
   const router = useRouter()
+
   const isActiveLink = (path) => {
     return (
       router.pathname === path ||
@@ -14,15 +15,17 @@ const Header = () => {
     )
   }
 
+  const Heading = router.pathname === '/' ? 'h1' : 'p'
+
   return (
     <header className={styles.gHeader}>
       <div className={`container ${styles.gHeader__inner}`}>
         <div className={styles.gHeader__logo}>
-          <h1 className={styles.gHeader__title}>
+          <Heading className={styles.gHeader__title}>
             <Link href="/" className={styles.gHeader__titleLink} scroll={false}>
               Lilly
             </Link>
-          </h1>
+          </Heading>
         </div>
         <nav className={styles.gNav}>
           <ul className={styles.gNav__list}>

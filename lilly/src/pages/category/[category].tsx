@@ -48,10 +48,10 @@ const TagPage: React.FC<TagPageProps> = ({ posts }) => {
                   exit={{ y: -15, opacity: 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <h2 className={styles.myTag__title}>
+                  <h1 className={styles.myTag__title}>
                     <span className={styles.myTag__titleIcon}>Category</span>
                     {category}
-                  </h2>
+                  </h1>
                 </motion.div>
 
                 <ul className={styles.myTag__list}>
