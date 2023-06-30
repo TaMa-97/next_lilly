@@ -5,8 +5,6 @@ date: 'June 15, 2023'
 
 ## ✨ ピックアップ
 
-- [Figma の Dev Mode で UI の確認を楽にする](https://note.com/fjkn/n/n7ce8729696a5)
-
 ## 👀 読んだ
 
 - [ソースコードを書く際のチェックポイント](https://qiita.com/seino-ta/items/02133bed66cc0fbb4f50)
@@ -19,8 +17,6 @@ date: 'June 15, 2023'
 - [エッジで輝くフロントエンド](https://speakerdeck.com/chimame/etuzidehui-kuhurontoendo?slide=15)
 - [どういうデザイナーとだと仕事しやすいか](https://konifar-zatsu.hatenadiary.jp/entry/2017/11/14/121512)
 - [Figma for VS Code で変わるデザインと開発のコミュニケーションと効率](https://zenn.dev/sakito/articles/388ca64d3c7a36)
-- [コーポレートサイトをリニューアルしました](https://developers.gnavi.co.jp/entry/corporate-renewal)
--
 
 ## 🚶 セミナー参加
 
