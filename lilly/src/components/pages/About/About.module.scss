@@ -19,12 +19,12 @@
   &::before {
     content: "";
     background: url(#{$cmnPath}bg01.svg) no-repeat center;
-    background-size: 800px 800px;
-    width: 800px;
-    height: 800px;
+    background-size: 500px 500px;
+    width: 500px;
+    height: 500px;
     position: absolute;
-    top: -40px;
-    right: 2vw;
+    top: -19px;
+    right: 19vw;
     @include max(1500) {
       background-size: 600px 600px;
       width: 600px;
@@ -83,8 +83,9 @@
     margin-bottom: 30px;
   }
   &__link {
-    display: inline-block;
-    margin-top: 50px;
+    display: block;
+    margin-bottom: 5px;
+    @include fz(13);
     &:hover {
       opacity: 1;
       #{$_}__linkIcon {
@@ -99,20 +100,18 @@
     &Icon {
       display: inline-block;
       position: relative;
-      top: 4px;
+      top: 3.5px;
       bottom: 0;
       right: 0;
       margin: auto;
-      width: 17px;
-      height: 17px;
+      width: 15px;
+      height: 15px;
       background-color: #007fff;
       border-radius: 50%;
       margin-left: 6px;
       overflow: hidden;
       transition: all 0.2s cubic-bezier(0.23, 1, 0.58, 1);
       @include tabletP {
-        width: 16px;
-        height: 16px;
         top: 2.5px;
       }
 
@@ -121,17 +120,12 @@
         position: absolute;
         top: -1px;
         left: -1px;
-        width: 20px;
-        height: 20px;
+        width: 17px;
+        height: 17px;
         background-image: url(#{$cmnPath}ico_circle_arrow.svg);
-        background-size: 20px 20px;
+        background-size: 17px 17px;
         background-repeat: no-repeat;
         background-position: 0 0;
-        @include tabletP {
-          width: 18px;
-          height: 18px;
-          background-size: 18px 18px;
-        }
       }
     } //icon
   }

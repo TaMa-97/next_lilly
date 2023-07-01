@@ -62,29 +62,14 @@ const About = () => {
             <br />
             My hobbies are tennis and sauna.
           </p>
-          <p className={styles.myAbout__txtJa}>
-            1997年生まれ。
-            <br />
-            2020年にエンジニアとしてキャリアをスタートし、現在はWebサイト制作やWebアプリケーション開発を行っています。
-            <br />
-            Webフロントエンド領域をメインとして、コンポーネントやインタラクションの実装からベース設計、リリースまでの工程に対応しています。
-            <br />
-            趣味は、テニスとサウナです。
-          </p>
-          <section className={styles.myAbout__block}>
-            <h2 className={styles.myAbout__blockTtl}>⚡つづけること</h2>
-            <ul className={styles.myAbout__blockList}>
-              <li className={styles.myAbout__blockItem}>
-                ・React,Next.jsの理解を深める
-              </li>
-              <li className={styles.myAbout__blockItem}>
-                ・最新のフロントエンド/AI周りの技術をキャッチアップする
-              </li>
-              <li className={styles.myAbout__blockItem}>
-                ・毎日何かしらのインプットとアウトプットを継続する
-              </li>
-            </ul>
-          </section>
+          <Link
+            href="https://bento.me/tama-97"
+            target="_blank"
+            className={styles.myAbout__link}
+            scroll={false}
+          >
+            Bento.me<span className={styles.myAbout__linkIcon}></span>
+          </Link>
           <Link
             href="/note/about"
             className={styles.myAbout__link}
