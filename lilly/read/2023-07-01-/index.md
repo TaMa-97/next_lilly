@@ -9,6 +9,7 @@ date: 'July 1, 2023'
 
 - [またまたデジタル庁(試行版)のサイトが見やすすぎな件について)](https://www.notion.so/Qiita-369b72f0fb6b4c56833afa5ed76244cd)
 - [DB エンジン 知っておきたい DB の種類と特徴一覧)](https://zenn.dev/lisras/articles/5ca8dfb5c26e81)
+- [Figma の思想と新機能)](https://speakerdeck.com/sakito/figmanosi-xiang-toxin-ji-neng)
 
 ## 🚶 セミナー参加
 
