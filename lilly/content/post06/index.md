@@ -14,6 +14,8 @@ tags: ['Pixi.js', 'WebGL', 'JavaScript']
 
 ## Web 制作/アプリ開発における Pixi.js の活用シーン
 
+![](/images/note/post06/img01.png)
+
 - 大量の DOM 要素を扱わなくてはならない場合
 
   - DOM 要素の数が増えるとブラウザのレンダリングに負荷が掛かるが、WebGL を介すことでスムーズにアニメーション動作を実現できる。
@@ -26,7 +28,7 @@ tags: ['Pixi.js', 'WebGL', 'JavaScript']
 
 通常の JavaScript では、ブラウザのレンダリングエンジンに依存するためパフォーマンスの制約があるが、Pixi.js は GPU を利用して描画を行うので大量の要素や複雑なグラフィックスを高速に処理できる。
 
-## ざっと流れ
+## ざっと実装の流れ
 
 1. Pixi アプリケーションの作成
    描画領域を表す canvas 要素を作成する
@@ -66,6 +68,8 @@ let el = document.getElementById('app');
 el.appendChild(app.view);
 ```
 
+![](/images/note/post06/img02.png)
+
 ---
 
 メソッドやオプションなどは下記参照
@@ -74,7 +78,7 @@ el.appendChild(app.view);
 
 ---
 
-## gsap を併用する場合のディレクトリ構造の雛形サンプル
+## gsap を併用する場合のディレクトリ構造の雛形メモ
 
 ```
 _js
