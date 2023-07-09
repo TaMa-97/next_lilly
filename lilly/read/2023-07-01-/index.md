@@ -11,6 +11,7 @@ date: 'July 1, 2023'
 - [DB エンジン 知っておきたい DB の種類と特徴一覧)](https://zenn.dev/lisras/articles/5ca8dfb5c26e81)
 - [Figma の思想と新機能)](https://speakerdeck.com/sakito/figmanosi-xiang-toxin-ji-neng)
 - [ChatGPT が凄いのは究極に心理的安全性が保たれているから)](https://qiita.com/chatrate/items/3e661b987afb444400d7)
+- [ChatGPT の新機能 Code Interpreter で何ができるのか試してみた](https://note.com/it_navi/n/ne33cc645fe23)
 
 ## 🚶 セミナー参加
 
