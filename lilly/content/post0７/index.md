@@ -1,5 +1,5 @@
 ---
-title: '筋トレ基礎知識'
+title: '筋トレ：メリット / 注意点 / 食事 など'
 date: '2023/07/09'
 tags: ['weight training']
 ---

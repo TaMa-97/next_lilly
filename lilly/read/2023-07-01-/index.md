@@ -12,6 +12,7 @@ date: 'July 1, 2023'
 - [Figma の思想と新機能)](https://speakerdeck.com/sakito/figmanosi-xiang-toxin-ji-neng)
 - [ChatGPT が凄いのは究極に心理的安全性が保たれているから)](https://qiita.com/chatrate/items/3e661b987afb444400d7)
 - [ChatGPT の新機能 Code Interpreter で何ができるのか試してみた](https://note.com/it_navi/n/ne33cc645fe23)
+- [Figma variables を使ってミニマムなデザインシステムをつくる](https://zenn.dev/jtakahashi64/articles/4de9a9f35c2fd8)
 
 ## 🚶 セミナー参加
 
