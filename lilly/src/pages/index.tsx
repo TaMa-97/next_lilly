@@ -36,8 +36,7 @@ export const getStaticProps = async () => {
 
 const Home: NextPage<Props> = ({ allPosts, categoryCounts }) => {
   const pageTitle = 'Lilly'
-  const pageDescription =
-    'Lillyの個人サイトです。This is the Home page of Lilly'
+  const pageDescription = 'Personal website of Lilly.'
 
   // 投稿を日付で降順に並べ替える
   const sortedPosts = allPosts.sort(

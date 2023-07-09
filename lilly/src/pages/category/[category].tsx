@@ -23,7 +23,7 @@ const TagPage: React.FC<TagPageProps> = ({ posts }) => {
   const { category } = router.query
 
   const pageTitle = `${category} | Lilly`
-  const pageDescription = `カテゴリー：${category}の記事一覧ページです。`
+  const pageDescription = `${category} Articles Page of lilly.`
 
   // タグと関連する投稿を表示
   return (

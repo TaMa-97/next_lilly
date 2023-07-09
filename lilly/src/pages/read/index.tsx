@@ -20,7 +20,7 @@ export const getStaticProps = async () => {
 
 const Reads: NextPage<Props> = ({ allReads }) => {
   const pageTitle = 'Reading list | lilly'
-  const pageDescription = 'lillyのReading listページです。'
+  const pageDescription = 'Reading list page of lilly'
 
   const sortedReads = allReads.sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()

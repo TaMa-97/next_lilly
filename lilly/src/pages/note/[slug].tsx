@@ -134,7 +134,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
 const Post: NextPage<Props> = ({ post }) => {
   useTocbot()
   useAccordion()
-  const pageTitle = post.title
+  const pageTitle = `${post.title} | lilly`
   const pageDescription = post.title
   return (
     <>

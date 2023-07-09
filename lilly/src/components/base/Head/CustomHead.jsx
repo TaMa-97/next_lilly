@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 const CustomHead = ({ title, description }) => {
   const router = useRouter()
-  const canonicalURL = `https://lilly-dev.vercel.app${router.asPath}`
+  const canonicalURL = `https://lilly-dog.dev${router.asPath}`
 
   return (
     <Head>
