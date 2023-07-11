@@ -24,3 +24,4 @@ date: 'July 1, 2023'
 - [【NextAuth.js 入門】認証機能から認証情報によるページの表示制御を学ぶ（Next.js & Typescript）)](https://zenn.dev/farstep/books/7a6eb67dd3bf1f)
 - [React Query はデータフェッチライブラリではない。非同期の状態管理ライブラリだ。](https://qiita.com/taisei-13046/items/05cac3a2b4daeced64aa)
 - [レイアウトデザインの視点を増やす 思考＆Tips](https://note.com/harahiroshi/n/n3af079dc17e9)
+- [Next.js と Firestore を用いた microCMS 記事の「いいね」機能の設計と実装](https://zenn.dev/chot/articles/47a4806ed719c2)
