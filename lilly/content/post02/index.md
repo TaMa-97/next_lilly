@@ -1,5 +1,5 @@
 ---
-title: 'Next.jsでframer-motionを使ったらCSS modulesのバグが発生した'
+title: 'Next.js：framer-motionを使うとCSS modulesのスタイルが一瞬当たらなくなる'
 date: '2023/04/23'
 tags: ['Next.js', 'framer-motion', 'TypeScript', 'CSS modules']
 ---
