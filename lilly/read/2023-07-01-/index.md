@@ -13,6 +13,8 @@ date: 'July 1, 2023'
 - [ChatGPT が凄いのは究極に心理的安全性が保たれているから)](https://qiita.com/chatrate/items/3e661b987afb444400d7)
 - [ChatGPT の新機能 Code Interpreter で何ができるのか試してみた](https://note.com/it_navi/n/ne33cc645fe23)
 - [Figma variables を使ってミニマムなデザインシステムをつくる](https://zenn.dev/jtakahashi64/articles/4de9a9f35c2fd8)
+- [やること多過ぎてやりたくないことをやっている時間ないよねというエンジニアのキャリアの話](https://qiita.com/JY8752/items/02869c5857b756ffc267)
+- [Redux Toolkit の使い方](https://qiita.com/ryocha12/items/76acbf02e9e73bb0c5ec)
 
 ## 🚶 セミナー参加
 
