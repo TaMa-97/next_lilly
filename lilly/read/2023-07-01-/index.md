@@ -15,6 +15,7 @@ date: 'July 1, 2023'
 - [Figma variables を使ってミニマムなデザインシステムをつくる](https://zenn.dev/jtakahashi64/articles/4de9a9f35c2fd8)
 - [やること多過ぎてやりたくないことをやっている時間ないよねというエンジニアのキャリアの話](https://qiita.com/JY8752/items/02869c5857b756ffc267)
 - [Redux Toolkit の使い方](https://qiita.com/ryocha12/items/76acbf02e9e73bb0c5ec)
+- [CSS・TypeScriptの相性が抜群。vanilla-extractが最高のCSS開発体験をくれた](https://zenn.dev/moneyforward/articles/vanilla-extract)
 
 ## 🚶 セミナー参加
 
