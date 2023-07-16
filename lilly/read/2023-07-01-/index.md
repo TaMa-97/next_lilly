@@ -16,6 +16,7 @@ date: 'July 1, 2023'
 - [やること多過ぎてやりたくないことをやっている時間ないよねというエンジニアのキャリアの話](https://qiita.com/JY8752/items/02869c5857b756ffc267)
 - [Redux Toolkit の使い方](https://qiita.com/ryocha12/items/76acbf02e9e73bb0c5ec)
 - [CSS・TypeScriptの相性が抜群。vanilla-extractが最高のCSS開発体験をくれた](https://zenn.dev/moneyforward/articles/vanilla-extract)
+- [CSS・TypeScriptの相性が抜群。vanilla-extractが最高のCSS開発体験をくれた](https://zenn.dev/moneyforward/articles/vanilla-extract)
 
 ## 🚶 セミナー参加
 
@@ -28,3 +29,4 @@ date: 'July 1, 2023'
 - [React Query はデータフェッチライブラリではない。非同期の状態管理ライブラリだ。](https://qiita.com/taisei-13046/items/05cac3a2b4daeced64aa)
 - [レイアウトデザインの視点を増やす 思考＆Tips](https://note.com/harahiroshi/n/n3af079dc17e9)
 - [Next.js と Firestore を用いた microCMS 記事の「いいね」機能の設計と実装](https://zenn.dev/chot/articles/47a4806ed719c2)
+- [Webサイト制作の要件定義書の確認項目](https://note.com/sgmtyu/n/n692d8b404c57)
