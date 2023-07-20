@@ -20,3 +20,4 @@ date: 'July 15, 2023'
 
 - [モダン WEB サイトにおける画像最適化について](https://zenn.dev/hrbrain/articles/7f1d1d45f027c7)
 - [ゼロランタイム CSS とランタイム CSS って実際どのくらいパフォーマンスに差があるのか[styled-component][Tailwind]](https://zenn.dev/maple_siro/articles/fd29bb6a051971)
+- [web フロントエンドテストと自動化](https://speakerdeck.com/cybozuinsideout/web_frontend_testing_and_automation-2023?slide=27)
