@@ -49,11 +49,19 @@
     font-weight: 500;
     @include fz(24);
   }
+  &__subtitle {
+    font-weight: 500;
+    @include fz(16);
+    padding: 0 0.8em;
+    background: transparent;
+    border-left: solid 4px #9b9b9b;
+    margin-bottom: 10px;
+  }
   &__lead {
     font-family: $fontEn;
     font-weight: 500;
     @include fz(35);
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     @include tabletP {
       line-height: 1.6;
     }
@@ -69,13 +77,12 @@
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
   &__txtEn {
     font-family: $fontEn;
     font-weight: 500;
     @include fz(15);
-    margin-bottom: 30px;
   }
   &__txtJa {
     font-weight: 500;
@@ -131,18 +138,27 @@
   }
 
   &__block {
-    &Ttl {
-      position: relative;
-      font-weight: 500;
-      @include fz(14);
-      margin-bottom: 5px;
+    margin-bottom: 50px;
+    &:last-of-type {
+      margin-bottom: 60px;
     }
-    &Item {
-      margin-left: 1em;
-      text-indent: -1em;
+  }
 
-      font-weight: 500;
-      @include fz(13);
-    }
+  &__list {
+    margin-left: 2em;
+  }
+  &__item {
+    list-style: disc;
+    @include fz(14);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  &__list02 {
+    margin-left: 1.4em;
+  }
+  &__item02 {
+    list-style: circle;
+    color: #7a7a7a;
+    @include fz(13);
   }
 }
