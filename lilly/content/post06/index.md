@@ -28,8 +28,33 @@ tags: ['Pixi.js', 'WebGL', 'JavaScript']
 
 通常の JavaScript では、ブラウザのレンダリングエンジンに依存するためパフォーマンスの制約があるが、Pixi.js は GPU を利用して描画を行うので大量の要素や複雑なグラフィックスを高速に処理できる。
 
-## ざっと実装の流れ
+## 実装フロー
 
+```
+開始
+↓
+レンダラーの初期化
+↓
+ステージの作成
+↓
+スプライトの作成
+↓
+テクスチャの作成
+↓
+スプライトの位置やサイズの設定
+↓
+ステージにスプライトを追加
+↓
+アニメーションの設定
+↓
+イベントリスナーの設定
+↓
+レンダリング
+↓
+終了
+```
+
+<br>
 1. Pixi アプリケーションの作成
    描画領域を表す canvas 要素を作成する
 
@@ -68,11 +93,7 @@ let el = document.getElementById('app');
 el.appendChild(app.view);
 ```
 
-![](/images/note/post06/img02.png)
-
----
-
-メソッドやオプションなどは下記参照
+※メソッドやオプションなどは下記参照
 [https://pixijs.download/dev/docs/index.html](https://pixijs.download/dev/docs/index.html)
 [https://qiita.com/takeshisakuma/items/2fc20a4b96f35433b27a](https://qiita.com/takeshisakuma/items/2fc20a4b96f35433b27a)
 
