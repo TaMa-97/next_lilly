@@ -13,7 +13,8 @@ date: 'July 15, 2023'
 - [フロント初心者が Web Speech API を使ったシステムのフロント部分作ってみた！！](https://qiita.com/yvngodowny/items/e101114168c054ff586a)
 - [フロントエンドを改善し続けてきた道を振り返る 〜 ビズリーチ・キャンパス](https://engineering.visional.inc/blog/428/campus-frontend-improvement/)
 - [【徹底解説】REST VS GraphQL](https://zenn.dev/nameless_sn/articles/the_differences_between_rest_and_gql)
-- [HTTPの仕組み(パケットキャプチャで学ぼう！)](https://zenn.dev/masahiro_toba/books/3daf7dc0d5dfd7)
+- [HTTP の仕組み(パケットキャプチャで学ぼう！)](https://zenn.dev/masahiro_toba/books/3daf7dc0d5dfd7)
+- [Emotion ユーザーが Kuma UI を試してみたら結構いい感じ](https://zenn.dev/yuneco/articles/kuma-ui-trial)
 
 ## 🚶 セミナー参加
 
