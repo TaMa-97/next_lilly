@@ -25,3 +25,4 @@ date: 'July 15, 2023'
 - [モダン WEB サイトにおける画像最適化について](https://zenn.dev/hrbrain/articles/7f1d1d45f027c7)
 - [ゼロランタイム CSS とランタイム CSS って実際どのくらいパフォーマンスに差があるのか[styled-component][Tailwind]](https://zenn.dev/maple_siro/articles/fd29bb6a051971)
 - [web フロントエンドテストと自動化](https://speakerdeck.com/cybozuinsideout/web_frontend_testing_and_automation-2023?slide=27)
+- [【NextAuth.js 入門】認証機能から認証情報によるページの表示制御を学ぶ（Next.js & Typescript）](https://zenn.dev/farstep/books/7a6eb67dd3bf1f)
