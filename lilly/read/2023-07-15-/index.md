@@ -15,6 +15,7 @@ date: 'July 15, 2023'
 - [【徹底解説】REST VS GraphQL](https://zenn.dev/nameless_sn/articles/the_differences_between_rest_and_gql)
 - [HTTP の仕組み(パケットキャプチャで学ぼう！)](https://zenn.dev/masahiro_toba/books/3daf7dc0d5dfd7)
 - [Emotion ユーザーが Kuma UI を試してみたら結構いい感じ](https://zenn.dev/yuneco/articles/kuma-ui-trial)
+- [CSS Modules で作る SVG Icon Component](https://zenn.dev/takepepe/articles/mask-image-icon)
 
 ## 🚶 セミナー参加
 
