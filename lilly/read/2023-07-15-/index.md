@@ -16,6 +16,7 @@ date: 'July 15, 2023'
 - [HTTP の仕組み(パケットキャプチャで学ぼう！)](https://zenn.dev/masahiro_toba/books/3daf7dc0d5dfd7)
 - [Emotion ユーザーが Kuma UI を試してみたら結構いい感じ](https://zenn.dev/yuneco/articles/kuma-ui-trial)
 - [CSS Modules で作る SVG Icon Component](https://zenn.dev/takepepe/articles/mask-image-icon)
+- [【全30項目】コーディング時のルールや思想（HTML/CSS/Sass/JSなど）](https://zenn.dev/dadada/articles/8faf8e1e20c0a5)
 
 ## 🚶 セミナー参加
 
