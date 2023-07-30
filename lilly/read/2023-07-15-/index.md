@@ -17,6 +17,7 @@ date: 'July 15, 2023'
 - [Emotion ユーザーが Kuma UI を試してみたら結構いい感じ](https://zenn.dev/yuneco/articles/kuma-ui-trial)
 - [CSS Modules で作る SVG Icon Component](https://zenn.dev/takepepe/articles/mask-image-icon)
 - [【全30項目】コーディング時のルールや思想（HTML/CSS/Sass/JSなど）](https://zenn.dev/dadada/articles/8faf8e1e20c0a5)
+- [CSSアニメーションを実装する上で気を付けたいパフォーマンスの話し](https://qiita.com/h-iwamori/items/9cb73e9c08560797f1a1)
 
 ## 🚶 セミナー参加
 
