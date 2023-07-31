@@ -6,6 +6,7 @@ date: 'July 15, 2023'
 ## ✨ ピックアップ
 
 - [重たい処理を裏に回してサイトの読み込みを爆速にするライブラリ「Partytown」使ってみたレビュー](https://gigazine.net/news/20230510-partytown/)
+- [エンジニアが開発しやすい環境作りをする](https://zenn.dev/sutamac/articles/5a262f0096176a)
 
 ## 👀 読んだ
 
@@ -16,8 +17,8 @@ date: 'July 15, 2023'
 - [HTTP の仕組み(パケットキャプチャで学ぼう！)](https://zenn.dev/masahiro_toba/books/3daf7dc0d5dfd7)
 - [Emotion ユーザーが Kuma UI を試してみたら結構いい感じ](https://zenn.dev/yuneco/articles/kuma-ui-trial)
 - [CSS Modules で作る SVG Icon Component](https://zenn.dev/takepepe/articles/mask-image-icon)
-- [【全30項目】コーディング時のルールや思想（HTML/CSS/Sass/JSなど）](https://zenn.dev/dadada/articles/8faf8e1e20c0a5)
-- [CSSアニメーションを実装する上で気を付けたいパフォーマンスの話し](https://qiita.com/h-iwamori/items/9cb73e9c08560797f1a1)
+- [【全 30 項目】コーディング時のルールや思想（HTML/CSS/Sass/JS など）](https://zenn.dev/dadada/articles/8faf8e1e20c0a5)
+- [CSS アニメーションを実装する上で気を付けたいパフォーマンスの話し](https://qiita.com/h-iwamori/items/9cb73e9c08560797f1a1)
 
 ## 🚶 セミナー参加
 
