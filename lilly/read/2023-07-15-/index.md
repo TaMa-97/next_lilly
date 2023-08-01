@@ -19,6 +19,7 @@ date: 'July 15, 2023'
 - [CSS Modules で作る SVG Icon Component](https://zenn.dev/takepepe/articles/mask-image-icon)
 - [【全 30 項目】コーディング時のルールや思想（HTML/CSS/Sass/JS など）](https://zenn.dev/dadada/articles/8faf8e1e20c0a5)
 - [CSS アニメーションを実装する上で気を付けたいパフォーマンスの話し](https://qiita.com/h-iwamori/items/9cb73e9c08560797f1a1)
+- [Webサイトで動画のエフェクトをいろいろ良い感じにごまかした話](https://note.com/kjkmr/n/nc331387eeafd)
 
 ## 🚶 セミナー参加
 
