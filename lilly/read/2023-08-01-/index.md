@@ -7,6 +7,8 @@ date: 'August 01, 2023'
 
 ## 👀 読んだ
 
+- [アクセシビリティスペシャリストとして SmartHR に入社しました。](https://note.com/mt_dew2/n/n1b40cf0ed2bf)
+
 ## 🚶 セミナー参加
 
 ## 📚 あとで読む
