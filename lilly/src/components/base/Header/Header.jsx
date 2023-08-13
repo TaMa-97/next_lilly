@@ -51,7 +51,7 @@ const Header = () => {
                 Read
               </Link>
             </li>
-            <li className={styles.gNav__item}>
+            {/* <li className={styles.gNav__item}>
               <Link
                 href="/about"
                 className={`${styles.gNav__link} ${
@@ -61,7 +61,7 @@ const Header = () => {
               >
                 About
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>
