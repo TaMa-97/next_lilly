@@ -73,6 +73,9 @@
       @include tabletPmin {
         box-shadow: rgba(149, 157, 165, 0.2) 0 8px 15px;
       }
+      #{$_}__linkTitle {
+        text-decoration: none;
+      }
       #{$_}__linkIcon {
         width: 7px;
         height: 7px;
@@ -86,6 +89,8 @@
       font-weight: 500;
       @include fz(16);
       margin-bottom: 20px;
+      text-decoration: underline;
+      color: nth($baseLinkColor, 1);
       @include tabletP {
         @include fz(15);
         margin-bottom: 15px;
@@ -112,6 +117,7 @@
       font-weight: 500;
       padding: 1px 12px;
       border: 1px solid #dbdbdb;
+      background: #dbdbdb;
       border-radius: 20px;
       @include tabletP {
         @include fz(10);
@@ -137,7 +143,7 @@
       margin: auto;
       width: 17px;
       height: 17px;
-      background-color: #dbdbdb;
+      background-color: nth($baseLinkColor, 1);
       border-radius: 50%;
       margin-left: 12px;
       overflow: hidden;
