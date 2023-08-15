@@ -16,9 +16,9 @@ import styles from './[slug].module.scss'
 const useTocbot = () => {
   useEffect(() => {
     Tocbot.init({
-      tocSelector: '.toc-accordion',
+      tocSelector: '.toc-wrapper',
       contentSelector: '.znc',
-      headingSelector: 'h1, h2',
+      headingSelector: 'h1, h2, h3',
       hasInnerContainers: true,
     })
 
@@ -28,54 +28,46 @@ const useTocbot = () => {
   }, [])
 }
 
-const useAccordion = () => {
-  useEffect(() => {
-    const tocHeader = document.getElementById('toc-header')
-    const tocContainer = document.querySelector('.toc-accordion')
+// const useAccordion = () => {
+//   useEffect(() => {
+//     const tocHeader = document.getElementById('toc-header')
+//     const tocContainer = document.querySelector('.toc-accordion')
 
-    const closeAccordion = () => {
-      const htmlElement = tocContainer as HTMLElement
-      htmlElement.style.height = '0px'
-      if (tocHeader) {
-        tocHeader.classList.remove('open')
-      }
-    }
+//     const closeAccordion = () => {
+//       const htmlElement = tocContainer as HTMLElement
+//       htmlElement.style.height = '0px'
+//       if (tocHeader) {
+//         tocHeader.classList.remove('open')
+//       }
+//     }
 
-    const toggleAccordion = () => {
-      if (tocContainer) {
-        const htmlElement = tocContainer as HTMLElement
-        if (htmlElement.style.height === '0px' || !htmlElement.style.height) {
-          // アコーディオンが閉じている場合、目次の高さを計算して適用する
-          const scrollHeight = htmlElement.scrollHeight
-          htmlElement.style.height = `${scrollHeight}px`
-          if (tocHeader) {
-            tocHeader.classList.add('open')
-          }
-        } else {
-          closeAccordion()
-        }
-      }
-    }
+//     const toggleAccordion = () => {
+//       if (tocContainer) {
+//         const htmlElement = tocContainer as HTMLElement
+//         if (htmlElement.style.height === '0px' || !htmlElement.style.height) {
+//           // アコーディオンが閉じている場合、目次の高さを計算して適用する
+//           const scrollHeight = htmlElement.scrollHeight
+//           htmlElement.style.height = `${scrollHeight}px`
+//           if (tocHeader) {
+//             tocHeader.classList.add('open')
+//           }
+//         } else {
+//           closeAccordion()
+//         }
+//       }
+//     }
 
-    if (tocHeader) {
-      tocHeader.addEventListener('click', toggleAccordion)
-    }
+//     if (tocHeader) {
+//       tocHeader.addEventListener('click', toggleAccordion)
+//     }
 
-    // const tocLinks = document.querySelectorAll('.toc-link')
-    // tocLinks.forEach((link) => {
-    //   link.addEventListener('click', closeAccordion)
-    // })
-
-    return () => {
-      if (tocHeader) {
-        tocHeader.removeEventListener('click', toggleAccordion)
-      }
-      // tocLinks.forEach((link) => {
-      //   link.removeEventListener('click', closeAccordion)
-      // })
-    }
-  }, [])
-}
+//     return () => {
+//       if (tocHeader) {
+//         tocHeader.removeEventListener('click', toggleAccordion)
+//       }
+//     }
+//   }, [])
+// }
 
 const ScrollAnimatedComponent = () => {
   const { scrollYProgress } = useScroll()
@@ -104,8 +96,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context: GetStaticPropsContext) => {
   if (!context.params || typeof context.params.slug !== 'string') {
-    // params が存在しない場合、または slug が string 型でない場合のエラーハンドリングを行います。
-    // 例: 404 ページを返す
+    // params が存在しない場合、または slug が string 型でない場合のエラーハンドリングを行う（例: 404 ページを返す）
     return {
       notFound: true,
     }
@@ -133,7 +124,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
 
 const Post: NextPage<Props> = ({ post }) => {
   useTocbot()
-  useAccordion()
+  // useAccordion()
   const pageTitle = `${post.title} | lilly`
   const pageDescription = post.title
   return (
@@ -170,11 +161,11 @@ const Post: NextPage<Props> = ({ post }) => {
                   ))}
                 </ul>
               </div>
-              <div id="toc" className={`${styles.myBlog__toc} toc-fixed`}>
+              <div id="toc" className={`${styles.myBlog__toc}`}>
                 <p id="toc-header" className={styles.myBlog__tocTtl}>
                   もくじ
                 </p>
-                <div className="toc-accordion"></div>
+                <div className="toc-wrapper"></div>
               </div>
               <article>
                 {/* ここでdangerouslySetInnerHTMLを使ってHTMLタグを出力する */}

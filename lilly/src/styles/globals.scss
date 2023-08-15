@@ -230,60 +230,27 @@ a[href*="tel:"] {
 /* Tocbot
 ------------------------------------------------------------*/
 
-.toc-fixed {
-  position: sticky;
-  top: 20px;
-  width: 50%;
-  margin-left: auto;
-  z-index: 100;
-  @include tabletP {
-    width: 80%;
-  }
-  #toc-header {
-    width: 90px;
-    margin-left: auto;
-  }
-}
-
-.toc-accordion {
-  overflow: hidden;
-  height: 0;
-  transition: height 0.2s ease-out;
-  background-color: #f5f5f5;
-  border-radius: 4px;
-  margin-top: 10px;
+#toc {
+  background: #f3f3f3;
   box-shadow: rgba(149, 157, 165, 0.2) 0 8px 15px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 60px;
+
+  @include tabletP {
+    padding: 10px;
+    margin-bottom: 50px;
+  }
 }
 
 #toc-header {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 7px;
-  background-color: #007fff;
-  color: #ffffff;
-  padding: 5px 10px 7px;
-  border-radius: 4px;
-  @include fz(13);
+  color: #111111;
+  @include fz(15);
   font-weight: bold;
-  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 15px;
   transition: all 0.2s ease-out;
-
-  &:hover {
-    opacity: 0.9;
-    @include tabletPmin {
-      box-shadow: rgba(149, 157, 165, 0.2) 0 12px 18px;
-      background-color: #f3f3f3;
-      color: #111111;
-    }
-    &::before {
-      @include tabletPmin {
-        filter: invert(31%) sepia(71%) saturate(3492%) hue-rotate(199deg)
-          brightness(105%) contrast(104%);
-      }
-    }
-  }
+  padding: 5px 10px 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dbdbdb;
 
   &::before {
     content: "";
@@ -291,10 +258,12 @@ a[href*="tel:"] {
     display: inline-block;
     width: 1em;
     height: 1em;
-    margin-right: 5px;
+    margin-right: 8px;
     position: relative;
-    top: 1px;
+    top: 2px;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M3.8%2017.2h-3c-.5%200-.8.4-.8.8v3c0%20.4.3.8.8.8h3c.4%200%20.8-.3.8-.8v-3c-.1-.4-.4-.8-.8-.8zm0-15h-3c-.5%200-.8.4-.8.8v3c0%20.4.3.8.8.8h3c.4%200%20.8-.3.8-.8V3c-.1-.4-.4-.8-.8-.8zm0%207.6h-3c-.5%200-.8.3-.8.7v3c0%20.4.3.8.8.8h3c.4%200%20.8-.3.8-.8v-3c-.1-.4-.4-.7-.8-.7zM23.2%2018h-15c-.4%200-.8.3-.8.8v1.5c0%20.4.3.8.8.8h15c.4%200%20.8-.3.8-.8v-1.5c0-.5-.3-.8-.8-.8zm0-15h-15c-.4%200-.7.3-.7.8v1.5c0%20.4.3.7.7.7h15c.5%200%20.8-.3.8-.8V3.8c0-.5-.3-.8-.8-.8zm0%207.5h-15c-.4%200-.8.3-.8.8v1.5c0%20.4.3.8.8.8h15c.4%200%20.8-.3.8-.8v-1.5c0-.5-.3-.8-.8-.8z%22%2F%3E%3C%2Fsvg%3E");
+    filter: invert(31%) sepia(71%) saturate(3492%) hue-rotate(199deg)
+      brightness(105%) contrast(104%);
   }
 
   &.open {
@@ -322,13 +291,22 @@ a[href*="tel:"] {
 }
 
 .toc-list {
-  padding: 20px 30px;
+  padding-left: 0;
   color: #adadad;
 
+  &.is-collapsed {
+    max-height: unset;
+  }
+  &.is-collapsible {
+    overflow: auto;
+  }
+
   li {
-    padding-left: 30px;
+    padding-left: 10px;
     padding-bottom: 5px;
     a.toc-link {
+      @include fz(14);
+      color: #111111;
       position: relative;
       text-decoration: none;
       transition: all 0.2s ease-out;
@@ -336,7 +314,7 @@ a[href*="tel:"] {
       &::before {
         content: "";
         position: absolute;
-        left: -20px;
+        left: -14px;
         top: 50%;
         transform: translateY(-50%);
         width: 5px;
@@ -358,10 +336,14 @@ a.toc-link.is-active-link {
     width: 5px;
     height: 5px;
     background-color: #007fff;
-    border: 2px solid #7bbbfc;
+    border: 3px solid #7bbbfc;
     box-sizing: content-box;
-    left: -21.5px;
+    left: -17px;
   }
+}
+
+.toc-wrapper {
+  padding-left: 10px;
 }
 
 /* progress-bar
