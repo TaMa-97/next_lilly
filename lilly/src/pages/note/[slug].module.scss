@@ -44,6 +44,7 @@
     font-weight: 500;
     padding: 1px 12px;
     border: 1px solid #dbdbdb;
+    background: #dbdbdb;
     border-radius: 20px;
     @include tabletP {
       @include fz(11);
