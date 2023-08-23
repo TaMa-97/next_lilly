@@ -5,10 +5,11 @@ date: 'August 01, 2023'
 
 ## ✨ ピックアップ
 
+- [DX 担当としてクラスメソッドからアナログ事業会社に転職し一年間必死に戦った中で見えたこと](https://dev.classmethod.jp/articles/tensei-dx-struggle/)
+
 ## 👀 読んだ
 
 - [アクセシビリティスペシャリストとして SmartHR に入社しました。](https://note.com/mt_dew2/n/n1b40cf0ed2bf)
-- [DX 担当としてクラスメソッドからアナログ事業会社に転職し一年間必死に戦った中で見えたこと](https://dev.classmethod.jp/articles/tensei-dx-struggle/)
 - [ChatGPT に要件定義をお願いしたらハンパなかった](https://dev.classmethod.jp/articles/gpt-requirement-definition/)
 - [インフラ弱者にもわかりやすく Terraform についてまとめてみた](https://qiita.com/takengineer1216/items/09e1b840d564a16b84eb)
 - [技術に興味がなくて何が悪い？](https://qiita.com/aikasu/items/c1bf747bed15e2840936)
