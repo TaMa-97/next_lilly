@@ -10,7 +10,7 @@ tags: ['Next.js', 'TypeScript']
 
 新ウェブサイトを作るにあたって利用した技術を紹介します。
 
-## 技術一覧
+## 活用技術
 
 - Next.js v13
 - TypeScript
@@ -61,8 +61,10 @@ Zenn の UI が好きなので、Markdown パーザーとして下記を採用�
 - ~~カテゴリーページ作成【済】~~
 - ~~目次追加【済】~~
 - ogimage 動的生成
-- 記事検索・絞り込み機能（Algolia を使う予定）
+- 記事検索・絞り込み機能（Algolia）
 - PWA 対応
+- 決済機能追加（Stripe）
+- お問い合わせフォーム（react-hook-form,Newt or SendGrid）
 
 ※その他随時更新
 
