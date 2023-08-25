@@ -15,3 +15,5 @@ date: 'August 15, 2023'
 ## 🚶 セミナー参加
 
 ## 📚 あとで読む
+
+- [ドメイン理解と制作スピードを両立する、FACTEVでのUIデザインについて](https://cocoda.design/keitay/p/pe36efb81994a)
