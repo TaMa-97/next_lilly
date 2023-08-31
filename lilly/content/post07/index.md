@@ -1,5 +1,5 @@
 ---
-title: 'Nextra：MDX メモ'
+title: '[Nextra] MDXメモ'
 date: '2023/08/13'
 tags: ['Nextra', 'Next.js', 'MDX']
 ---
@@ -159,7 +159,6 @@ import { Cards, Card } from 'nextra/components'
 
 ```jsx
 import { Steps } from 'nextra/components'
-
 ;<Steps>### Step 1 Step 1 コンテンツ ### Step 2 Step 2 コンテンツ</Steps>
 ```
 
