@@ -17,6 +17,7 @@ date: 'August 15, 2023'
 - [オレオレ Next.js 初期設定](https://zenn.dev/www_y/articles/58d6bb1da8a723)
 - [State of CSS 2023 の結果公開など : Cybozu Frontend Weekly (2023-08-29 号)](https://zenn.dev/cybozu_frontend/articles/frontend_weekly_20230829)
 - [リーダブルコードを読んで重要だと感じたルールを抜粋](https://qiita.com/app_js/items/2176cfad20d4d86a2398)
+- [Reactのディレクトリ構成について](https://zenn.dev/porokyu32/articles/2e6511fa8b606d)
 
 ## 🚶 セミナー参加
 
