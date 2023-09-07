@@ -13,6 +13,7 @@ date: 'September 01, 2023'
 - [イラストで理解する API Gateway](https://zenn.dev/fdnsy/articles/86897abce0bbf5)
 - [API ドキュメントを Redoc で一新しました](https://techblog.asia-quest.jp/202207/api-documentation-has-been-redesigned-with-redoc)
 - [Amazon Cognito を試してみた（ユーザプール編）](https://qiita.com/zumax/items/6937b3ecb501b6ca50bb)
+- [【プルリクを出す前に】figma からのマークアップ チェックリスト【チーム開発効率 UP】](https://qiita.com/komi-21/items/9e05b267eb6039665ccf)
 
 ## 🚶 セミナー参加
 
