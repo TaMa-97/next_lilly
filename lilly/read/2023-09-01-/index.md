@@ -15,6 +15,7 @@ date: 'September 01, 2023'
 - [Amazon Cognito を試してみた（ユーザプール編）](https://qiita.com/zumax/items/6937b3ecb501b6ca50bb)
 - [【プルリクを出す前に】figma からのマークアップ チェックリスト【チーム開発効率 UP】](https://qiita.com/komi-21/items/9e05b267eb6039665ccf)
 - [React で再レンダリングを抑えるシンプルな方法](https://zenn.dev/counterworks/articles/react-composition)
+- [JavaScriptでconsole.logを使用してませんか？](https://zenn.dev/keiichiro/articles/ebd91551a5108d)
 
 ## 🚶 セミナー参加
 
