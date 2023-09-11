@@ -15,7 +15,11 @@ date: 'September 01, 2023'
 - [Amazon Cognito を試してみた（ユーザプール編）](https://qiita.com/zumax/items/6937b3ecb501b6ca50bb)
 - [【プルリクを出す前に】figma からのマークアップ チェックリスト【チーム開発効率 UP】](https://qiita.com/komi-21/items/9e05b267eb6039665ccf)
 - [React で再レンダリングを抑えるシンプルな方法](https://zenn.dev/counterworks/articles/react-composition)
-- [JavaScriptでconsole.logを使用してませんか？](https://zenn.dev/keiichiro/articles/ebd91551a5108d)
+- [JavaScript で console.log を使用してませんか？](https://zenn.dev/keiichiro/articles/ebd91551a5108d)
+- [Mock Service Worker(MSW)をテストで利用するための設定(基礎編)](https://reffect.co.jp/html/mock-service-worker/)
+- [Astro を使ってみた所感など](https://qiita.com/mtripg6666tdr/items/22e9605236b4c4ee303a)
+- [【W3Techs】2023 年 8 月に Web で最も使われている技術は jQuery・Bootstrap・PHP・WordPress](https://qiita.com/rana_kualu/items/e23d728bb9b934069d8c)
+- [【React】設計をシンプルにする試み](https://zenn.dev/yhase_rqp/articles/c2de131eb98d4f)
 
 ## 🚶 セミナー参加
 
