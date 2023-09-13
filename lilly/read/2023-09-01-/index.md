@@ -20,6 +20,7 @@ date: 'September 01, 2023'
 - [Astro を使ってみた所感など](https://qiita.com/mtripg6666tdr/items/22e9605236b4c4ee303a)
 - [【W3Techs】2023 年 8 月に Web で最も使われている技術は jQuery・Bootstrap・PHP・WordPress](https://qiita.com/rana_kualu/items/e23d728bb9b934069d8c)
 - [【React】設計をシンプルにする試み](https://zenn.dev/yhase_rqp/articles/c2de131eb98d4f)
+- [CSS の Subgrid が全ブラウザ対応へ。Grid の入れ子の基本から応用までを完全理解する](https://zenn.dev/moneyforward/articles/css-subgrid-all-browsers)
 
 ## 🚶 セミナー参加
 
