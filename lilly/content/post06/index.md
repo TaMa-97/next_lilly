@@ -116,17 +116,17 @@ _js
 │      *.js
 │
 └─page
-    │  [slug].js（Canvas.jsの実行とDOM要素の受け渡し）
+    │  [slug].js                #Canvas.jsの実行とDOM要素の受け渡し
     │
     └─[slug]
-        │  Canvas.js （Canvasの根幹制御部分）
-        │  Utility.js (よく使うユーティリティー関数)
-        │  Variable.js (よく使う定数値：幅、高さ、ブレークポイントなど)
+        │  Canvas.js            #Canvasの根幹制御部分
+        │  Utility.js           #よく使うユーティリティー関数
+        │  Variable.js          #よく使う定数値：幅、高さ、ブレークポイントなど
         │
-        ├─dom（DOM要素管理）
-        │      *.js
+        ├─dom                   #DOM要素管理
+        │   *.js
         │
-        ├─object (Canvasオブジェクトの各コンポーネントの管理)
+        ├─object                #Canvasオブジェクトの各コンポーネント管理
         │  │
         │  ├─[component01]
         │  │      *.js
@@ -135,8 +135,8 @@ _js
         │  │      *.js
         │  │
         │  └─[component03]
-        │            *.js
+        │         *.js
         │
-        └─timeline (GSAPのタイムライン)
-                *.js
+        └─timeline              #GSAPのタイムライン
+               *.js
 ```
