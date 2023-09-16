@@ -1,68 +1,59 @@
 ---
 title: '[capo.js] head内の要素を優先度の高い順に並び替える'
 date: '2023/09/15'
-tags: ['パフォーマンス', 'Core Web Vitals', 'capo.js', 'meta']
+tags: ['パフォーマンス', 'capo.js', 'head']
 ---
 
-## 前提
-
-head 内の順序はパフォーマンスに影響を与える可能性がある
-
-## **capo.js とは**
+## **capo.js**とは
 
 <head>内の各要素を最適に並び替えてくれるツール
 
 ### 推奨している順序
 
-1. (最も優先度が低い)：その他すべて
+1. (最も優先度が低い)：下記以外のものすべて
 
-2. スクリプト(`defer` )
+2. プリフェッチ/プリレンダリング類
 
-   - プリフェッチとプリレンダリング
-   - `<link rel=prefetch>`など
+   - `<link rel=prefetch>`
+   - `<link rel=prerender>`...
 
 3. スクリプト(`defer` )
 
    - `<script defer src>`
 
-4. プリロード
+4. プリロード類
 
    - `<link rel=preload>`
-   - `<link rel=modulepreload>`
+   - `<link rel=modulepreload>`...
 
 5. 同期スタイル
 
    - `<link rel=stylesheet>`
    - `<style>`
 
-6. 同期スタイル
-
-   - `<link rel=stylesheet>`
-   - `<style>`
-
-7. 同期スクリプト
+6. 同期スクリプト
 
    - `<script src>`
 
-8. スタイルのインポート
+7. スタイルのインポート
 
    - `@import`
 
-9. 非同期スクリプト(`async`)
+8. 非同期スクリプト(`async`)
 
    - `<script async src>`
 
-10. 事前接続
+9. 事前接続類
 
-    - `<link rel=preconnect>`
+   - `<link rel=preconnect>`
 
-11. タイトル
+10. タイトル
 
     - `<title>`
 
-12. (最も優先度が高い)：プラグマディレクティブ
+11. (最も優先度が高い)：プラグマディレクティブ
 
-    - `<meta charset>`など
+    - `<meta charset>`...
 
 ## 使い方
 

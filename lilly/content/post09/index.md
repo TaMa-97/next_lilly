@@ -8,7 +8,7 @@ tags: ['パフォーマンス', 'Core Web Vitals', 'webpack', 'Tree Shaking']
 
 - バンドルサイズの削減
 
-## 改善方法
+## 改善内容
 
 ### webpack 設定項目
 
