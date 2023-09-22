@@ -13,6 +13,7 @@ date: 'September 15, 2023'
 - [外部サービス提供の API を叩く時に気をつけていること](https://zenn.dev/sky/articles/6f79982ca89ea3)
 - [Next.js のプロジェクトを開発しやすいようにする lint と formatter などの設定](https://zenn.dev/brachio_takumi/articles/a8fecd8b1b2742)
 - [UI コンポーネントライブラリをうまく使うためにできること](https://speakerdeck.com/mottox2/components-with-designer)
+- [【制作会社向け】MW WP Form が終了！切り替えにベストなプラグインと検証](https://do-jo.jp/plugins/1445/)
 
 ## 🚶 セミナー参加
 
