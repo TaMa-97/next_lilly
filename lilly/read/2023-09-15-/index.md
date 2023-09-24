@@ -14,9 +14,13 @@ date: 'September 15, 2023'
 - [Next.js のプロジェクトを開発しやすいようにする lint と formatter などの設定](https://zenn.dev/brachio_takumi/articles/a8fecd8b1b2742)
 - [UI コンポーネントライブラリをうまく使うためにできること](https://speakerdeck.com/mottox2/components-with-designer)
 - [【制作会社向け】MW WP Form が終了！切り替えにベストなプラグインと検証](https://do-jo.jp/plugins/1445/)
+- [プログラミングを学ぶ上で絶対に覚えておきたい原則 10 選](https://zenn.dev/lclco/articles/3d23a1032e1727)
+- [Web 開発の画面制作のときに使う用語をまとめてみた](https://zenn.dev/algorithms/articles/417724a078e55f)
+- [【フロントエンド】コンポーネント指向 React / Vue のテスト方針](https://qiita.com/mrnaoki/items/3fd211deb8711fae8204)
 
 ## 🚶 セミナー参加
 
 ## 📚 あとで読む
 
 - [ざっくり App Router 入門【Next.js】](https://zenn.dev/yamadadayo123/articles/6cb4f586de0183)
+- [【WordPress】 受託開発におけるハイブリッドテーマ開発](https://qiita.com/AkiHamano/items/4166dd093e2ba03c57d7)
