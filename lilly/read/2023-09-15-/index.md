@@ -17,6 +17,7 @@ date: 'September 15, 2023'
 - [プログラミングを学ぶ上で絶対に覚えておきたい原則 10 選](https://zenn.dev/lclco/articles/3d23a1032e1727)
 - [Web 開発の画面制作のときに使う用語をまとめてみた](https://zenn.dev/algorithms/articles/417724a078e55f)
 - [【フロントエンド】コンポーネント指向 React / Vue のテスト方針](https://qiita.com/mrnaoki/items/3fd211deb8711fae8204)
+- [巷で話題の nue.js を試してみた](https://qiita.com/haruyan_hopemucci/items/93d4556afb76b0c964b9)
 
 ## 🚶 セミナー参加
 
