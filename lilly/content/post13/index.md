@@ -1,7 +1,7 @@
 ---
 title: 'macOSのChromeでのみCSSのblurがちらつく'
 date: '2023/09/26'
-tags: ['CSS', 'JavaScript', 'UserAgent']
+tags: ['SCSS', 'JavaScript', 'UserAgent']
 ---
 
 ## 事象
