@@ -31,6 +31,7 @@ blur の数値を変更したり、transform いじってみたりしたが解�
 時間もないので、macOS の Chrome のみは blur を適用させない対応で対処する。
 
 ```scss
+// GoogleChromeにのみ適用
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
 }
 ```
