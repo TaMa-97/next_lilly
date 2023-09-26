@@ -8,7 +8,7 @@ Google Calendar と Full Calendar を連携させるにあたり必要な情報�
 
 ## 使用プラグイン
 
-- FullCalendar Standard（無料プラン）
+- [FullCalendar Standard（無料プラン）](https://fullcalendar.io/)
   [MIT ライセンス](https://fullcalendar.io/license)
 
 ## 連携すればできること
@@ -35,10 +35,10 @@ Google Calendar と Full Calendar を連携させるにあたり必要な情報�
 
 ## 要準備
 
-- Google カレンダー APIKEY
-- Google カレンダー ID
+- Google Calendar API キー
+- Google Calendar ID
 
-## APIKEY について
+## Google Calendar API キー について
 
 - 取得
   - 支払い設定をしないと表示されないので、お客様で取得いただく。
@@ -49,7 +49,7 @@ Google Calendar と Full Calendar を連携させるにあたり必要な情報�
 - API の制限
   - キーを制限で Calendar JavaScript API を選択する。
 
-## Google CalendarAPI 料金
+## Google Calendar API 料金
 
 > Google Calendar API はすべて、追加料金なしで利用できます。クォータ リクエストの制限を超えても追加料金は発生せず、アカウントには請求されません。
 
@@ -57,7 +57,7 @@ Google Calendar と Full Calendar を連携させるにあたり必要な情報�
 
 ## お客様への注意/懸念点
 
-- お客様で API KEY の取得をしていただく必要がある
+- お客様で API キー の取得をしていただく必要がある
 - お客様で対象 Google Calendar の公開設定をしていただく必要がある
 - 課金対象になる可能性がある
 - 仕様変更によって表示されなくなる可能性がある
