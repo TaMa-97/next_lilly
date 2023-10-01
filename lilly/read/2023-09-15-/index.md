@@ -21,6 +21,8 @@ date: 'September 15, 2023'
 - [良いデザインシステムとは その基本と構造をグッドパッチが解説](https://creatorzine.jp/article/detail/4678)
 - [React useForm を利用して form を作成する](https://zenn.dev/redpanda/articles/4dba043cd753e3)
 - [実践 Docker - ソフトウェアエンジニアの「Docker よくわからない」を終わりにする本](https://zenn.dev/suzuki_hoge/books/2022-03-docker-practice-8ae36c33424b59)
+- [コンテナ技術の基本を徹底解説](https://zenn.dev/nameless_sn/articles/the_fundamental_of_container)
+- [Astro 3.0 入門](https://speakerdeck.com/nozaki/astro-3-dot-0ru-men)
 
 ## 🚶 セミナー参加
 
