@@ -12,3 +12,5 @@ date: 'October 01, 2023'
 ## 🚶 セミナー参加
 
 ## 📚 あとで読む
+
+- [React の useEffect とクリーンアップ関数の実行タイミングがこれだけで分かる](https://zenn.dev/yumemi_inc/articles/react-effect-simply-explained)
