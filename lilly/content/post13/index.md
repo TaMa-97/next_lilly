@@ -87,5 +87,6 @@ export default Mv;
 
 :::message alert
 ※追記
-iOS17 の safari は、`@keyframes` が効かない模様（iPhone は効かず、iPad はなぜか効く）。出たての最新バージョンなので、今後のアップデートで解消されることを期待します。
+iOS17 の safari は、`@keyframes` が効かない模様（iPadOS17 はなぜか効く）
+出たての最新バージョンなので、今後のアップデートで解消されることを期待します。
 :::
