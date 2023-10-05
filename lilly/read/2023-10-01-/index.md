@@ -8,6 +8,7 @@ date: 'October 01, 2023'
 ## 👀 読んだ
 
 - [CSS Selector Level4 ・ Nested Selector サンプル 60 個付きチートシート](https://zenn.dev/algorithms/articles/2d49dfc015a588)
+- [続・変更に強いコンポーネント設計の方針と規約（Web フロントエンド）](https://speakerdeck.com/sansantech/sansan-20231004)
 
 ## 🚶 セミナー参加
 
