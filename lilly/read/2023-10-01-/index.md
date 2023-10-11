@@ -13,6 +13,7 @@ date: 'October 01, 2023'
 - [Algolia と Next.js (App Router) を利用して、高度な全文検索を実現する](https://www.newt.so/docs/tutorials/search-by-algolia)
 - [コードを書くのは楽しいですか？](https://qiita.com/monsoonTropicalBird/items/57ba7f175a8e77fa011a)
 - [Web のフロントエンドでも Docker で開発環境を構築する理由。（余談としての脱 node 依存開発）](https://qiita.com/SFITB/items/27cb917945fa9e721f34)
+- [Volta でも.node-version や.nvmrc を使って Node.js のバージョン切り替えがしたい！](https://zenn.dev/hrbrain/articles/989acf69368896)
 
 ## 🚶 セミナー参加
 
