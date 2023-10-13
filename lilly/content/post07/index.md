@@ -1,5 +1,5 @@
 ---
-title: '[Nextra] MDXメモ'
+title: '[Nextra] MDX記法'
 date: '2023/08/13'
 tags: ['Nextra', 'Next.js', 'MDX']
 ---
