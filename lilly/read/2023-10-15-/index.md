@@ -13,3 +13,5 @@ date: 'October 15, 2023'
 ## 🚶 セミナー参加
 
 ## 📚 あとで読む
+
+- [ヘッドレス CMS の本質 ヘッドレス CMS の全体観を掴む](https://www.newt.so/blog/deep-dive-into-headless-cms-fundamentals)
