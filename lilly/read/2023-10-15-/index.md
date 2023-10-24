@@ -11,6 +11,7 @@ date: 'October 15, 2023'
 - [エンジニアがデザインシステムの構築に向けて、UX 改善と両立して取り組んだ話](https://zenn.dev/loglass/articles/81de13de7dab2a)
 - [フロントエンドにおける生成 AI の現在とこれから](https://speakerdeck.com/kgsi/hurontoendoniokerusheng-cheng-ainoxian-zai-tokorekara)
 - [はてなリモートインターンシップ 2023 インフラ講義資料](https://speakerdeck.com/hatena/remote-internship-2023-infra)
+- [microcms-js-sdk にコンテンツ全件取得のためのメソッドを追加しました](https://blog.microcms.io/microcms-js-sdk-2_7_0/)
 
 ## 🚶 セミナー参加
 
