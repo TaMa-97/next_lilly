@@ -5,6 +5,10 @@ date: 'October 15, 2023'
 
 ## ✨ ピックアップ
 
+- [IT 業界でストレスなく働くには](https://qiita.com/kaku3/items/a6291ba623b739f35c46)
+- [【JavaScript】読みやすいコードの書き方](https://qiita.com/ment_RE/items/7dd5c00ed5f83bf058fa)
+- [React Native スタイリングの手引き](https://zenn.dev/cureapp/articles/d182e76ca1ea1c)
+
 ## 👀 読んだ
 
 - [Figma でデザイン、そのままデモ、そのまま実装！](https://qiita.com/RyoWakabayashi/items/7abf561dcd49d0884c86)
@@ -20,6 +24,9 @@ date: 'October 15, 2023'
 - [ゼロから始める React Native + Expo 入門](https://zenn.dev/izuchy/articles/6d6f7970a77aa203396c)
 - [React が分かれば難しくない！ React Native for Web 入門](https://dev.classmethod.jp/articles/react-native-for-web-with-typescript-while-referring-to-the-official-introduction/)
 - [読みやすいコード クラスメソッド 2022 年度新卒研修](https://speakerdeck.com/januswel/du-miyasuikodo-kurasumesotudo-2022-nian-du-xin-zu-yan-xiu)
+- [React Native + Expo でアプリを作って App Store と Google Play で公開した](https://zenn.dev/ryonakae/articles/35ebacb8e7be49)
+- [はじめて React Native でネイティブアプリをリリースした話](https://zenn.dev/stafes_blog/articles/react-native-beginner)
+- [React Native ( TypeScript ) × microCMS でつくるニュースアプリ](https://zenn.dev/chot/articles/537c99ea098add)
 
 ## 🚶 セミナー参加
 
