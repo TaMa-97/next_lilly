@@ -27,6 +27,8 @@ date: 'October 15, 2023'
 - [React Native + Expo でアプリを作って App Store と Google Play で公開した](https://zenn.dev/ryonakae/articles/35ebacb8e7be49)
 - [はじめて React Native でネイティブアプリをリリースした話](https://zenn.dev/stafes_blog/articles/react-native-beginner)
 - [React Native ( TypeScript ) × microCMS でつくるニュースアプリ](https://zenn.dev/chot/articles/537c99ea098add)
+- [React/Next によるアプリケーション開発のこれから](https://speakerdeck.com/koba04/next-niyoruapurikesiyonkai-fa-nokorekara?slide=34)
+- [GraphQL はどんな時に使うか](https://speakerdeck.com/saboyutaka/graphqlhadonnashi-nishi-uka)
 
 ## 🚶 セミナー参加
 
