@@ -30,6 +30,7 @@ date: 'October 15, 2023'
 - [React/Next によるアプリケーション開発のこれから](https://speakerdeck.com/koba04/next-niyoruapurikesiyonkai-fa-nokorekara?slide=34)
 - [GraphQL はどんな時に使うか](https://speakerdeck.com/saboyutaka/graphqlhadonnashi-nishi-uka)
 - [ESLint を eslintrc から Flat Config に移行する](https://qiita.com/Shilaca/items/c494e4dc6b536a5231de)
+- [Webフロントエンドの進化とJamstackアーキテクチャの変遷](https://speakerdeck.com/microcms/webhurontoendonojin-hua-tojamstackakitekutiyanobian-qian)
 
 ## 🚶 セミナー参加
 
