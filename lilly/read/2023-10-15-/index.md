@@ -39,3 +39,4 @@ date: 'October 15, 2023'
 - [ヘッドレス CMS の本質 ヘッドレス CMS の全体観を掴む](https://www.newt.so/blog/deep-dive-into-headless-cms-fundamentals)
 - [React のレンダリングに関する完全ガイド](https://qiita.com/hellokenta/items/6b795501a0a8921bb6b5)
 - [AWS によるクラウド入門](https://tomomano.gitlab.io/intro-aws/)
+- [ブラウザ/ Browser](https://speakerdeck.com/recruitengineers/browser-2023)
