@@ -31,6 +31,7 @@ date: 'October 15, 2023'
 - [GraphQL はどんな時に使うか](https://speakerdeck.com/saboyutaka/graphqlhadonnashi-nishi-uka)
 - [ESLint を eslintrc から Flat Config に移行する](https://qiita.com/Shilaca/items/c494e4dc6b536a5231de)
 - [Webフロントエンドの進化とJamstackアーキテクチャの変遷](https://speakerdeck.com/microcms/webhurontoendonojin-hua-tojamstackakitekutiyanobian-qian)
+- [アウトプットこそ最高のインプット。鹿野壮が語る「自分が一番トクする」アウトプットの力](https://levtech.jp/media/article/column/detail_329/)
 
 ## 🚶 セミナー参加
 
