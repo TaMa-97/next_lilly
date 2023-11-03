@@ -7,6 +7,8 @@ date: 'November 01, 2023'
 
 ## 👀 読んだ
 
+- [PageSpeed Insights API を利用して、新規作成したページのスコアをチェックする](https://www.newt.so/docs/tutorials/use-page-speed-insights-api)
+
 ## 🚶 セミナー参加
 
 ## 📚 あとで読む
