@@ -11,6 +11,7 @@ date: 'November 01, 2023'
 - [Power Automate で Premium コネクタを使わずメール本文を PDF にする](https://qiita.com/DaddyDaddy/items/6383adf2d1034cf6e5ff)
 - [フルスタックプログラマーの卵どもにおくる、独学チートシート : 2](https://qiita.com/monsoonTropicalBird/items/88424c54734b0aeb317d)
 - [超速で技術力を伸ばす方法](https://speakerdeck.com/yuki_okamoto476/chao-su-teji-shu-li-woshen-hasufang-fa)
+- [CSS Modules を型安全にする仕組み](https://zenn.dev/cybozu_frontend/articles/2528ad2935be9f)
 
 ## 🚶 セミナー参加
 
