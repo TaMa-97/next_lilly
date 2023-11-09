@@ -13,6 +13,7 @@ date: 'November 01, 2023'
 - [超速で技術力を伸ばす方法](https://speakerdeck.com/yuki_okamoto476/chao-su-teji-shu-li-woshen-hasufang-fa)
 - [CSS Modules を型安全にする仕組み](https://zenn.dev/cybozu_frontend/articles/2528ad2935be9f)
 - [Web フロントエンドの進化と Jamstack アーキテクチャの変遷](https://speakerdeck.com/microcms/webhurontoendonojin-hua-tojamstackakitekutiyanobian-qian)
+- [専門家へのアウトプットは最強のインプットである](https://baigie.me/nippo/2023/11/06/231106_takahashi/)
 
 ## 🚶 セミナー参加
 
