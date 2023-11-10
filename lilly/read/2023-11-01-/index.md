@@ -14,6 +14,8 @@ date: 'November 01, 2023'
 - [CSS Modules を型安全にする仕組み](https://zenn.dev/cybozu_frontend/articles/2528ad2935be9f)
 - [Web フロントエンドの進化と Jamstack アーキテクチャの変遷](https://speakerdeck.com/microcms/webhurontoendonojin-hua-tojamstackakitekutiyanobian-qian)
 - [専門家へのアウトプットは最強のインプットである](https://baigie.me/nippo/2023/11/06/231106_takahashi/)
+- [結局 Sass のネストってどこで切ればいいの問題](https://qiita.com/maryjass/items/f841c1bea4e26c14f4c3)
+- [20 代若手エンジニアに伝えたい「圧倒的に成長する秘訣」](https://qiita.com/Terao-Takumi/items/ddf11b32676021fd2e83)
 
 ## 🚶 セミナー参加
 
