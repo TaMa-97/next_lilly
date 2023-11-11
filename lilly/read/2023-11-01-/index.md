@@ -16,6 +16,7 @@ date: 'November 01, 2023'
 - [専門家へのアウトプットは最強のインプットである](https://baigie.me/nippo/2023/11/06/231106_takahashi/)
 - [結局 Sass のネストってどこで切ればいいの問題](https://qiita.com/maryjass/items/f841c1bea4e26c14f4c3)
 - [20 代若手エンジニアに伝えたい「圧倒的に成長する秘訣」](https://qiita.com/Terao-Takumi/items/ddf11b32676021fd2e83)
+- [ZOZOTOWN に CSS in JS（Emotion）を導入して 1 年後の状況](https://speakerdeck.com/hiro0218/one-year-after-introducing-css-in-js-to-zozotown)
 
 ## 🚶 セミナー参加
 
