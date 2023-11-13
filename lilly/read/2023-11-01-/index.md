@@ -18,6 +18,7 @@ date: 'November 01, 2023'
 - [20 代若手エンジニアに伝えたい「圧倒的に成長する秘訣」](https://qiita.com/Terao-Takumi/items/ddf11b32676021fd2e83)
 - [ZOZOTOWN に CSS in JS（Emotion）を導入して 1 年後の状況](https://speakerdeck.com/hiro0218/one-year-after-introducing-css-in-js-to-zozotown)
 - [MyGPTs で簡単にカスタム bot を作って公開する方法](https://zenn.dev/karaage0703/articles/1b908f5040f119)
+- [Master CSS？インラインスタイルで良いじゃん](https://zenn.dev/tsukiyama3/articles/9c3e1dd5f8d621)
 
 ## 🚶 セミナー参加
 
