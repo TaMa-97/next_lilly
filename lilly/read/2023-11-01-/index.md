@@ -19,6 +19,7 @@ date: 'November 01, 2023'
 - [ZOZOTOWN に CSS in JS（Emotion）を導入して 1 年後の状況](https://speakerdeck.com/hiro0218/one-year-after-introducing-css-in-js-to-zozotown)
 - [MyGPTs で簡単にカスタム bot を作って公開する方法](https://zenn.dev/karaage0703/articles/1b908f5040f119)
 - [Master CSS？インラインスタイルで良いじゃん](https://zenn.dev/tsukiyama3/articles/9c3e1dd5f8d621)
+- [grid でアコーディオンメニューの実装](https://qiita.com/kiita_chi/items/c9d7d20beb82dd279c8e)
 
 ## 🚶 セミナー参加
 
