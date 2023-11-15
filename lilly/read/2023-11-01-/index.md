@@ -20,6 +20,9 @@ date: 'November 01, 2023'
 - [MyGPTs で簡単にカスタム bot を作って公開する方法](https://zenn.dev/karaage0703/articles/1b908f5040f119)
 - [Master CSS？インラインスタイルで良いじゃん](https://zenn.dev/tsukiyama3/articles/9c3e1dd5f8d621)
 - [grid でアコーディオンメニューの実装](https://qiita.com/kiita_chi/items/c9d7d20beb82dd279c8e)
+- [Next.js を Firebase にデプロイしたら高額請求がきて貯金がなくなりかけた話](https://qiita.com/Sicut_study/items/1723379221bd966b36aa)
+- [ESLint を使い倒す方法まとめ](https://zenn.dev/noshiro_piko/articles/take-full-advantage-of-typescript-eslint)
+- [GPTs で Notion API を叩くようにしてみたらやばかった](https://zenn.dev/yutakobayashi/articles/gpts-notion-api)
 
 ## 🚶 セミナー参加
 
