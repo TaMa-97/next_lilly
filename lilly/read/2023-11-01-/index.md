@@ -23,6 +23,7 @@ date: 'November 01, 2023'
 - [Next.js を Firebase にデプロイしたら高額請求がきて貯金がなくなりかけた話](https://qiita.com/Sicut_study/items/1723379221bd966b36aa)
 - [ESLint を使い倒す方法まとめ](https://zenn.dev/noshiro_piko/articles/take-full-advantage-of-typescript-eslint)
 - [GPTs で Notion API を叩くようにしてみたらやばかった](https://zenn.dev/yutakobayashi/articles/gpts-notion-api)
+- [aria-label で始める、アクセシビリティ改善活動](https://zenn.dev/moneyforward/articles/b5c9b060cf9237)
 
 ## 🚶 セミナー参加
 
