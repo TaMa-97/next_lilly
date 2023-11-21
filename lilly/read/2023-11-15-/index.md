@@ -11,6 +11,7 @@ date: 'November 15, 2023'
 - [10 年続く WEAR における、デザインシステム事始め](https://techblog.zozo.com/entry/wear-design-system-first)
 - [style dictionary を使ってみた](https://zenn.dev/saki/articles/50d15e03423f11)
 - [style-dictionary を使ってフロントエンドで利用しやすいデザイントークンを生成する](https://zenn.dev/beijaflor/articles/584eb4e00a5bb3)
+- [Figma Tokens で小さくはじめるデザインシステム](https://zenn.dev/mi_/articles/453f7594120c9a)
 
 ## 🚶 セミナー参加
 
