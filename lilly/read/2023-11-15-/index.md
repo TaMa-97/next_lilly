@@ -15,6 +15,7 @@ date: 'November 15, 2023'
 - [React での API 通信のベストプラクティス](https://shiganai-react.com/pages/react%E3%81%A7%E3%81%AEapi%E9%80%9A%E4%BF%A1%E3%81%AE%E3%83%99%E3%82%B9%E3%83%88%E3%83%97%E3%83%A9%E3%82%AF%E3%83%86%E3%82%A3%E3%82%B9-987579/)
 - [【2023 年】React データ取得ライブラリまとめ（JS / TS）](https://www.cxr-inc.com/blog/c87e713f56664945bdc11fb536ff7651)
 - [WEB+DB PRESS で特集記事を書く方法](https://speakerdeck.com/kentaro/how-to-become-an-author-of-web-plus-db-press)
+- [次世代のコードエディター Cursor のメリデメ](https://qiita.com/taka-sigure/items/1d0c7d3cd51524d7d1d3)
 
 ## 🚶 セミナー参加
 
