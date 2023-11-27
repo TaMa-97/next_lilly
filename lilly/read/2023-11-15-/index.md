@@ -18,7 +18,8 @@ date: 'November 15, 2023'
 - [次世代のコードエディター Cursor のメリデメ](https://qiita.com/taka-sigure/items/1d0c7d3cd51524d7d1d3)
 - [curl で SSL 証明書のエラーを無視する](https://tech.kurojica.com/archives/25380/)
 - [デザイントークンの W3C コミュニティグループと仕様ドラフト、関連ツールの利用について](https://zenn.dev/sakito/articles/c96625b2d30540)
-- [Design Skill Map - メルカリUXデザインチームの専門スキル](https://note.com/mercari_design/n/n673cfcdb99ea)
+- [Design Skill Map - メルカリ UX デザインチームの専門スキル](https://note.com/mercari_design/n/n673cfcdb99ea)
+- [ESLint・Prettier を併用してコードスタイルのチェックは Prettier にまかせてみた](https://note.com/shift_tech/n/n2a0b5561c27b)
 
 ## 🚶 セミナー参加
 
