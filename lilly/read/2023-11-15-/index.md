@@ -21,6 +21,7 @@ date: 'November 15, 2023'
 - [Design Skill Map - メルカリ UX デザインチームの専門スキル](https://note.com/mercari_design/n/n673cfcdb99ea)
 - [ESLint・Prettier を併用してコードスタイルのチェックは Prettier にまかせてみた](https://note.com/shift_tech/n/n2a0b5561c27b)
 - [フルスタックプログラマーの卵どもにおくる、独学チートシート (サーバーサイド)](https://qiita.com/monsoonTropicalBird/items/af562370b390fb26dfdf)
+- [[React]useAuthenticator で Cognito の認証情報を扱う](https://qiita.com/ayumu_jp/items/ba2be21a96eefa887495)
 
 ## 🚶 セミナー参加
 
