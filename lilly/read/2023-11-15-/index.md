@@ -22,6 +22,10 @@ date: 'November 15, 2023'
 - [ESLint・Prettier を併用してコードスタイルのチェックは Prettier にまかせてみた](https://note.com/shift_tech/n/n2a0b5561c27b)
 - [フルスタックプログラマーの卵どもにおくる、独学チートシート (サーバーサイド)](https://qiita.com/monsoonTropicalBird/items/af562370b390fb26dfdf)
 - [[React]useAuthenticator で Cognito の認証情報を扱う](https://qiita.com/ayumu_jp/items/ba2be21a96eefa887495)
+- [CSS の勉強の 1 つとして PostCSS Preset Env を眺める](https://qiita.com/xrxoxcxox/items/e2681f546385b285a824)
+- [postcss-preset-env で少し未来の CSS を予習する](https://creators.bengo4.com/entry/postcss-preset-env)
+- [vite で PostCSS まわりを開発とビルドで実行を分けたいよ](https://www.flying-h.co.jp/media/2023/05/24/vite-postcss/)
+- [Tokens Studio for Figma と Style Dictionary でデザインの共通言語をつくる](https://creators.bengo4.com/entry/2023/02/28/120000)
 
 ## 🚶 セミナー参加
 
