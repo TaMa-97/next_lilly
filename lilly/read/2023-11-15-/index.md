@@ -26,6 +26,8 @@ date: 'November 15, 2023'
 - [postcss-preset-env で少し未来の CSS を予習する](https://creators.bengo4.com/entry/postcss-preset-env)
 - [vite で PostCSS まわりを開発とビルドで実行を分けたいよ](https://www.flying-h.co.jp/media/2023/05/24/vite-postcss/)
 - [Tokens Studio for Figma と Style Dictionary でデザインの共通言語をつくる](https://creators.bengo4.com/entry/2023/02/28/120000)
+- [2023 年度版フロントエンド開発環境構築徹底解説](https://qiita.com/kjm_nuco/items/1b97cb3d9f43c5828adf)
+- [しずかなインターネットの技術構成](https://zenn.dev/catnose99/articles/f8a90a1616dfb3)
 
 ## 🚶 セミナー参加
 
