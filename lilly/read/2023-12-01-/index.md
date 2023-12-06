@@ -13,6 +13,7 @@ date: 'December 01, 2023'
 - [トークンを LocalStorage に保存する](https://confrage.jp/%E3%83%88%E3%83%BC%E3%82%AF%E3%83%B3%E3%82%92localstorage%E3%81%AB%E4%BF%9D%E5%AD%98%E3%81%99%E3%82%8B-%E3%80%90auth0%E3%80%91/)
 - [Basic 認証、Digest 認証、Bearer 認証、OAuth 認証方式について](https://architecting.hateblo.jp/entry/2020/03/27/130535)
 - [様々な認証方式について](https://zenn.dev/kome471/articles/4b8ffc4aac0f6f)
+- [React(SPA)での認証についてまとめ](https://coders-shelf.com/react-auth-problem/)
 
 ## 🚶 セミナー参加
 
