@@ -15,6 +15,7 @@ date: 'December 01, 2023'
 - [様々な認証方式について](https://zenn.dev/kome471/articles/4b8ffc4aac0f6f)
 - [React(SPA)での認証についてまとめ](https://coders-shelf.com/react-auth-problem/)
 - [VScode だけで Git 操作を完結させるのだ～～ッ!!](https://zenn.dev/praha/articles/db1c4bcc4ef48c)
+- [Next.js プロジェクトに追加したい設定 11 個](https://qiita.com/tksst/items/bf62d50b25af69505e8e)
 
 ## 🚶 セミナー参加
 
