@@ -18,6 +18,7 @@ date: 'December 01, 2023'
 - [Next.js プロジェクトに追加したい設定 11 個](https://qiita.com/tksst/items/bf62d50b25af69505e8e)
 - [大谷翔平 vs 国内大手 SaaS 企業](https://note.com/numashi_biz/n/n327107ee6c97)
 - [イライラ不可避な UI デザイン 10 選](https://qiita.com/9re-pe/items/0296f8a8c11490efda21)
+- [フロントエンドの"バリデーション"は最低限の方がいいらしい](https://qiita.com/mi2__user/items/f2f415ccbb0a625c8647)
 
 ## 🚶 セミナー参加
 
