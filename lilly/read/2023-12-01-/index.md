@@ -19,6 +19,8 @@ date: 'December 01, 2023'
 - [大谷翔平 vs 国内大手 SaaS 企業](https://note.com/numashi_biz/n/n327107ee6c97)
 - [イライラ不可避な UI デザイン 10 選](https://qiita.com/9re-pe/items/0296f8a8c11490efda21)
 - [フロントエンドの"バリデーション"は最低限の方がいいらしい](https://qiita.com/mi2__user/items/f2f415ccbb0a625c8647)
+- [デジタル庁のサイト、その後…](https://qiita.com/mu_tomoya/items/14cd7c7ca4c6d1af96ca)
+- [フロントエンドのキャッチアップ大変だよねという話 2023](https://zenn.dev/genda_jp/articles/d48f1e956b112f)
 
 ## 🚶 セミナー参加
 
