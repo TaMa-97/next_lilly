@@ -5,6 +5,8 @@ date: 'December 01, 2023'
 
 ## ✨ ピックアップ
 
+- [チームで仕事をするなら、リアクションし続けよ](https://note.com/dutoit6/n/ned66041f43ff)
+
 ## 👀 読んだ
 
 - [[React]useAuthenticator で Cognito の認証情報を扱う](https://qiita.com/ayumu_jp/items/ba2be21a96eefa887495)
