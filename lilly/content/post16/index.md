@@ -1,49 +1,61 @@
 ---
-title: '[GAS] Gmailラベル付け自動振り分け'
+title: '[Git] (Non-Fast-Forward Merge) git merge 時に「Please enter a commit message to explain why this merge is necessary …」'
 date: '2023/10/25'
-tags: ['GAS', 'JavaScript']
+tags: ['Git']
 ---
 
-Google Apps Script (GAS)を使用して、Gmail の受信メールに特定のキーワードが含まれている場合に自動的にラベルを付与して振り分けする方法
+## ログ
 
-## GAS スクリプト
+自分が作業中の feature/hogehoge ブランチに push した際に、他の方が同じブランチに push しており reject され下記エラー（自分のリポジトリが後ろにいる状態）
 
-以下のスクリプトは、受信メールの中から各キーワードが含まれているものを検索して、それぞれのメールに対応するラベルを付与します。
-
-```js
-function autoLabelEmails() {
-  // 対象のキーワード/ラベル名を設定
-  const keywordLabelPairs = [
-    { keyword: 'GitHub', label: 'GitHub' },
-    { keyword: 'Backlog', label: 'Backlog' },
-    { keyword: 'Redmine', label: 'Redmine' },
-    { keyword: 'rakumo', label: '勤怠' },
-    { keyword: 'Adobe', label: 'Adobe' },
-    { keyword: 'Figma', label: 'Figma' },
-    { keyword: 'Chatwork', label: 'Chatwork' },
-  ]
-
-  for (let i = 0; i < keywordLabelPairs.length; i++) {
-    let pair = keywordLabelPairs[i]
-
-    // Gmailで検索するクエリを設定
-    const query = 'is:inbox is:unread subject:' + pair.keyword
-
-    // クエリに一致するスレッドを取得
-    let threads = GmailApp.search(query)
-
-    // ラベルを取得、存在しない場合は新しく作成
-    let label =
-      GmailApp.getUserLabelByName(pair.label) ||
-      GmailApp.createLabel(pair.label)
-
-    // 各スレッドにラベル付与
-    for (let j = 0; j < threads.length; j++) {
-      label.addToThread(threads[j])
-    }
-  }
-}
+```shell-session
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: ‘git pull …’) before pushing again.
+hint: See the ‘Note about fast-forwards’ in ‘git push –help’ for details.
 ```
 
-あとは、定期的に実行したいのでトリガーを設定します。
-GAS のトリガー機能を使用して設定することができます。
+リモートリポジトリから取得しようとするが、またもやエラー
+
+```shell-session
+git pull origin feature/hogehoge
+```
+
+```shell-session
+Diverging branches can't be fast-forwarded, you need to either;
+git merge --no-ff
+or
+geit rebase
+Disable this message with "git config advice.diverging false"
+```
+
+自分のローカルブランチとリモートブランチが分岐している状態で、ローカルとリモートの両方で新しいコミットが存在するため、これらが直線的（`fast-forward`）に統合できない状態にある。
+
+なので、`-no-ff`オプションを付与して強制的に`Non-Fast-Forward Merge`を行う。
+（`Non-Fast-Forward Merge`は、ブランチの統合点を明確に示したい場合や、特定のブランチの存在を履歴に残したい場合に有用）
+
+```shell-session
+git merge --no-ff origin/feature/hogehoge
+```
+
+するとまたもや何か言われる
+
+```shell-session
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+~
+```
+
+マージするならコミットメッセージを入力してね、とのこと
+
+「vi」エディタが起動しているので、コマンドで対応する。
+以下順序で対処（※コミットメッセージを残さない場合）
+
+1. esc ボタンを押す
+
+2. 「:wq」と入力する
+
+3. Enter ボタンを押す
