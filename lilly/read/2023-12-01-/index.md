@@ -23,6 +23,7 @@ date: 'December 01, 2023'
 - [フロントエンドの"バリデーション"は最低限の方がいいらしい](https://qiita.com/mi2__user/items/f2f415ccbb0a625c8647)
 - [デジタル庁のサイト、その後…](https://qiita.com/mu_tomoya/items/14cd7c7ca4c6d1af96ca)
 - [フロントエンドのキャッチアップ大変だよねという話 2023](https://zenn.dev/genda_jp/articles/d48f1e956b112f)
+- [エンジニアが AdobeXD から Figma に移行して感じたこと](https://baigie.me/engineerblog/adobexd-to-figma-review/)
 
 ## 🚶 セミナー参加
 
