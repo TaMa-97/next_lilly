@@ -1,5 +1,5 @@
 ---
-title: 'Pixi.js（WebGL）の活用シーンなど'
+title: '[WebGL]Pixi.js備忘録'
 date: '2023/07/08'
 tags: ['Pixi.js', 'WebGL', 'JavaScript']
 ---
@@ -12,9 +12,7 @@ tags: ['Pixi.js', 'WebGL', 'JavaScript']
 
 [Wikipedia/PixiJS](https://ja.wikipedia.org/wiki/PixiJS)
 
-## Web 制作/アプリ開発における Pixi.js の活用シーン
-
-![](/images/note/post06/img01.png)
+## 活用シーン
 
 - 大量の DOM 要素を扱わなくてはならない場合
 
@@ -54,7 +52,8 @@ tags: ['Pixi.js', 'WebGL', 'JavaScript']
 終了
 ```
 
-<br>
+### 例
+
 1. Pixi アプリケーションの作成
    描画領域を表す canvas 要素を作成する
 
@@ -75,7 +74,7 @@ const titleText = new PIXI.Text( "hogehoge", textStyle );
 app.stage.addChild( titleText );
 ```
 
-3. オブジェクトを動かしたり
+3. アニメーション設定
 
 ```JavaScript
 titleText.x = 350;
@@ -85,7 +84,7 @@ app.ticker.add( delta => {
 } );
 ```
 
-4. DOM に Pixi アプリケーションを突っ込む
+4. DOM に Pixi アプリケーションを追加
    `HTML`の`<main id="app"></main>`の中に先程作った PIXI アプリケーション(app)のビュー(canvas)を追加
 
 ```JavaScript
