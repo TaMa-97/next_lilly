@@ -1,10 +1,8 @@
 ---
-title: '[Next.js] useRouterメモ'
+title: '[Next.js] useRouter備忘録'
 date: '2023/04/29'
 tags: ['Next.js', 'TypeScript']
 ---
-
-## はじめに
 
 `useRouter`の機能やプロパティ/メソッド、現在のページのルーティング情報を取得する方法など
 
@@ -135,67 +133,6 @@ const MyComponent = () => {
   )
 }
 ```
-
-## 具体例
-
-当サイトで実際に実装されている Header コンポーネント。
-`useRouter`を使用して、現在のページのパス名に基づいてアクティブなナビリンクのスタイルを変更している。
-
-```tsx:Header.tsx
-import { useRouter } from 'next/router'
-// 省略
-
-const Header = () => {
-  const router = useRouter()
-  const isActiveLink = (path) => {
-    return (
-      router.pathname === path ||
-      (path === '/' &&
-        (router.pathname.startsWith('/blog/') ||
-          router.pathname.startsWith('/category/')))
-    )
-  }
-
-  return (
-    <header className={styles.gHeader}>
-      <div className={`container ${styles.gHeader__inner}`}>
-        {/* 省略 */}
-        <nav className={styles.gNav}>
-          <ul className={styles.gNav__list}>
-            <li className={styles.gNav__item}>
-              <Link
-                href="/"
-                className={`${styles.gNav__link} ${
-                  isActiveLink('/') ? styles.gNav__linkActive : ''
-                }`}
-                scroll={false}
-              >
-                Blog
-              </Link>
-            </li>
-            <li className={styles.gNav__item}>
-              <Link
-                href="/about"
-                className={`${styles.gNav__link} ${
-                  isActiveLink('/about') ? styles.gNav__linkActive : ''
-                }`}
-                scroll={false}
-              >
-                About
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-  )
-}
-
-export default Header
-
-```
-
-`useRouter`フックを使って`router`オブジェクトを取得して、`isActiveLink`関数を作成している。引数として渡されたパスが現在のページのパスと一致するかどうかをチェック、`/blog/`と`/category/`配下のページを含むチェックも追加しフラグを返している。
 
 ## 参考
 
