@@ -11,6 +11,7 @@ date: 'December 15, 2023'
 - [デジタル庁で jQuery が何をしているのか](https://laiso.hatenablog.com/entry/2023/12/14/184602)
 - [共創するためのデザイン批評](https://speakerdeck.com/takanorip/gong-chuang-surutamefalsedezainpi-ping)
 - [Three.js で新宿駅構内図を 3D で可視化してみる](https://qiita.com/satoshi7190/items/23d192372877af75b283)
+- [巨大企業で DX 革新を起こすということ](https://zenn.dev/aeonpeople/articles/574989fab01f2f)
 
 ## 🚶 セミナー参加
 
