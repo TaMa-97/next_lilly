@@ -5,6 +5,8 @@ date: 'December 15, 2023'
 
 ## ✨ ピックアップ
 
+- [Astro ゆく年くる年](https://zenn.dev/morinokami/articles/astro-2023-2024)
+
 ## 👀 読んだ
 
 - [４年間、7 色だけで UI をデザインし続けた話](https://note.com/ash/n/n82b11075119a)
