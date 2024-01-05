@@ -7,6 +7,9 @@ date: 'January 01, 2024'
 
 ## 👀 読んだ
 
+- [Figma プラグイン開発のススメ](https://speakerdeck.com/temoki/figmapuraguinkai-fa-nosusume)
+- [サイトを高速化するといくら儲かるのか見積もってみる](https://qiita.com/miyanaga/items/1c6053be8bbaf6f2e177)
+
 ## 🚶 セミナー参加
 
 ## 📚 あとで読む
