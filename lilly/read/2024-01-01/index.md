@@ -13,6 +13,7 @@ date: 'January 01, 2024'
 - [ここがツボ、UI デザインの段取り](https://xtech.nikkei.com/it/atcl/column/16/012500018/012500004/)
 - [データベース研修](https://speakerdeck.com/techtekt/detabesuyan-xiu)
 - [フロントエンド刷新活動の紹介](https://speakerdeck.com/cybozuinsideout/jsconf-sponsor-lt)
+- [Web Application Overview 2021](https://speakerdeck.com/cybozuinsideout/web-application-overview-2021)
 
 ## 🚶 セミナー参加
 
