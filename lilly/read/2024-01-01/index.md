@@ -14,6 +14,7 @@ date: 'January 01, 2024'
 - [データベース研修](https://speakerdeck.com/techtekt/detabesuyan-xiu)
 - [フロントエンド刷新活動の紹介](https://speakerdeck.com/cybozuinsideout/jsconf-sponsor-lt)
 - [Web Application Overview 2021](https://speakerdeck.com/cybozuinsideout/web-application-overview-2021)
+- [github で人生を管理する](https://zenn.dev/hand_dot/articles/85c9640b7dcc66)
 
 ## 🚶 セミナー参加
 
