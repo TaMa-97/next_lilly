@@ -15,6 +15,7 @@ date: 'January 01, 2024'
 - [フロントエンド刷新活動の紹介](https://speakerdeck.com/cybozuinsideout/jsconf-sponsor-lt)
 - [Web Application Overview 2021](https://speakerdeck.com/cybozuinsideout/web-application-overview-2021)
 - [github で人生を管理する](https://zenn.dev/hand_dot/articles/85c9640b7dcc66)
+- [突拍子もない Web サイトの作り方 制作フロー編](https://zenn.dev/junni/articles/3a62a247a033db)
 
 ## 🚶 セミナー参加
 
