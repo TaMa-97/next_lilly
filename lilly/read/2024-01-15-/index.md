@@ -18,6 +18,7 @@ date: 'January 15, 2024'
 - [Tailwind Variants で Tailwind CSS を次のレベルへ引き上げよう](https://zenn.dev/sc30gsw/articles/4e0262c33dc7b4)
 - [日本語 LLM の学習に向けたデータ前処理](https://zenn.dev/elith/articles/5321e321956ac2)
 - [htmx とは何なのか？ その背景にある思想について](https://qiita.com/tsmd/items/0d07feb8e02cfa213cc4)
+- [htmx コア入門](https://zenn.dev/laiso/articles/079c2e1b7ecbba)
 
 ## 🚶 セミナー参加
 
