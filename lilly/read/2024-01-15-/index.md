@@ -19,6 +19,7 @@ date: 'January 15, 2024'
 - [日本語 LLM の学習に向けたデータ前処理](https://zenn.dev/elith/articles/5321e321956ac2)
 - [htmx とは何なのか？ その背景にある思想について](https://qiita.com/tsmd/items/0d07feb8e02cfa213cc4)
 - [htmx コア入門](https://zenn.dev/laiso/articles/079c2e1b7ecbba)
+- [『リーダブルコード』を実践的に活用するための問題集[Javascript](第 1 部 表面上の改善)](https://qiita.com/kyok01_japan/items/cc6df24164bc291677bd)
 
 ## 🚶 セミナー参加
 
