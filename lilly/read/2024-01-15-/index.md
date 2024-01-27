@@ -20,6 +20,8 @@ date: 'January 15, 2024'
 - [htmx とは何なのか？ その背景にある思想について](https://qiita.com/tsmd/items/0d07feb8e02cfa213cc4)
 - [htmx コア入門](https://zenn.dev/laiso/articles/079c2e1b7ecbba)
 - [『リーダブルコード』を実践的に活用するための問題集[Javascript](第 1 部 表面上の改善)](https://qiita.com/kyok01_japan/items/cc6df24164bc291677bd)
+- [Next.js App Router キャッシュの今](https://zenn.dev/frontendflat/articles/nextjs-cache-2024)
+- [デザインガイドラインを使って既存のコンポーネントを（愚直に）アップデートする](https://zenn.dev/team_zenn/articles/apply-design-guide-to-exiting)
 
 ## 🚶 セミナー参加
 
