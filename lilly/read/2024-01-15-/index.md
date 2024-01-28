@@ -22,6 +22,7 @@ date: 'January 15, 2024'
 - [『リーダブルコード』を実践的に活用するための問題集[Javascript](第 1 部 表面上の改善)](https://qiita.com/kyok01_japan/items/cc6df24164bc291677bd)
 - [Next.js App Router キャッシュの今](https://zenn.dev/frontendflat/articles/nextjs-cache-2024)
 - [デザインガイドラインを使って既存のコンポーネントを（愚直に）アップデートする](https://zenn.dev/team_zenn/articles/apply-design-guide-to-exiting)
+- [「React の難しさ」を分解しよう](https://hachibeechan.hateblo.jp/entry/you-can-understand-react)
 
 ## 🚶 セミナー参加
 
