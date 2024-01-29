@@ -23,6 +23,7 @@ date: 'January 15, 2024'
 - [Next.js App Router キャッシュの今](https://zenn.dev/frontendflat/articles/nextjs-cache-2024)
 - [デザインガイドラインを使って既存のコンポーネントを（愚直に）アップデートする](https://zenn.dev/team_zenn/articles/apply-design-guide-to-exiting)
 - [「React の難しさ」を分解しよう](https://hachibeechan.hateblo.jp/entry/you-can-understand-react)
+- [HTMX の正体が分からないので、オレオレ HTMX を作ってみた](https://qiita.com/YmBIgo/items/4df3eb97d1ecfd3c66ed)
 
 ## 🚶 セミナー参加
 
