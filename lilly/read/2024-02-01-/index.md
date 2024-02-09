@@ -13,6 +13,7 @@ date: 'February 01, 2024'
 - [Next.js + TypeScript + Tailwind CSS の開発環境をできるだけ丁寧に構築する](https://zenn.dev/yoshinoki/articles/next-ts-tailwind-setting)
 - [Atomic Design に対する感情](https://scrapbox.io/fsubal/Atomic_Design_%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E6%84%9F%E6%83%85)
 - [React プロジェクトのディレクトリ構成](https://scrapbox.io/fsubal/React_%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E6%A7%8B%E6%88%90)
+- [HTTP リアルタイム通信をまとめてみた](https://zenn.dev/sdb_blog/articles/8558a2f226495b)
 
 ## 🚶 セミナー参加
 
