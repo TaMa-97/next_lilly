@@ -17,6 +17,12 @@ date: 'February 01, 2024'
 - [TypeScript の変性（共変・反変）を 5 分で理解する](https://zenn.dev/jay_es/articles/2024-02-13-typescript-variance)
 - [useNavigate + useLocation で遷移先に送付する値を管理する](https://zenn.dev/horisan/articles/2aeaf0bd3fb70f)
 - [Ubie のデザインの「今」を知りたいときに読む note (プロダクト・事業篇)](https://note.com/hatakejp/n/ne70865522914)
+- [いまさら Local Storage とアクセストークンの保存場所の話について](https://qiita.com/NewGyu/items/0b3111b61405366a76c5)
+- [JWT を認証に使うときに知っておきたいことやテストのこと](https://blog.kapiecii.com/posts/2021/06/13/what-you-need-to-know-about-using-jwt-for-authentication-and-tests/)
+- [Web アプリケーションのセッション管理に JWT 導入を検討する際の考え方](https://ritou.hatenablog.com/entry/2019/12/01/060000)
+- [JSON Web Signature 導入における鍵周りの基本的な考え方](https://qiita.com/ritou/items/a861e952ccea8ba9e68c)
+- [おーい磯野ー，Local Storage に JWT 保存しようぜ！](https://zenn.dev/musou1500/articles/6bc49fe0f9d7ed7e20cc)
+- [JWT は使うべきではない　〜 SPA における本当にセキュアな認証方式 〜](https://qiita.com/nyandora/items/8174891f52ec0ea15bc1)
 
 ## 🚶 セミナー参加
 
