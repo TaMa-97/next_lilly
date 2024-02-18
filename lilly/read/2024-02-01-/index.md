@@ -16,6 +16,7 @@ date: 'February 01, 2024'
 - [HTTP リアルタイム通信をまとめてみた](https://zenn.dev/sdb_blog/articles/8558a2f226495b)
 - [TypeScript の変性（共変・反変）を 5 分で理解する](https://zenn.dev/jay_es/articles/2024-02-13-typescript-variance)
 - [useNavigate + useLocation で遷移先に送付する値を管理する](https://zenn.dev/horisan/articles/2aeaf0bd3fb70f)
+- [Ubie のデザインの「今」を知りたいときに読む note (プロダクト・事業篇)](https://note.com/hatakejp/n/ne70865522914)
 
 ## 🚶 セミナー参加
 
