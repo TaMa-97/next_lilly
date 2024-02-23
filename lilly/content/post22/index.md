@@ -19,12 +19,9 @@ create-react-app はすでにメンテナンスモードに入っており、新
 
 ## 環境
 
-```shell-session
-React v18.2.0
-react-scripts v5.0.1
-typescript v4.9.5
-eslint v8.56.0
-```
+| 言語       | UI ライブラリ | リンター       | その他               |
+| ---------- | ------------- | -------------- | -------------------- |
+| typescript | react v18.2.0 | eslint v8.56.0 | react-scripts v5.0.1 |
 
 ## 対応内容
 

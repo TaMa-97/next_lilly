@@ -4,10 +4,6 @@ date: '2023/09/15'
 tags: ['パフォーマンス', 'Core Web Vitals', 'webpack', 'Tree Shaking']
 ---
 
-## 目的
-
-- バンドルサイズの削減
-
 ## 改善内容
 
 ### webpack 設定項目
@@ -31,15 +27,3 @@ optimization: {
   mangleExports: "deterministic",
 },
 ```
-
-## 結果
-
-- bundle ファイル(defer.js)
-  - 改善前: 238 KiB
-  - 改善後: 237 KiB
-- bundle ファイル(async.js)
-  - 改善前: 3.92 KiB
-  - 改善後: 3.25 KiB
-
-今回、作業前の初期セットを対象としているので結果は微々たるものですが、
-案件の規模が拡大することでより大きな効果が期待できそうです。

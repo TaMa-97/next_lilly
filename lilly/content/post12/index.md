@@ -54,10 +54,3 @@ Google Calendar と Full Calendar を連携させるにあたり必要な情報�
 > Google Calendar API はすべて、追加料金なしで利用できます。クォータ リクエストの制限を超えても追加料金は発生せず、アカウントには請求されません。
 
 [割り当ての管理 | Google Calendar | Google for Developers](https://developers.google.com/calendar/api/guides/quota?hl=ja)
-
-## お客様への注意/懸念点
-
-- お客様で API キー の取得をしていただく必要がある
-- お客様で対象 Google Calendar の公開設定をしていただく必要がある
-- 課金対象になる可能性がある
-- 仕様変更によって表示されなくなる可能性がある
