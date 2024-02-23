@@ -16,7 +16,7 @@ React SPA 環境において `React Router` での画面遷移時に、特定の
 
 ## 対応内容
 
-下記が今回対象の `Wrapper` コンポーネントに対して、`StyledBodyInner` のスクロール位置を遷移時に最上部にリセットする機能を付与したもの。
+下記が今回対象の `Wrapper` コンポーネントの`StyledBodyInner`要素に対して、遷移時にスクロール位置を最上部にリセットする機能を付与したもの。
 
 ```tsx:src/components/layouts/wrapper/Wrapper.tsx
 import React, { useEffect, useRef } from 'react';
@@ -63,7 +63,7 @@ export default Wrapper;
 ```
 
 - `const { pathname } = useLocation();`
-  - 現在の URL のパス名を取得して、ページ遷移が発生したかどうかを判断する
+  - 現在の URL のパス名を取得
 - `<StyledBodyInner ref={wrapperRef}>{children}</StyledBodyInner>`
   - `ref` 属性を追加して、`wrapperRef` をその要素への参照として設定する
 - `const wrapperRef = useRef<HTMLDivElement>(null);`
