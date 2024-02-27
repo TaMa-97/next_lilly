@@ -13,6 +13,7 @@ date: 'February 15, 2024'
 - [json 作る時の自分なりの考え方](https://zenn.dev/hulk510/articles/bf585a91d6e1b1286e07)
 - [Web API には JSON ベースのフォーマットを使おう](https://qiita.com/tkawa/items/2841e155e5b51c09ed40)
 - [PixiJS で簡単なゲームを作ってみた](https://zenn.dev/tellernovel_inc/articles/8f47a24fc55f2c)
+- [Lottie を使ったローディングアニメーションを AE で作成 → 実装してみた](https://zenn.dev/takanami/articles/10d46d1603a230)
 
 ## 🚶 セミナー参加
 
