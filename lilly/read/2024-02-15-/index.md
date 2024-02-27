@@ -14,6 +14,10 @@ date: 'February 15, 2024'
 - [Web API には JSON ベースのフォーマットを使おう](https://qiita.com/tkawa/items/2841e155e5b51c09ed40)
 - [PixiJS で簡単なゲームを作ってみた](https://zenn.dev/tellernovel_inc/articles/8f47a24fc55f2c)
 - [Lottie を使ったローディングアニメーションを AE で作成 → 実装してみた](https://zenn.dev/takanami/articles/10d46d1603a230)
+- [レンダープロップパターン｜フロントエンドのデザインパターン](https://zenn.dev/morinokami/books/learning-patterns-1/viewer/render-props-pattern)
+- [2024 年 1 月 LIFULL のアクセシビリティへの取り組み](https://www.lifull.blog/entry/2024/02/21/110000)
+- [何故くそややこしい React を勉強しないといけないのか？](https://qiita.com/monsoonTropicalBird/items/904e8f24ba7a816511d3)
+- [Storybook の実力をフル活用する Chromatic](https://speakerdeck.com/sakito/storybooknoshi-li-wohuruhuo-yong-suruchromatic)
 
 ## 🚶 セミナー参加
 
