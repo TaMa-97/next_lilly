@@ -1,7 +1,7 @@
 ---
 title: 'React Typescript環境におけるカスタムパスエイリアス設定'
 date: '2024/02/11'
-tags: ['React', 'Typescript', 'webpack', 'ESLint']
+tags: ['React', 'TypeScript', 'webpack', 'ESLint']
 ---
 
 ## やりたいこと

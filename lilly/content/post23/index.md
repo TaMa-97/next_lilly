@@ -1,7 +1,7 @@
 ---
 title: 'React SPAで特定の要素内のスクロール位置を制御する'
 date: '2024/02/21'
-tags: ['React', 'Typescript']
+tags: ['React', 'TypeScript']
 ---
 
 ## やりたいこと
