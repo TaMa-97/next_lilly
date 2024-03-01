@@ -19,6 +19,8 @@ date: 'February 15, 2024'
 - [何故くそややこしい React を勉強しないといけないのか？](https://qiita.com/monsoonTropicalBird/items/904e8f24ba7a816511d3)
 - [Storybook の実力をフル活用する Chromatic](https://speakerdeck.com/sakito/storybooknoshi-li-wohuruhuo-yong-suruchromatic)
 - [「さっきからなんなんだ このふわっとした指示は！」をどうにかしたいスプレッドシート用チャットを作ってみる](https://zenn.dev/hankei6km/articles/chat-in-google-sheets-with-gemini-api)
+- [【CSS】border を使って、三角形作るのはやめませんか？](https://qiita.com/degudegu2510/items/09f34d4b218c9df6bb57)
+- [エンタープライズでの LLM 導入: 戦略的アプローチとリスク管理](https://zenn.dev/knowledgework/articles/llm-enterprise-appication)
 
 ## 🚶 セミナー参加
 
