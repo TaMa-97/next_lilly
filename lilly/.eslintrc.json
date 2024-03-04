@@ -27,7 +27,6 @@
   "rules": {
     "react/prop-types": "off",
     // 任意の構文の間に空行を入れるかどうかの定義
-    // ここでは return 文の前に空行を入れるが、一行の const 宣言の直後に限って空行なしを許容する設定としている
     "padding-line-between-statements": [
       "error",
       {
@@ -43,8 +42,6 @@
     ],
 
     // 型情報のみの import を import type に強制するルール
-    // デフォルトでは import { type ... } の書式になっているので、
-    // import type { ... } の書式に変更
     "@typescript-eslint/consistent-type-imports": [
       "error",
       {
@@ -53,50 +50,22 @@
     ],
 
     // オブジェクトの型定義にインターフェースまたは型エイリアスのどちらかを強制するルール
-    // eslint-config-standard-with-typescript がインターフェースを強制しているのを無効化
     "@typescript-eslint/consistent-type-definitions": "off",
 
     // 関数の戻り値に必ず型定義を書かなければいけないルール
-    // eslint-config-standard-with-typescript が全面採用しているが厳しすぎるため、
-    // その適用がエクスポートされる関数に限られる @typescript-eslint/explicit-module-boundary-types に入れ替え
-    // 追記：
-    // @typescript-eslint/explicit-module-boundary-types の方も有効化するメリットがないという意見もあるので error から off に変更
-    // 参考：
-    // https://twitter.com/fiahfy/status/1521724999953879040
-    // https://github.com/typescript-eslint/typescript-eslint/issues/3746
-    "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
 
     // Promise の誤用を防ぐためのルール
-    // 何も返さない async 関数のコールに明示的に void キーワードをつけることを強制され、
-    // かつ、コンポーネントのイベント属性に async 関数を渡す際に、
-    // (e): void => { handleSubmit(e) } のような煩雑な記述を強いられるのを部分的に無効化
     "@typescript-eslint/no-misused-promises": [
       "error",
       {
         "checksVoidReturn": false
       }
     ],
-
-    // 本ルールについての説明、補足を追加すること
-    // `${process.env.REACT_APP_REST_URL}/tasks/` のような記述に対するエラーを無効化している
     "@typescript-eslint/restrict-template-expressions": "off",
 
     // 使用していない変数の定義を許可しないルール
-    // ここでは変数および引数の名前の頭に `_` をつけた時のみ許容するよう設定
-    // eslint-plugin-unused-imports を併用する場合はこちらの設定はコンフリクトするのでコメントアウトする
-    // '@typescript-eslint/no-unused-vars': [
-    //   'error',
-    //   {
-    //     argsIgnorePattern: '^_',
-    //     varsIgnorePattern: '^_',
-    //   },
-    // ],
-
-    // 使用していないインポートを自動削除するルール
-    // 本プラグインとコンフリクトを起こす no-unused-vars の設定を無効化し、
-    // 変数および引数の名前の頭に `_` をつけた場合のみ許可する設定をこちらでおこなっている
-    "@typescript-eslint/no-unused-vars": "off", // or 'no-unused-vars': 'off'
+    "@typescript-eslint/no-unused-vars": "off",
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
       "warn",
@@ -109,8 +78,6 @@
     ],
 
     // Boolean 値が期待される記述で、Boolean 型以外の使用を許可しないルール
-    // デフォルト設定だと警告が過剰に思えるので、ルールを緩和
-    // ここでは string, number, オブジェクト、関数、null、undefined の場合には許容するよう設定
     "@typescript-eslint/strict-boolean-expressions": [
       "error",
       {
@@ -123,7 +90,6 @@
     ],
 
     // トリプルスラッシュ・ディレクティブの使用を許可するかどうかを定義するルール
-    // ここでは eslint-config-standard-with-typescript が一律禁止にしているのを、type 属性に限り許可するように設定
     "@typescript-eslint/triple-slash-reference": [
       "error",
       {
@@ -132,13 +98,9 @@
     ],
 
     // autoFocus 属性の使用を禁止するルール
-    // autoFocus 属性の使用はユーザビリティを損なうため禁止は妥当なのだが、
-    // デフォルトで有効化されてるフレームワーク等に対して値を false にしたい場合でもエラーになってしまうので判定を無効化
     "jsx-a11y/no-autofocus": "off",
 
     // インポートの際のファイル拡張子を記述するかを定義するルール
-    // ここでは npm パッケージ以外のファイルについて、`.js`、`.jsx`、`.ts`、`.tsx` のみ拡張子を省略し、
-    // それ以外のファイルは拡張子を記述させるように設定
     "import/extensions": [
       "error",
       {
@@ -156,10 +118,6 @@
     "import/newline-after-import": "error",
 
     // モジュールインポートの順番をカスタマイズできるルール
-    // react および react-dom モジュールを最初に、
-    // 非相対パスで記述した内部モジュールのコンポーネントを相対パスモジュールの直前に、
-    // CSS Modules ファイルのインポートを最後にするよう設定
-    // import from `xxx` 形式の記述は eslint-plugin-import が認識できないため、通常の CSS ファイルのインポート文はソート不可
     "import/order": [
       "error",
       {
@@ -173,25 +131,21 @@
           "index"
         ],
         "pathGroups": [
-          // type のインポートを最上部に配置、ただし @types/** からのインポートは外部インポートのあとに配置
           {
             "pattern": "@/types/**",
             "group": "type",
             "position": "after"
           },
-          // @/ からインポートするファイルをグルーピング
           {
             "pattern": "{@/**}",
             "group": "internal",
             "position": "before"
           },
-          // 非相対パスで記述した内部モジュールのコンポーネントを相対パスモジュールの直前に配置
           {
             "pattern": "{[A-Z]*,**/[A-Z]*}",
             "group": "internal",
             "position": "after"
           },
-          // @@/ からインポートするファイルを一番最後に配置
           {
             "pattern": "@@/**",
             "group": "index",
