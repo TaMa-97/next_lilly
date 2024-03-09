@@ -76,7 +76,7 @@ const TopBody = ({ allPosts, categoryCounts }: Props) => {
             </CSSTransition>
           </div>
           <ul className={styles.myBlog__list}>
-            {sortedPosts?.map((post) => (
+            {sortedPosts?.map((post: Post) => (
               <li key={post.slug} className={styles.myBlog__item}>
                 <Link
                   href={`/note/${post.slug}`}
