@@ -16,6 +16,7 @@ type Post = {
 
 type Props = {
   allPosts: Post[]
+  sortedPosts: Post[]
   categoryCounts: Record<string, number>
 }
 
