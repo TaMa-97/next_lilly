@@ -1,3 +1,4 @@
+import type { Post } from '@/types/postTypes'
 import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
@@ -7,16 +8,8 @@ import styles from './index.module.scss'
 import { useAccordion } from '../hooks/useAccordion'
 import { useSortedPosts } from '../hooks/useSortedPosts'
 
-type Post = {
-  slug: string
-  title: string
-  date: string
-  tags: string[]
-}
-
 type Props = {
   allPosts: Post[]
-  sortedPosts: Post[]
   categoryCounts: Record<string, number>
 }
 
