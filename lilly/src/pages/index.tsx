@@ -3,8 +3,8 @@ import React from 'react'
 import { getStaticProps } from '@/features/top/api/dataFetching'
 import { TopBody } from '@/features/top/components'
 import CustomHead from '@/components/base/Head/CustomHead'
-import Header from '@/components/base/Header/Header'
-import Footer from '@/components/base/Footer/Footer'
+import Header from '@/components/layouts/Header/Header'
+import Footer from '@/components/layouts/Footer/Footer'
 
 export { getStaticProps }
 

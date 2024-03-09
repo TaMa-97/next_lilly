@@ -5,8 +5,8 @@ import { motion } from 'framer-motion'
 import { getAllReads } from '@/utils/readApi'
 import { Wrapper } from '@/components/layouts/Wrapper'
 import CustomHead from '@/components/base/Head/CustomHead'
-import Header from '@/components/base/Header/Header'
-import Footer from '@/components/base/Footer/Footer'
+import Header from '@/components/layouts/Header/Header'
+import Footer from '@/components/layouts/Footer/Footer'
 import styles from './index.module.scss'
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>
