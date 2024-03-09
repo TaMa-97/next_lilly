@@ -53,6 +53,7 @@
     "@typescript-eslint/consistent-type-definitions": "off",
 
     // 関数の戻り値に必ず型定義を書かなければいけないルール
+    "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
 
     // Promise の誤用を防ぐためのルール
