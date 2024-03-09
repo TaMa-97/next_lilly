@@ -1,9 +1,13 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
-const CustomHead = ({ title, description }) => {
+type CustomHeadProps = {
+  title: string
+  description: string
+}
+
+const CustomHead = ({ title, description }: CustomHeadProps) => {
   const router = useRouter()
   const canonicalURL = `https://lilly-dog.dev${router.asPath}`
 
@@ -24,11 +28,6 @@ const CustomHead = ({ title, description }) => {
       <link rel="icon" href="https://lilly-dog.dev/favicon.ico" />
     </Head>
   )
-}
-
-CustomHead.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
 }
 
 export default CustomHead

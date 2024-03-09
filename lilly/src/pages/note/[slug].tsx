@@ -9,9 +9,9 @@ import { motion, useScroll } from 'framer-motion'
 import { getAllPosts, getPostBySlug } from '@/utils/api'
 import markdownToHtml from '@/utils/markdownToHtml'
 import { Wrapper } from '@/components/layouts/Wrapper'
-import CustomHead from '@/components/layouts/Head/CustomHead'
-import Header from '@/components/layouts/Header/Header'
-import Footer from '@/components/layouts/Footer/Footer'
+import { CustomHead } from '@/components/layouts/Head'
+import { Header } from '@/components/layouts/Header'
+import { Footer } from '@/components/layouts/Footer'
 import styles from './[slug].module.scss'
 
 const useTocbot = () => {

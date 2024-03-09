@@ -6,7 +6,7 @@ import styles from './Header.module.scss'
 const Header = () => {
   const router = useRouter()
 
-  const isActiveLink = (path) => {
+  const isActiveLink = (path: string): boolean => {
     return (
       router.pathname === path ||
       (path === '/' &&
@@ -22,7 +22,12 @@ const Header = () => {
       <div className={`container ${styles.gHeader__inner}`}>
         <div className={styles.gHeader__logo}>
           <Heading className={styles.gHeader__title}>
-            <Link href="/" className={styles.gHeader__titleLink} scroll={false}>
+            <Link
+              href="/"
+              className={styles.gHeader__titleLink}
+              scroll={false}
+              aria-label="Home"
+            >
               Lilly
             </Link>
           </Heading>
@@ -51,17 +56,6 @@ const Header = () => {
                 Read
               </Link>
             </li>
-            {/* <li className={styles.gNav__item}>
-              <Link
-                href="/about"
-                className={`${styles.gNav__link} ${
-                  isActiveLink('/about') ? styles.gNav__linkActive : ''
-                }`}
-                scroll={false}
-              >
-                About
-              </Link>
-            </li> */}
           </ul>
         </nav>
       </div>

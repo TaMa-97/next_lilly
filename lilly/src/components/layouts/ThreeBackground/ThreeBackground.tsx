@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from 'react'
 import * as THREE from 'three'
 import FOG from 'vanta/dist/vanta.fog.min'
 
-function ThreeBackground() {
-  const myRef = useRef()
+const ThreeBackground = () => {
+  const myRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    let vantaEffect = null
-    if (myRef.current !== null) {
+    let vantaEffect: any = null
+    if (myRef.current) {
       vantaEffect = FOG({
         el: myRef.current,
         THREE,
@@ -27,11 +27,9 @@ function ThreeBackground() {
     }
 
     return () => {
-      if (vantaEffect !== null) {
-        vantaEffect.destroy()
-      }
+      if (vantaEffect) vantaEffect.destroy()
     }
-  }, [myRef.current])
+  }, [])
 
   return <div ref={myRef} className="gThreeBg" />
 }

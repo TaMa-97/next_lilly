@@ -4,9 +4,9 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { getAllReads } from '@/utils/readApi'
 import { Wrapper } from '@/components/layouts/Wrapper'
-import CustomHead from '@/components/layouts/Head/CustomHead'
-import Header from '@/components/layouts/Header/Header'
-import Footer from '@/components/layouts/Footer/Footer'
+import { CustomHead } from '@/components/layouts/Head'
+import { Header } from '@/components/layouts/Header'
+import { Footer } from '@/components/layouts/Footer'
 import styles from './index.module.scss'
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>
