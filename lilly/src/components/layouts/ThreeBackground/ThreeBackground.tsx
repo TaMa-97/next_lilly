@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import * as THREE from 'three'
-import FOG from 'vanta/dist/vanta.fog.min'
+// import FOG from 'vanta/dist/vanta.fog.min'
+const FOG: any = require('vanta/dist/vanta.fog.min')
 
 const ThreeBackground = () => {
   const myRef = useRef<HTMLDivElement>(null)
