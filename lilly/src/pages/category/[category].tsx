@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 import { getAllPosts } from '@/utils/api'
+import { Wrapper } from '@/components/layouts/Wrapper'
 import CustomHead from '@/components/base/Head/CustomHead'
 import Header from '@/components/base/Header/Header'
 import Footer from '@/components/base/Footer/Footer'
@@ -29,16 +30,10 @@ const TagPage: React.FC<TagPageProps> = ({ posts }) => {
   return (
     <>
       {category !== undefined ? (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ ease: 'easeOut', duration: 0.25 }}
-          className="gWrapper"
-        >
+        <>
           <CustomHead title={pageTitle} description={pageDescription} />
           <Header />
-          <main>
+          <Wrapper>
             <section className={styles.myTag}>
               <div className="container">
                 <motion.div
@@ -82,9 +77,9 @@ const TagPage: React.FC<TagPageProps> = ({ posts }) => {
                 </ul>
               </div>
             </section>
-          </main>
+          </Wrapper>
           <Footer />
-        </motion.div>
+        </>
       ) : (
         <LoadingSpinner />
       )}

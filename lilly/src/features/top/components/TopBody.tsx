@@ -2,23 +2,29 @@ import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { CSSTransition } from 'react-transition-group'
+import { Wrapper } from '@/components/layouts/Wrapper'
 import styles from './index.module.scss'
+import { useAccordion } from '../hooks/useAccordion'
+import { useSortedPosts } from '../hooks/useSortedPosts'
 
-type Props = {
-  sortedPosts: any[]
-  categoryCounts: Record<string, number>
-  isOpen: boolean
-  toggleAccordion: () => void
+type Post = {
+  slug: string
+  title: string
+  date: string
+  tags: string[]
 }
 
-const TopBody = ({
-  sortedPosts,
-  categoryCounts,
-  isOpen,
-  toggleAccordion,
-}: Props) => {
+type Props = {
+  allPosts: Post[]
+  categoryCounts: Record<string, number>
+}
+
+const TopBody = ({ allPosts, categoryCounts }: Props) => {
+  const sortedPosts = useSortedPosts(allPosts)
+  const { isOpen, toggleAccordion } = useAccordion()
+
   return (
-    <main>
+    <Wrapper>
       <section className={styles.myBlog}>
         <div className="container">
           <motion.div
@@ -96,7 +102,7 @@ const TopBody = ({
           </ul>
         </div>
       </section>
-    </main>
+    </Wrapper>
   )
 }
 

@@ -8,6 +8,7 @@ import Tocbot from 'tocbot'
 import { motion, useScroll } from 'framer-motion'
 import { getAllPosts, getPostBySlug } from '@/utils/api'
 import markdownToHtml from '@/utils/markdownToHtml'
+import { Wrapper } from '@/components/layouts/Wrapper'
 import CustomHead from '@/components/base/Head/CustomHead'
 import Header from '@/components/base/Header/Header'
 import Footer from '@/components/base/Footer/Footer'
@@ -129,56 +130,48 @@ const Post: NextPage<Props> = ({ post }) => {
   const pageDescription = post.title
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ ease: 'easeOut', duration: 0.25 }}
-        className="gWrapper"
-      >
-        <CustomHead title={pageTitle} description={pageDescription} />
-        <Header />
-        <main>
-          <ScrollAnimatedComponent />
-          <div className="container">
-            <section className={styles.myBlog}>
-              <motion.h1
-                className={styles.myBlog__title}
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: -10, opacity: 0 }}
-                transition={{ duration: 0.2 }}
-              >
-                {post.title}
-              </motion.h1>
-              <div className={styles.myBlog__head}>
-                <p className={styles.myBlog__date}>{post.date}</p>
-                <ul className={styles.myBlog__list}>
-                  {post.tags?.map((tag) => (
-                    <li key={tag} className={styles.myBlog__item}>
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div id="toc" className={`${styles.myBlog__toc}`}>
-                <p id="toc-header" className={styles.myBlog__tocTtl}>
-                  もくじ
-                </p>
-                <div className="toc-wrapper"></div>
-              </div>
-              <article>
-                {/* ここでdangerouslySetInnerHTMLを使ってHTMLタグを出力する */}
-                <div
-                  className={`znc ${styles.myZnc}`}
-                  dangerouslySetInnerHTML={{ __html: post.content }}
-                />
-              </article>
-            </section>
-          </div>
-        </main>
-        <Footer />
-      </motion.div>
+      <CustomHead title={pageTitle} description={pageDescription} />
+      <Header />
+      <Wrapper>
+        <ScrollAnimatedComponent />
+        <div className="container">
+          <section className={styles.myBlog}>
+            <motion.h1
+              className={styles.myBlog__title}
+              initial={{ y: 10, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -10, opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              {post.title}
+            </motion.h1>
+            <div className={styles.myBlog__head}>
+              <p className={styles.myBlog__date}>{post.date}</p>
+              <ul className={styles.myBlog__list}>
+                {post.tags?.map((tag) => (
+                  <li key={tag} className={styles.myBlog__item}>
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div id="toc" className={`${styles.myBlog__toc}`}>
+              <p id="toc-header" className={styles.myBlog__tocTtl}>
+                もくじ
+              </p>
+              <div className="toc-wrapper"></div>
+            </div>
+            <article>
+              {/* ここでdangerouslySetInnerHTMLを使ってHTMLタグを出力する */}
+              <div
+                className={`znc ${styles.myZnc}`}
+                dangerouslySetInnerHTML={{ __html: post.content }}
+              />
+            </article>
+          </section>
+        </div>
+      </Wrapper>
+      <Footer />
     </>
   )
 }
