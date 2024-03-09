@@ -154,6 +154,7 @@
         ],
         "newlines-between": "never"
       }
-    ]
+    ],
+    "@typescript-eslint/explicit-function-return-type": "off"
   }
 }
