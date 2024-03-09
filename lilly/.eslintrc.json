@@ -155,7 +155,6 @@
         ],
         "newlines-between": "never"
       }
-    ],
-    "@typescript-eslint/no-var-requires": "off"
+    ]
   }
 }

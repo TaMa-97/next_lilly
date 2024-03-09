@@ -1,12 +1,14 @@
 import React, { useEffect, useRef } from 'react'
 import * as THREE from 'three'
 // import FOG from 'vanta/dist/vanta.fog.min'
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const FOG: any = require('vanta/dist/vanta.fog.min')
 
 const ThreeBackground = () => {
   const myRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let vantaEffect: any = null
     if (myRef.current) {
       vantaEffect = FOG({
