@@ -82,7 +82,7 @@ const TopBody = ({
                   </p>
                   <div className={styles.myBlog__linkInner}>
                     <ul className={styles.myBlog__linkList}>
-                      {post.tags?.map((tag) => (
+                      {post.tags?.map((tag: string) => (
                         <li key={tag} className={styles.myBlog__linkItem}>
                           {tag}
                         </li>
