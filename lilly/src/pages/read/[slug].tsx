@@ -1,4 +1,5 @@
 import type { InferGetStaticPropsType, NextPage } from 'next'
+import React from 'react'
 import {
   getStaticPaths,
   getStaticProps,
