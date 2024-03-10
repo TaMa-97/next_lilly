@@ -7,7 +7,7 @@ function ThreeBackground() {
 
   useEffect(() => {
     let vantaEffect = null
-    if (myRef.current !== null) {
+    if (myRef.current) {
       vantaEffect = FOG({
         el: myRef.current,
         THREE,
@@ -27,11 +27,11 @@ function ThreeBackground() {
     }
 
     return () => {
-      if (vantaEffect !== null) {
+      if (vantaEffect) {
         vantaEffect.destroy()
       }
     }
-  }, [myRef.current])
+  }, [])
 
   return <div ref={myRef} className="gThreeBg" />
 }
