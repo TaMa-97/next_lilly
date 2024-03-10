@@ -3,11 +3,12 @@ import * as THREE from 'three'
 import FOG from 'vanta/dist/vanta.fog.min'
 
 function ThreeBackground() {
-  const myRef = useRef()
+  const myRef = useRef(null)
 
   useEffect(() => {
     let vantaEffect = null
-    if (myRef.current) {
+    if (myRef.current !== null) {
+      // 明示的なnullチェック
       vantaEffect = FOG({
         el: myRef.current,
         THREE,
@@ -27,7 +28,7 @@ function ThreeBackground() {
     }
 
     return () => {
-      if (vantaEffect) {
+      if (vantaEffect !== null) {
         vantaEffect.destroy()
       }
     }
@@ -35,4 +36,5 @@ function ThreeBackground() {
 
   return <div ref={myRef} className="gThreeBg" />
 }
+
 export default ThreeBackground
