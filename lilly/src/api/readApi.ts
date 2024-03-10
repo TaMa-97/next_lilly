@@ -55,13 +55,11 @@ export const getReadBySlug = (
  * @param fields 取得したいフィールドの配列
  * @returns 記事の配列
  */
-export const getAllReads = (fields: string[] = []): Array<Partial<Read>> => {
+export const getAllReads = (fields: string[] = []): Read[] => {
   const slugs = getReadSlugs()
-  return slugs
-    .map((slug) => getReadBySlug(slug, fields))
-    .sort((a, b) =>
-      (a.slug as string)
-        .toLowerCase()
-        .localeCompare((b.slug as string).toLowerCase())
-    )
+  const reads: Read[] = slugs
+    .map((slug) => getReadBySlug(slug, fields) as Read)
+    .sort((a, b) => a.slug.toLowerCase().localeCompare(b.slug.toLowerCase()))
+
+  return reads
 }
