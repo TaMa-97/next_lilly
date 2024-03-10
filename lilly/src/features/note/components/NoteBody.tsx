@@ -1,21 +1,23 @@
-import type { Read } from '@/types/readTypes'
-import { motion } from 'framer-motion'
+import type { Post } from '@/types/postTypes'
 import React from 'react'
+import { motion, useScroll, useSpring } from 'framer-motion'
 import { useTocbot } from '@/hooks/useTocbot'
 import { Wrapper } from '@/components/layouts/Wrapper'
-import { ReadArticlesScroll } from './ReadArticlesScroll'
 import styles from './index.module.scss'
 
-type ReadArticlesBodyProps = {
-  read: Read
+type NoteBodyProps = {
+  post: Post
 }
 
-const ReadArticlesBody = ({ read }: ReadArticlesBodyProps) => {
+export const NoteBody = ({ post }: NoteBodyProps) => {
   useTocbot()
+
+  const { scrollYProgress } = useScroll()
+  const scaleX = useSpring(scrollYProgress)
 
   return (
     <Wrapper>
-      <ReadArticlesScroll />
+      <motion.div style={{ scaleX }} className="progress-bar" />
       <div className="container">
         <section className={styles.myBlog}>
           <motion.h1
@@ -25,12 +27,19 @@ const ReadArticlesBody = ({ read }: ReadArticlesBodyProps) => {
             exit={{ y: -10, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            {read.title}
+            {post.title}
           </motion.h1>
           <div className={styles.myBlog__head}>
-            <p className={styles.myBlog__date}>{read.date}</p>
+            <p className={styles.myBlog__date}>{post.date}</p>
+            <ul className={styles.myBlog__list}>
+              {post.tags?.map((tag) => (
+                <li key={tag} className={styles.myBlog__item}>
+                  {tag}
+                </li>
+              ))}
+            </ul>
           </div>
-          <div id="toc" className={`${styles.myBlog__toc} toc-fixed`}>
+          <div id="toc" className={`${styles.myBlog__toc}`}>
             <p id="toc-header" className={styles.myBlog__tocTtl}>
               もくじ
             </p>
@@ -39,7 +48,7 @@ const ReadArticlesBody = ({ read }: ReadArticlesBodyProps) => {
           <article>
             <div
               className={`znc ${styles.myZnc}`}
-              dangerouslySetInnerHTML={{ __html: read.content }}
+              dangerouslySetInnerHTML={{ __html: post.content }}
             />
           </article>
         </section>
@@ -48,4 +57,4 @@ const ReadArticlesBody = ({ read }: ReadArticlesBodyProps) => {
   )
 }
 
-export default ReadArticlesBody
+export default NoteBody

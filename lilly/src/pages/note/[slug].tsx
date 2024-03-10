@@ -1,137 +1,27 @@
-import type {
-  NextPage,
-  InferGetStaticPropsType,
-  GetStaticPropsContext,
-} from 'next'
-import React, { useEffect } from 'react'
-import Tocbot from 'tocbot'
-import { motion, useScroll, useSpring } from 'framer-motion'
-import { getAllPosts, getPostBySlug } from '@/utils/api'
-import markdownToHtml from '@/utils/markdownToHtml'
-import { Wrapper } from '@/components/layouts/Wrapper'
+import type { NextPage, InferGetStaticPropsType } from 'next'
+import React from 'react'
+import {
+  getStaticPaths,
+  getStaticProps,
+} from '@/features/note/api/dataFetching'
+import { NoteBody } from '@/features/note/components'
 import { CustomHead } from '@/components/layouts/Head'
 import { Header } from '@/components/layouts/Header'
 import { Footer } from '@/components/layouts/Footer'
-import styles from './[slug].module.scss'
 
-const useTocbot = () => {
-  useEffect(() => {
-    Tocbot.init({
-      tocSelector: '.toc-wrapper',
-      contentSelector: '.znc',
-      headingSelector: 'h1, h2, h3',
-      hasInnerContainers: true,
-    })
-
-    return () => {
-      Tocbot.destroy()
-    }
-  }, [])
-}
-
-const ScrollAnimatedComponent = () => {
-  const { scrollYProgress } = useScroll()
-  const scaleX = useSpring(scrollYProgress)
-
-  return <motion.div style={{ scaleX }} className="progress-bar" />
-}
+export { getStaticPaths, getStaticProps }
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
-export const getStaticPaths = async () => {
-  const posts = getAllPosts(['slug'])
-
-  return {
-    paths: posts.map((post) => {
-      return {
-        params: {
-          slug: post.slug,
-        },
-      }
-    }),
-    fallback: false,
-  }
-}
-
-export const getStaticProps = async (context: GetStaticPropsContext) => {
-  if (!context.params || typeof context.params.slug !== 'string') {
-    // params が存在しない場合、または slug が string 型でない場合のエラーハンドリングを行う（例: 404 ページを返す）
-    return {
-      notFound: true,
-    }
-  }
-  const post = getPostBySlug(context.params.slug, [
-    'slug',
-    'title',
-    'date',
-    'tags',
-    'content',
-  ])
-  // ここで変換
-  const content = await markdownToHtml(post.content)
-
-  // 変換結果をpropsとして渡す
-  return {
-    props: {
-      post: {
-        ...post,
-        content,
-      },
-    },
-  }
-}
-
-const Post: NextPage<Props> = ({ post }) => {
-  useTocbot()
-  // useAccordion()
-  const pageTitle = `${post.title} | lilly`
-  const pageDescription = post.title
+const NotePage: NextPage<Props> = ({ post }) => {
   return (
     <>
-      <CustomHead title={pageTitle} description={pageDescription} />
+      <CustomHead title={`${post.title} | lilly`} description={post.title} />
       <Header />
-      <Wrapper>
-        <ScrollAnimatedComponent />
-        <div className="container">
-          <section className={styles.myBlog}>
-            <motion.h1
-              className={styles.myBlog__title}
-              initial={{ y: 10, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -10, opacity: 0 }}
-              transition={{ duration: 0.2 }}
-            >
-              {post.title}
-            </motion.h1>
-            <div className={styles.myBlog__head}>
-              <p className={styles.myBlog__date}>{post.date}</p>
-              <ul className={styles.myBlog__list}>
-                {post.tags?.map((tag) => (
-                  <li key={tag} className={styles.myBlog__item}>
-                    {tag}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div id="toc" className={`${styles.myBlog__toc}`}>
-              <p id="toc-header" className={styles.myBlog__tocTtl}>
-                もくじ
-              </p>
-              <div className="toc-wrapper"></div>
-            </div>
-            <article>
-              {/* ここでdangerouslySetInnerHTMLを使ってHTMLタグを出力する */}
-              <div
-                className={`znc ${styles.myZnc}`}
-                dangerouslySetInnerHTML={{ __html: post.content }}
-              />
-            </article>
-          </section>
-        </div>
-      </Wrapper>
+      <NoteBody post={post} />
       <Footer />
     </>
   )
 }
 
-export default Post
+export default NotePage

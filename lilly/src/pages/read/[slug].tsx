@@ -16,7 +16,7 @@ type Props = InferGetStaticPropsType<typeof getStaticProps>
 const ReadArticlePage: NextPage<Props> = ({ read }) => {
   return (
     <>
-      <CustomHead title={read.title} description={read.title} />
+      <CustomHead title={`${read.title} | lilly`} description={read.title} />
       <Header />
       <ReadArticlesBody read={read} />
       <Footer />
