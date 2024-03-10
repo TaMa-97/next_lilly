@@ -1,4 +1,4 @@
-import type { GetStaticPaths } from 'next'
+import type { GetStaticProps, GetStaticPaths } from 'next'
 import { getAllPosts } from '@/utils/api'
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -12,8 +12,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return { paths, fallback: false }
 }
 
-export const getStaticProps = async ({ params }) => {
-  const category = typeof params.category === 'string' ? params.category : ''
+export const getStaticProps: GetStaticProps = async (context) => {
+  const category =
+    typeof context.params?.category === 'string' ? context.params.category : ''
   const allPosts = getAllPosts(['slug', 'title', 'tags', 'date'])
   const posts = allPosts
     .filter((post) => post.tags.includes(category))
