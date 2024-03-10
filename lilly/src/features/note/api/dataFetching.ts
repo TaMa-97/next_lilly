@@ -3,7 +3,7 @@ import type {
   GetStaticProps,
   GetStaticPropsContext,
 } from 'next'
-import markdownToHtml from '@/api/markdownToHtml'
+import markdownToHtml from '@/lib/markdownToHtml'
 import { getPostBySlug, getAllPosts } from '@/api/postApi'
 
 export const getStaticPaths: GetStaticPaths = async () => {
