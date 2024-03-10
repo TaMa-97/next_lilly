@@ -1,5 +1,5 @@
 import type { GetStaticProps, GetStaticPaths } from 'next'
-import { getAllPosts } from '@/utils/api'
+import { getAllPosts } from '@/api/postApi'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const allPosts = getAllPosts(['tags'])

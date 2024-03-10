@@ -3,8 +3,8 @@ import type {
   GetStaticProps,
   GetStaticPropsContext,
 } from 'next'
-import markdownToHtml from '@/utils/markdownToHtml'
-import { getPostBySlug, getAllPosts } from '@/utils/api'
+import markdownToHtml from '@/api/markdownToHtml'
+import { getPostBySlug, getAllPosts } from '@/api/postApi'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = getAllPosts(['slug'])

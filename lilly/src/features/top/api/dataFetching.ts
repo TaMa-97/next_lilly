@@ -1,4 +1,4 @@
-import { getAllPosts } from '@/utils/api'
+import { getAllPosts } from '@/api/postApi'
 
 export async function getStaticProps() {
   const allPosts = getAllPosts(['slug', 'title', 'date', 'tags'])

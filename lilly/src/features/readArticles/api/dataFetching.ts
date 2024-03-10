@@ -3,8 +3,8 @@ import type {
   GetStaticProps,
   GetStaticPropsContext,
 } from 'next'
-import { getReadBySlug, getAllReads } from '@/utils/readApi'
-import markdownToHtml from '@/utils/markdownToHtml'
+import { getReadBySlug, getAllReads } from '@/api/readApi'
+import markdownToHtml from '@/api/markdownToHtml'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const reads = getAllReads(['slug'])
