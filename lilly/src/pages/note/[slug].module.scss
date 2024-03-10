@@ -40,7 +40,6 @@
   &__item {
     display: inline-block;
     @include fz(14);
-    font-family: $fontEn;
     font-weight: 500;
     padding: 1px 12px;
     border: 1px solid #dbdbdb;

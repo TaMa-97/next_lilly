@@ -355,14 +355,11 @@ a.toc-link.is-active-link {
   top: 0;
   left: 0;
   right: 0;
-  height: 2px;
+  height: 5px;
   background: #dbdbdb;
   transform-origin: 0%;
-  border-radius: 10px;
+  border-radius: 9999px;
   z-index: 100;
-  @include tabletP {
-    height: 3px;
-  }
 }
 
 .gThreeBg {

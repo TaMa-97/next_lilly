@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app'
+import Script from 'next/script'
 import React from 'react'
 import { AnimatePresence } from 'framer-motion'
 import { useNextCssRemovalPrevention } from '@/hooks/useNextCssRemovalPrevention'
@@ -12,9 +13,21 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
   return (
     <>
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtm.js?id=GTM-N9C56QC`}
+      />
+      <Script id="gtm-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'GTM-N9C56QC');
+        `}
+      </Script>
       <ThreeBackground />
       <AnimatePresence
-        initial={false}
+        initial={true}
         mode={'wait'}
         onExitComplete={() => {
           window.scrollTo(0, 0)

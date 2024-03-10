@@ -5,7 +5,7 @@ import type {
 } from 'next'
 import React, { useEffect } from 'react'
 import Tocbot from 'tocbot'
-import { motion, useScroll } from 'framer-motion'
+import { motion, useScroll, useSpring } from 'framer-motion'
 import { getAllReads, getReadBySlug } from '@/utils/readApi'
 import markdownToHtml from '@/utils/markdownToHtml'
 import { Wrapper } from '@/components/layouts/Wrapper'
@@ -81,10 +81,9 @@ const useAccordion = () => {
  */
 const ScrollAnimatedComponent = () => {
   const { scrollYProgress } = useScroll()
+  const scaleX = useSpring(scrollYProgress)
 
-  return (
-    <motion.div style={{ scaleX: scrollYProgress }} className="progress-bar" />
-  )
+  return <motion.div style={{ scaleX }} className="progress-bar" />
 }
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>

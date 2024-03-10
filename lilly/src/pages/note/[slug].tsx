@@ -5,7 +5,7 @@ import type {
 } from 'next'
 import React, { useEffect } from 'react'
 import Tocbot from 'tocbot'
-import { motion, useScroll } from 'framer-motion'
+import { motion, useScroll, useSpring } from 'framer-motion'
 import { getAllPosts, getPostBySlug } from '@/utils/api'
 import markdownToHtml from '@/utils/markdownToHtml'
 import { Wrapper } from '@/components/layouts/Wrapper'
@@ -29,53 +29,11 @@ const useTocbot = () => {
   }, [])
 }
 
-// const useAccordion = () => {
-//   useEffect(() => {
-//     const tocHeader = document.getElementById('toc-header')
-//     const tocContainer = document.querySelector('.toc-accordion')
-
-//     const closeAccordion = () => {
-//       const htmlElement = tocContainer as HTMLElement
-//       htmlElement.style.height = '0px'
-//       if (tocHeader) {
-//         tocHeader.classList.remove('open')
-//       }
-//     }
-
-//     const toggleAccordion = () => {
-//       if (tocContainer) {
-//         const htmlElement = tocContainer as HTMLElement
-//         if (htmlElement.style.height === '0px' || !htmlElement.style.height) {
-//           // アコーディオンが閉じている場合、目次の高さを計算して適用する
-//           const scrollHeight = htmlElement.scrollHeight
-//           htmlElement.style.height = `${scrollHeight}px`
-//           if (tocHeader) {
-//             tocHeader.classList.add('open')
-//           }
-//         } else {
-//           closeAccordion()
-//         }
-//       }
-//     }
-
-//     if (tocHeader) {
-//       tocHeader.addEventListener('click', toggleAccordion)
-//     }
-
-//     return () => {
-//       if (tocHeader) {
-//         tocHeader.removeEventListener('click', toggleAccordion)
-//       }
-//     }
-//   }, [])
-// }
-
 const ScrollAnimatedComponent = () => {
   const { scrollYProgress } = useScroll()
+  const scaleX = useSpring(scrollYProgress)
 
-  return (
-    <motion.div style={{ scaleX: scrollYProgress }} className="progress-bar" />
-  )
+  return <motion.div style={{ scaleX }} className="progress-bar" />
 }
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>

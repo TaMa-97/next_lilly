@@ -90,12 +90,12 @@
     }
     &Item {
       @include fz(11);
-      font-family: $fontEn;
       font-weight: 500;
       padding: 1px 12px;
       border: 1px solid #dbdbdb;
       background: #dbdbdb;
       border-radius: 20px;
+
       @include tabletP {
         @include fz(10);
         padding: 0px 8px;
@@ -273,7 +273,6 @@
     padding: 6px 0;
     line-height: 1.3;
     a {
-      font-family: $fontEn;
       color: #333;
       text-decoration: underline;
       @include fz(15);
