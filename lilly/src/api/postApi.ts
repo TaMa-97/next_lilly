@@ -24,8 +24,12 @@ export const getPostBySlug = (slug: string, fields: string[] = []): Post => {
       post.slug = slug
     } else if (field === 'content') {
       post.content = content
-    } else {
-      post[field] = data[field]
+    } else if (field === 'title') {
+      post.title = data.title
+    } else if (field === 'date') {
+      post.date = data.date
+    } else if (field === 'tags') {
+      post.tags = data.tags
     }
   })
 
