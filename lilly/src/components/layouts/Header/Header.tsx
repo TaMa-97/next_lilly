@@ -5,16 +5,6 @@ import styles from './Header.module.scss'
 
 const Header = () => {
   const router = useRouter()
-
-  const isActiveLink = (path: string): boolean => {
-    return (
-      router.pathname === path ||
-      (path === '/' &&
-        (router.pathname.startsWith('/note/') ||
-          router.pathname.startsWith('/category/')))
-    )
-  }
-
   const Heading = router.pathname === '/' ? 'h1' : 'p'
 
   return (
@@ -24,9 +14,9 @@ const Header = () => {
           <Heading className={styles.gHeader__title}>
             <Link
               href="/"
-              className={styles.gHeader__titleLink}
               scroll={false}
               aria-label="Home"
+              className={`${styles.gNav__link}`}
             >
               Lilly
             </Link>
@@ -37,10 +27,8 @@ const Header = () => {
             <li className={styles.gNav__item}>
               <Link
                 href="/"
-                className={`${styles.gNav__link} ${
-                  isActiveLink('/') ? styles.gNav__linkActive : ''
-                }`}
                 scroll={false}
+                className={`${styles.gNav__link} }`}
               >
                 Note
               </Link>
@@ -48,10 +36,8 @@ const Header = () => {
             <li className={styles.gNav__item}>
               <Link
                 href="/read"
-                className={`${styles.gNav__link} ${
-                  isActiveLink('/read') ? styles.gNav__linkActive : ''
-                }`}
                 scroll={false}
+                className={`${styles.gNav__link} }`}
               >
                 Read
               </Link>
