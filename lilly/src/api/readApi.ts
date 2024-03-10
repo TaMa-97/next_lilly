@@ -1,3 +1,4 @@
+import type { Read } from '@/types/readTypes'
 import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
@@ -15,39 +16,37 @@ export const getReadSlugs = (): string[] => {
     .map(({ name }) => name)
 }
 
-export type Read = {
-  slug: string
-  content?: string
-  title: string
-  date?: string
-  tags: string[]
-}
-
 /**
  * 指定されたslugから記事の内容を取得
  * @param slug 記事のslug
  * @param fields 取得したいフィールドの配列
  * @returns 記事の内容を含むオブジェクト
  */
-export const getReadBySlug = (
-  slug: string,
-  fields: string[] = []
-): Partial<Read> => {
+export const getReadBySlug = (slug: string, fields: string[] = []): Read => {
   const fullPath = join(readsDirectory, slug, 'index.md')
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
-  const items: Partial<Read> = { slug }
+  const items: Partial<Read> = {}
 
   fields.forEach((field) => {
-    if (field === 'content') {
+    if (field === 'slug') {
+      items.slug = slug
+    } else if (field === 'content') {
       items.content = content
-    } else if (data[field]) {
-      items[field as keyof Read] = data[field]
+    } else {
+      if (typeof data[field] !== 'undefined') {
+        items[field as keyof Read] = data[field]
+      }
     }
   })
 
-  return items
+  return {
+    slug: items.slug ?? '',
+    title: items.title ?? '無題',
+    date: items.date ?? '不明',
+    content: items.content ?? '',
+  }
 }
 
 /**
@@ -57,9 +56,6 @@ export const getReadBySlug = (
  */
 export const getAllReads = (fields: string[] = []): Read[] => {
   const slugs = getReadSlugs()
-  const reads: Read[] = slugs
-    .map((slug) => getReadBySlug(slug, fields) as Read)
-    .sort((a, b) => a.slug.toLowerCase().localeCompare(b.slug.toLowerCase()))
-
-  return reads
+  const reads = slugs.map((slug) => getReadBySlug(slug, fields))
+  return reads.sort((a, b) => a.slug.localeCompare(b.slug))
 }
