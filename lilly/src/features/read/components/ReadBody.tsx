@@ -1,7 +1,7 @@
 import type { Read } from '@/types/readTypes'
 import React from 'react'
 import Link from 'next/link'
-import { PageTitle } from '@/components/elements/pageTitle'
+import { PageTitle } from '@/components/elements/PageTitle'
 import { Wrapper } from '@/components/layouts/Wrapper'
 import styles from '../styles/index.module.scss'
 import { useSortedReads } from '../hooks/useSortedReads'
