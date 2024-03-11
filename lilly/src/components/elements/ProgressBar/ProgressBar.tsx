@@ -1,9 +1,11 @@
 import React from 'react'
 import { motion, useScroll, useSpring } from 'framer-motion'
 
-export const ReadArticlesScroll = () => {
+const ProgressBar = () => {
   const { scrollYProgress } = useScroll()
   const scaleX = useSpring(scrollYProgress)
 
-  return <motion.div style={{ scaleX }} className="progress-bar" />
+  return <motion.div style={{ scaleX }} className="progressBar" />
 }
+
+export default ProgressBar

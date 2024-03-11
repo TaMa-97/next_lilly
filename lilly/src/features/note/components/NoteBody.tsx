@@ -1,8 +1,9 @@
 import type { Post } from '@/types/postTypes'
 import React from 'react'
-import { motion, useScroll, useSpring } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useTocbot } from '@/hooks/useTocbot'
 import { Wrapper } from '@/components/layouts/Wrapper'
+import { ProgressBar } from '@/components/elements/ProgressBar'
 import styles from '../styles/index.module.scss'
 
 type NoteBodyProps = {
@@ -12,12 +13,9 @@ type NoteBodyProps = {
 export const NoteBody = ({ post }: NoteBodyProps) => {
   useTocbot()
 
-  const { scrollYProgress } = useScroll()
-  const scaleX = useSpring(scrollYProgress)
-
   return (
     <Wrapper>
-      <motion.div style={{ scaleX }} className="progress-bar" />
+      <ProgressBar />
       <div className="container">
         <section className={styles.myBlog}>
           <motion.h1

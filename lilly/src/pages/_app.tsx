@@ -4,6 +4,8 @@ import React from 'react'
 import { AnimatePresence } from 'framer-motion'
 import { useNextCssRemovalPrevention } from '@/hooks/useNextCssRemovalPrevention'
 import { ThreeBackground } from '@/components/layouts/ThreeBackground'
+import { Header } from '@/components/layouts/Header'
+import { Footer } from '@/components/layouts/Footer'
 import '@/styles/globals.scss'
 import 'zenn-content-css'
 import 'tocbot/dist/tocbot.css'
@@ -26,6 +28,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
         `}
       </Script>
       <ThreeBackground />
+      <Header />
       <AnimatePresence
         initial={true}
         mode={'wait'}
@@ -35,6 +38,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
       >
         <Component key={router.asPath} {...pageProps} />
       </AnimatePresence>
+      <Footer />
     </>
   )
 }

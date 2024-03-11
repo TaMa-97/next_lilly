@@ -3,8 +3,6 @@ import React from 'react'
 import { getStaticProps } from '@/features/read/api/dataFetching'
 import { ReadBody } from '@/features/read/components'
 import { CustomHead } from '@/components/layouts/Head'
-import { Header } from '@/components/layouts/Header'
-import { Footer } from '@/components/layouts/Footer'
 
 export { getStaticProps }
 
@@ -17,9 +15,7 @@ const Reads: NextPage<Props> = ({ allReads }) => {
   return (
     <>
       <CustomHead title={pageTitle} description={pageDescription} />
-      <Header />
       <ReadBody allReads={allReads} />
-      <Footer />
     </>
   )
 }

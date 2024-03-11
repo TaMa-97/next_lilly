@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import "@/styles/variables";
+
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #dbdbdb;
+  transform-origin: 0%;
+  border-radius: 9999px;
+  z-index: 100;
+}

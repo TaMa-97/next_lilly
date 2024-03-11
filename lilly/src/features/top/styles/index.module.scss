@@ -200,7 +200,7 @@
       box-shadow: rgba(149, 157, 165, 0.2) 0 10px 15px;
       @include tabletPmin {
         background-color: #f3f3f3;
-        color: #111111;
+        color: $mainColor;
       }
       &::before {
         @include tabletPmin {
@@ -212,7 +212,7 @@
 
     &.open {
       background-color: #f3f3f3;
-      color: #111111;
+      color: $mainColor;
       &::before {
         filter: invert(31%) sepia(71%) saturate(3492%) hue-rotate(199deg)
           brightness(105%) contrast(104%);

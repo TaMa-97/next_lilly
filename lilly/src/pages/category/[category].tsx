@@ -7,8 +7,6 @@ import {
 } from '@/features/category/api/dataFetching'
 import { CategoryBody } from '@/features/category/components'
 import { CustomHead } from '@/components/layouts/Head'
-import { Header } from '@/components/layouts/Header'
-import { Footer } from '@/components/layouts/Footer'
 
 export { getStaticPaths, getStaticProps }
 
@@ -24,9 +22,7 @@ const CategoryPage: NextPage<
         title={`${category} | Lilly`}
         description={`${category} Articles Page of Lilly.`}
       />
-      <Header />
       <CategoryBody posts={posts} category={category} />
-      <Footer />
     </>
   )
 }

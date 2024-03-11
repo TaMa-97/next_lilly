@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 import styles from './Header.module.scss'
 
@@ -8,7 +9,13 @@ const Header = () => {
   const Heading = router.pathname === '/' ? 'h1' : 'p'
 
   return (
-    <header className={styles.gHeader}>
+    <motion.header
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ ease: 'easeOut', duration: 1.2 }}
+      className={styles.gHeader}
+    >
       <div className={`container ${styles.gHeader__inner}`}>
         <div className={styles.gHeader__logo}>
           <Heading className={styles.gHeader__title}>
@@ -45,7 +52,7 @@ const Header = () => {
           </ul>
         </nav>
       </div>
-    </header>
+    </motion.header>
   )
 }
 

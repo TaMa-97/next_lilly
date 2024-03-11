@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import { useTocbot } from '@/hooks/useTocbot'
 import { Wrapper } from '@/components/layouts/Wrapper'
-import { ReadArticlesScroll } from './ReadArticlesScroll'
+import { ProgressBar } from '@/components/elements/ProgressBar'
 import styles from '../styles/index.module.scss'
 
 type ReadArticlesBodyProps = {
@@ -15,7 +15,7 @@ const ReadArticlesBody = ({ read }: ReadArticlesBodyProps) => {
 
   return (
     <Wrapper>
-      <ReadArticlesScroll />
+      <ProgressBar />
       <div className="container">
         <section className={styles.myBlog}>
           <motion.h1
