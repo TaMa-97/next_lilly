@@ -1,0 +1,16 @@
+@charset "utf-8";
+@import "@/styles/variables";
+
+.pageHead {
+  $_: ".pageHead";
+  margin-bottom: 50px;
+  &__title {
+    font-family: $fontEn;
+    font-weight: 500;
+    @include fz(24);
+  }
+  &__lead {
+    color: #9b9b9b;
+    @include fz(15);
+  }
+}

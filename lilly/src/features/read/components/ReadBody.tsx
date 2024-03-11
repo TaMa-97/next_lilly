@@ -1,7 +1,7 @@
 import type { Read } from '@/types/readTypes'
 import React from 'react'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+import { PageTitle } from '@/components/elements/pageTitle'
 import { Wrapper } from '@/components/layouts/Wrapper'
 import styles from '../styles/index.module.scss'
 import { useSortedReads } from '../hooks/useSortedReads'
@@ -17,18 +17,12 @@ const ReadBody = ({ allReads }: ReadBodyProps) => {
     <Wrapper>
       <section className={styles.myRead}>
         <div className="container">
-          <motion.div
-            className={styles.myRead__head}
-            initial={{ y: 15, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -15, opacity: 0 }}
-            transition={{ duration: 0.2 }}
-          >
-            <h1 className={styles.myRead__title}>Reading list 📖</h1>
-            <h2 className={styles.myRead__lead}>
-              主に読んだ記事や本などをまとめていくための場所です。
-            </h2>
-          </motion.div>
+          <PageTitle
+            title="Reading list 📖"
+            lead="主に読んだ記事や本などをまとめていくための場所です。"
+            titleTag="h1"
+            leadTag="h2"
+          />
           <ul className={styles.myRead__list}>
             {sortedReads.map((read) => (
               <li key={read.slug} className={styles.myRead__item}>

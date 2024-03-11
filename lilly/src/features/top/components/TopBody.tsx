@@ -1,8 +1,8 @@
 import type { Post } from '@/types/postTypes'
 import React from 'react'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 import { CSSTransition } from 'react-transition-group'
+import { PageTitle } from '@/components/elements/pageTitle'
 import { Wrapper } from '@/components/layouts/Wrapper'
 import styles from '../styles/index.module.scss'
 import { useAccordion } from '../hooks/useAccordion'
@@ -21,18 +21,10 @@ const TopBody = ({ allPosts, categoryCounts }: Props) => {
     <Wrapper>
       <section className={styles.myBlog}>
         <div className="container">
-          <motion.div
-            className={styles.myBlog__head}
-            initial={{ y: 15, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -15, opacity: 0 }}
-            transition={{ duration: 0.2 }}
-          >
-            <h2 className={styles.myBlog__title}>Notebook &#x1f680;</h2>
-            <h3 className={styles.myBlog__lead}>
-              主に技術的なメモやTipsをゆるく投稿している場所です。
-            </h3>
-          </motion.div>
+          <PageTitle
+            title="Notebook 🚀"
+            lead="主に技術的なメモやTipsをゆるく投稿している場所です。"
+          />
           <div className={styles.myBlog__catArea}>
             <button
               className={`${styles.myBlog__catItemButton} ${
