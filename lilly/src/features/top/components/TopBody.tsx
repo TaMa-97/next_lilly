@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { CSSTransition } from 'react-transition-group'
 import { Wrapper } from '@/components/layouts/Wrapper'
-import styles from './index.module.scss'
+import styles from '../styles/index.module.scss'
 import { useAccordion } from '../hooks/useAccordion'
 import { useSortedPosts } from '../hooks/useSortedPosts'
 

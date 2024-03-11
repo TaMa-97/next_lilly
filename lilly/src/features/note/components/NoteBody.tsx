@@ -3,7 +3,7 @@ import React from 'react'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import { useTocbot } from '@/hooks/useTocbot'
 import { Wrapper } from '@/components/layouts/Wrapper'
-import styles from './index.module.scss'
+import styles from '../styles/index.module.scss'
 
 type NoteBodyProps = {
   post: Post

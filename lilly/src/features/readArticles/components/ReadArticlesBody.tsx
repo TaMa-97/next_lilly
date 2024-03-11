@@ -4,7 +4,7 @@ import React from 'react'
 import { useTocbot } from '@/hooks/useTocbot'
 import { Wrapper } from '@/components/layouts/Wrapper'
 import { ReadArticlesScroll } from './ReadArticlesScroll'
-import styles from './index.module.scss'
+import styles from '../styles/index.module.scss'
 
 type ReadArticlesBodyProps = {
   read: Read

@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Wrapper } from '@/components/layouts/Wrapper'
-import styles from './index.module.scss'
+import styles from '../styles/index.module.scss'
 
 type CategoryBodyProps = {
   posts?: Post[]
