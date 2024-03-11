@@ -3,6 +3,7 @@ import Script from 'next/script'
 import React from 'react'
 import { AnimatePresence } from 'framer-motion'
 import { useNextCssRemovalPrevention } from '@/hooks/useNextCssRemovalPrevention'
+import { useSmoothScroll } from '@/hooks/useSmoothScroll'
 import { ThreeBackground } from '@/components/layouts/ThreeBackground'
 import { Header } from '@/components/layouts/Header'
 import { Footer } from '@/components/layouts/Footer'
@@ -12,6 +13,7 @@ import 'tocbot/dist/tocbot.css'
 
 export default function App({ Component, pageProps, router }: AppProps) {
   useNextCssRemovalPrevention()
+  useSmoothScroll()
 
   return (
     <>
