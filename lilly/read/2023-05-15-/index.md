@@ -21,7 +21,6 @@ date: 'May 15, 2023'
 - [フロントエンド研修【MIXI 23 新卒技術研修】](https://speakerdeck.com/mixi_engineers/2023-frontend-training)
 - [Three.js を使った 3D 都市モデルの読み込みと表示](https://www.mlit.go.jp/plateau/learning/tpc12-1/)
 - [フロントエンドエンジニアがこれだけは知っておいて欲しい ~認証について~](https://qiita.com/anneau/items/fec78c0a6345c497f183)
-  認証処理あたりも学んでいきたい
 - [引越し業界初の新サービスを支えるフロントエンドの技術](https://qiita.com/anneau/items/3936c954690a28c51c8f)
 - [【ChatGPT】ついにプラグインが開放され更に色々できるようになった](https://qiita.com/tak001/items/720e279f70222f065ab3)
 - [【CSS】素の CSS でようやくネストができるようになった](https://qiita.com/rana_kualu/items/e814f3e13aac48d53aaa)
@@ -50,15 +49,4 @@ date: 'May 15, 2023'
 
 ## 📚 あとで読む
 
-- [Google Cloud Skills Boost Generative AI](https://www.cloudskillsboost.google/journeys/118)
-- [ESLint と Prettier の設定をドキュメントを丹念に見ながらやる（2022 年 2 月時点）](https://zenn.dev/hiroko_ino/articles/eslint-prettier-husky-2022)
-- [サクッと始めるプロンプトエンジニアリング【LangChain / ChatGPT】](https://zenn.dev/umi_mori/books/prompt-engineer)
-- [ジェネレーティブ AI 実践入門/20230524](https://speakerdeck.com/yoshidashingo/20230524)
-- [OpenAI GPT-4/ChatGPT/LangChain 人工知能プログラミング実践入門](https://techplay.jp/book/7678)
 - [Storybook@7 入門：Next.js + TailwindCSS へのステップバイステップ組み込みガイド](https://zenn.dev/chot/articles/3f214a0e15704d)
-- [CyberAgent AI 事業本部 MLOps 研修応用編](https://speakerdeck.com/nsakki55/cyberagent-aishi-ye-ben-bu-mlopsyan-xiu-ying-yong-bian)
-- [日本初の挑戦〜食べログによる ChatGPT プラグイン開発の舞台裏](https://tech-blog.tabelog.com/entry/first-challenge-tabelog-chatgpt-plugin-devleopment)
-- [Docker 一強の終焉にあたり、押さえるべき Container 事情](https://zenn.dev/ttnt_1013/articles/f36e251a0cd24e)
-- [【図解】Docker の全体像を理解する -前編-](https://qiita.com/etaroid/items/b1024c7d200a75b992fc)
-- [Web ブラウザのレンダリングの仕組みを理解する](https://zenn.dev/oreo2990/articles/280d39a45c203e)
-- [AI Native Development Guide](https://www.ai-native.dev/docs/v/ja/)
