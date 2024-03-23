@@ -16,6 +16,7 @@ date: 'March 15, 2024'
 - [TypeScript で知ってコードの安全性が上がった tips 集](https://zenn.dev/yutake27/articles/f5818b006184bf)
 - [Astro DB で TODO リストを作成](https://zenn.dev/tor_inc/articles/250ff4dc51731d)
 - [デザインシステム改善:デザイナーとエンジニアで一緒に進めるコンポーネント整理](https://lydesign.jp/n/nfd699e1d0177)
+- [エンジニアが企業向け Web ブラウザと向き合う: Chrome ポリシーと Web ブラウジングにおける挙動の変化](https://zenn.dev/loglass/articles/ef5767a8994136)
 
 ## 🚶 セミナー参加
 
